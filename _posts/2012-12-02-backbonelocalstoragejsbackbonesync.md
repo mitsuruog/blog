@@ -152,7 +152,7 @@ describe("test localstorage", function () {
 ただ、なんとなく違和感が残ります。
 
 Model だけをテストする目的であればこれも有りだと思いますが、テストを通すためにコードを足したようでなんとなく気持ち悪いですし、何か使い方が間違っている気がします。  
-（[次回](/2012/12/backbonemodelbackbonecollection/)はこの違和感を取り除いて行く過程を書きます。）
+（[次回]({{ site.baseurl }}/2012/12/backbonemodelbackbonecollection/)はこの違和感を取り除いて行く過程を書きます。）
 
 ちなみに、backbone.localstorage.js はコードが 140 行足らずなので読むのは非常に楽でした。
 実際に Backbone.Sync を Override するコードを書く場合は、ぜひ参考にしたいと考えています。
