@@ -5,7 +5,7 @@ date: 2017-11-15 0:00:00 +900
 comments: true
 tags: [typescript, definitelytyped]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/TypeSctiptisfun.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/TypeSctiptisfun.png
 ---
 
 TypeScript を使っていると、結構必要になる型定義ファイル。
@@ -22,11 +22,11 @@ TypeScript を使っていると、結構必要になる型定義ファイル。
 コントリビュートの仕方については、まず公式ドキュメントをさらりと眺めておいてください。
 ただ、結構わかりにくいと思うので、これから順を追って説明していきます。
 
-- <https://github.com/DefinitelyTyped/DefinitelyTyped>
+- <https:https://github.com/DefinitelyTyped/DefinitelyTyped>
 
 それから型定義が存在しない事を確認しましょう。
 
-- <https://microsoft.github.io/TypeSearch/>
+- <https:https://microsoft.github.io/TypeSearch/>
 
 ## 事前準備
 
@@ -48,7 +48,7 @@ dts-gen --dt --name my-package-name --template module
 
 > (2017.11.23 追記)テンプレートっぽいの見つけたので貼っておきます。
 >
-> - <https://github.com/Microsoft/TypeScript-Handbook/tree/master/pages/declaration%20files/templates>
+> - <https:https://github.com/Microsoft/TypeScript-Handbook/tree/master/pages/declaration%20files/templates>
 
 generate した結果はこんな感じで、`types`の下にディレクトリが作成されています。
 
@@ -72,7 +72,7 @@ DefinitelyTyped
 
 型定義ファイルが出来上がったら、実際にプロジェクトに投入して正しく機能するかデバックします。実は、`npm`からインストールされた型定義ファイルは、`node_modules/@types`の中に格納されています。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/DefinitelyTyped.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/DefinitelyTyped.png)
 
 そのため、`@types`の下にライブラリ名と同じフォルダを作成して、その中に作成した`index.d.ts`を配置すると、あたかも`npm`インストールしたような振る舞いをします。
 
@@ -139,7 +139,7 @@ Alert.closeAll();
 
 (2017/11/15 現在のコードなので古くなっているかもしれません。最新はこちらから見れます)
 
-- <https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react-s-alert/react-s-alert-tests.tsx>
+- <https:https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react-s-alert/react-s-alert-tests.tsx>
 
 ## Lint チェックをする
 

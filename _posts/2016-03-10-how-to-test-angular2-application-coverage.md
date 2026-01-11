@@ -5,7 +5,7 @@ date: 2016-03-10 23:35:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, coverage, istanbul, unit test]
 categories: ["Blog", "テスト"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -33,7 +33,7 @@ Angular2 の実装の方法は記事をよく目にする機会が増えたの�
 ## カバレッジ編
 
 > コード網羅率（コードもうらりつ、英: Code coverage ）コードカバレッジは、ソフトウェアテストで用いられる尺度の 1 つである。プログラムのソースコードがテストされた割合を意味する。
-> [コード網羅率 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E7%B6%B2%E7%BE%85%E7%8E%87)
+> [コード網羅率 - Wikipedia](https:https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%89%E7%B6%B2%E7%BE%85%E7%8E%87)
 
 カバレッジを取得することのメリットは、コードの危ない部分に対して効果的にテストができているか客観的に評価できることです。。
 特に HTML 形式のレポートは、コードとテストを実行した部分を重ねて表示することができ、結果を視覚的に見やすくしてくれます。
@@ -42,7 +42,7 @@ Angular2 の実装の方法は記事をよく目にする機会が増えたの�
 
 ## karma-coverage でカバレッジを測定する
 
-Karma でカバレッジを取得するためには、プラグインの 1 つである[karma-coverage](https://github.com/karma-runner/karma-coverage)を利用します。
+Karma でカバレッジを取得するためには、プラグインの 1 つである[karma-coverage](https:https://github.com/karma-runner/karma-coverage)を利用します。
 早速、リポジトリの`devDependency`に追加します。
 
 ```
@@ -76,7 +76,7 @@ module.exports = function (config) {
 
     // (3)
     // カバレッジ用reporterの出力先, フォーマットを指定します
-    // see https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
+    // see https:https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
     coverageReporter: {
       dir : 'report/coverage/',
       reporters: [{
@@ -92,22 +92,22 @@ module.exports = function (config) {
 
 テストを実行すると`report/coverage`の直下に HTML 形式のカバレッジレポートが出力されます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-1.png)
 
-karma-coverage 内部では、JavaScript のカバレッジ測定ツールとして有名な[istanbul](https://github.com/gotwarlost/istanbul)を利用しています。
+karma-coverage 内部では、JavaScript のカバレッジ測定ツールとして有名な[istanbul](https:https://github.com/gotwarlost/istanbul)を利用しています。
 HTML レポートでは、ディレクトリやファイルごとにカバレッジを知ることができます。これを見ながらカバレッジの低い部分などに追加のテストを書いていきます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-2.png)
 
 コードとテスト実行した部分を重ねあわせて表示することで、テストが不足している部分を容易に発見できます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-3.png)
 
 ところがこのままでは、レポートのコードが ts ファイルをトランスパイルした JavaScript ファイルとなっているため、実際に作成した ts ファイル上のどの部分に該当するかが非常に分かりにくいです。
 
 ## remap-istanbul で ts ファイルとリンクさせる
 
-先ほどのカバレッジレポートを改良してトランスパイル前の ts ファイルをリンクさせます。リンクさせるには[remap-istanbul](https://github.com/SitePen/remap-istanbul)を利用します。
+先ほどのカバレッジレポートを改良してトランスパイル前の ts ファイルをリンクさせます。リンクさせるには[remap-istanbul](https:https://github.com/SitePen/remap-istanbul)を利用します。
 
 remap-istanbul とは、ts ファイルをトランスパイルした際に生成される SouceMap(ここでは inline SouceMap)を元に、カバレッジレポートをオリジナルの ts ファイルにリンクさせるツールです。
 早速、リポジトリの`devDependency`に追加します。
@@ -143,7 +143,7 @@ module.exports = function (config) {
 
     // (3)
     // カバレッジ用reporterの出力先, フォーマットを指定します
-    // see https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
+    // see https:https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
     coverageReporter: {
       dir : 'report/coverage/',
       reporters: [{
@@ -168,7 +168,7 @@ node_modules/.bin/remap-istanbul -i report/coverage/coverage-final.json -o repor
 
 コマンドを実行すると`report/coverage`の直下に HTML 形式のカバレッジレポートが出力されます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-4.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-coverage-4.png)
 
 今度は ts ファイルとカバレッジレポートがリンクするようになりました。
 めでたし。めでたし。
@@ -184,4 +184,4 @@ HTML レポートの出力方法は他にもあると思いますので、いろ
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 (もちろんカバレッジも取得できます！！)
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)

@@ -5,7 +5,7 @@ date: 2019-03-26 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-array-filter-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-array-filter-logo.png
 ---
 
 TypeScript の小ネタです。
@@ -38,7 +38,7 @@ users
 
 ## User-Defined Type Guards を使う
 
-このエラーを解消するためには[Type Guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards)を使って、コンパイラに型情報を追加で教える必要があります。
+このエラーを解消するためには[Type Guards](https:https://www.typescriptlang.org/docs/handbook/advanced-types.html#user-defined-type-guards)を使って、コンパイラに型情報を追加で教える必要があります。
 
 1 つめのやり方は、name が Optional ではない新しい Type を作る方法です。
 
@@ -69,4 +69,4 @@ users
 
 疑問に思ったので、ここで聞いてみた内容でした。
 
-- [Why TypeScript compiler doesn't handle correctly nested object filtering? \- Stack Overflow](https://stackoverflow.com/questions/55337969/why-typescript-compiler-doesnt-handle-correctly-nested-object-filtering)
+- [Why TypeScript compiler doesn't handle correctly nested object filtering? \- Stack Overflow](https:https://stackoverflow.com/questions/55337969/why-typescript-compiler-doesnt-handle-correctly-nested-object-filtering)

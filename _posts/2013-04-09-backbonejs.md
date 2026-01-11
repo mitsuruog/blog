@@ -5,7 +5,7 @@ date: 2013-04-09 17:44:40 +0900
 comments: true
 tags: [backbone, spa, チュートリアル]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/backbone.jpg
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/backbone.jpg
 ---
 
 先日めでたく 1.0.0 をリリースした Backbone.js ですが、よくも悪くも「どう作るか」について、作成者側の思いで自由にできるため、始めの取っ掛かりとして、どう作ればよいかと言うことで結構悩む方も多いかと思います。
@@ -28,7 +28,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/backbo
 
 このチュートリアルでは、よくある Tweet 検索アプリケーションを作成しています。
 
-[https://github.com/mitsuruog/SPA-with-Backbone](https://github.com/mitsuruog/SPA-with-Backbone)
+[https:https://github.com/mitsuruog/SPA-with-Backbone](https://github.com/mitsuruog/SPA-with-Backbone)
 
 次からは、View について注意するポイントを幾つか紹介します。
 
@@ -42,14 +42,14 @@ Backbone.js でアプリケーションを作成する場合、いつくか View
 ```js
 initialize: function () {
 
-  //他のViewのイベントをハンドリングしてレンダリングする
+  https://他のViewのイベントをハンドリングしてレンダリングする
   this.someView.on('chage:some', this.render);
 
 },
 
 render: function(){
 
-  //他のViewへレンダリング指示
+  https://他のViewへレンダリング指示
   this.anotherView.render();
 
 }
@@ -59,13 +59,13 @@ Backbone.js には`Backbone.Events`というカスタムイベントをバイン
 実装する際は、`Backbone.Events`を`_.extend()`して使います。
 
 ```js
-//Backbone.Eventsのクローン
+https://Backbone.Eventsのクローン
 _.extend(mediator, Backbone.Events);
 
-//イベントの発火
+https://イベントの発火
 mediator.trigger("change:some", param);
 
-//イベントのハンドリング
+https://イベントのハンドリング
 mediator.on("change:some", this.behavior);
 ```
 
@@ -86,21 +86,21 @@ mediator.on("change:some", this.behavior);
 ```js
 initialize: function () {
 
-  //他のViewからのModel追加依頼
+  https://他のViewからのModel追加依頼
   mediator.on('add', this.addSome);
 
-  //Collectionのaddイベントをハンドリングしてレンダリング処理を呼び出す
+  https://Collectionのaddイベントをハンドリングしてレンダリング処理を呼び出す
   this.listenTo(this.collections, 'add', this.render);
 
 },
 
 addSome: function (some) {
-  //CollectionにModelを1件追加する
-  //追加した場合、addイベントが発火する
+  https://CollectionにModelを1件追加する
+  https://追加した場合、addイベントが発火する
 },
 
 render: function () {
-  //レンダリング処理
+  https://レンダリング処理
 },
 ```
 
@@ -115,10 +115,10 @@ render: function () {
 View が管理する Collection や Model のイベントハンドリングには従来`.on()`を使用してきましたが、0.9.9 以降は`.listenTo()`を使います。
 
 ```js
-//.on()を使ったバージョン
+https://.on()を使ったバージョン
 this.collections.on("reset", this.render);
 
-//.listenTo()を使ったバージョン
+https://.listenTo()を使ったバージョン
 this.listenTo(this.collections, "reset", this.render);
 ```
 
@@ -133,7 +133,7 @@ initialize: function () {
 
   bindAll(this);
 
-  //なにかの処理
+  https://なにかの処理
 
 },
 ```

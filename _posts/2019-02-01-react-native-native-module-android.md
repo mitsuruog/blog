@@ -5,12 +5,12 @@ date: 2019-02-01 0:00:00 +900
 comments: true
 tags: [react-native, android]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/android-react-native-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/android-react-native-logo.png
 ---
 
 react-native で Android の Native module を呼び出す方法です。基本的には下の公式ドキュメントのやり方を真似ていますが、一部そのままでは動作しなかった部分があるため、その辺りも紹介します。
 
-- [Native Modules · React Native](https://facebook.github.io/react-native/docs/native-modules-android)
+- [Native Modules · React Native](https:https://facebook.github.io/react-native/docs/native-modules-android)
 
 紹介する内容は次の通りです。
 
@@ -28,7 +28,7 @@ react-native で Android の Native module を呼び出す方法です。基本�
 
 プロジェクト全体のコードは GitHub で見ることができます。
 
-- <https://github.com/mitsuruog/react-native-call-native-module-sample>
+- <https:https://github.com/mitsuruog/react-native-call-native-module-sample>
 
 ちなみに Android 開発はほとんどやったことがありません。
 

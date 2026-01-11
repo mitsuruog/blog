@@ -5,14 +5,14 @@ date: 2019-03-01 0:00:00 +900
 comments: true
 tags: [react-native]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-config-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-config-logo.png
 ---
 
 まぁ、よくある development/statging/production の定数切り替えです。
 
-いくつかライブラリを選定したのですが、最終的に[react-native-config](https://github.com/luggit/react-native-config)を使うことにしました。理由は NativeModule を使っていて、双方で定数を共有したいからです。
+いくつかライブラリを選定したのですが、最終的に[react-native-config](https:https://github.com/luggit/react-native-config)を使うことにしました。理由は NativeModule を使っていて、双方で定数を共有したいからです。
 
-NativeModule を使っていなければ[react-native-dotenv](https://github.com/zetachang/react-native-dotenv)でも大丈夫だと思います。
+NativeModule を使っていなければ[react-native-dotenv](https:https://github.com/zetachang/react-native-dotenv)でも大丈夫だと思います。
 
 導入にあたり Native 側にも設定が必要だったので、設定するにあたりある程度の困難はあると思っていたのですが、結構大変だったのでその辺りを中心に紹介します。
 
@@ -25,12 +25,12 @@ npm install --save react-native-config
 react-native link react-native-config
 ```
 
-設定ファイルの記述方法や基本的な環境の切り替えからなどは、[dotenv](https://github.com/motdotla/dotenv)と同じなので、使ったことがある人はそれほど苦労しないはず。
+設定ファイルの記述方法や基本的な環境の切り替えからなどは、[dotenv](https:https://github.com/motdotla/dotenv)と同じなので、使ったことがある人はそれほど苦労しないはず。
 
 次のような`.env`ファイルを準備します。
 
 ```txt
-API_URL=https://myapi.com
+API_URL=https:https://myapi.com
 GOOGLE_MAPS_API_KEY=abcdefgh
 ```
 
@@ -39,7 +39,7 @@ react-native 側では次のように取得します。
 ```js
 import Config from "react-native-config";
 
-Config.API_URL; // 'https://myapi.com'
+Config.API_URL; // 'https:https://myapi.com'
 Config.GOOGLE_MAPS_API_KEY; // 'abcdefgh'
 ```
 
@@ -79,11 +79,11 @@ package jp.sample.mitsuruog.custom.hoge;
   ...
 
   public HttpURLConnection getApiClient() {
-    URL url = new URL(BuildConfig.API_URL); // 'https://myapi.com'
+    URL url = new URL(BuildConfig.API_URL); // 'https:https://myapi.com'
   }
 ```
 
-- [React Native Android Build Error MainActivity.java:29: error: cannot find symbol](https://stackoverflow.com/a/35912176/1855830)
+- [React Native Android Build Error MainActivity.java:29: error: cannot find symbol](https:https://stackoverflow.com/a/35912176/1855830)
 
 ### swift で使うための設定
 
@@ -117,14 +117,14 @@ xcode 上でのエラーが消えたので、実機で試そうかと思って�
 
 まず、xcode のプロジェクトビューの`Libraries`グループの中に`ReactNativeConfig.xcodeproj`があることを確認します。もしなければ、次の手順にしたがって手動でリンクを直してください。
 
-- [Linking Libraries · React Native](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)
+- [Linking Libraries · React Native](https:https://facebook.github.io/react-native/docs/linking-libraries-ios.html)
 
 プロジェクトの「Build Settings > Header Search Paths」には`$(SRCROOT)/../node_modules/react-native-config/ios`を追加します。
 
-![React Native Config Settings](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-config1.png){: w="550" h="209" }
+![React Native Config Settings](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-config1.png){: w="550" h="209" }
 
-- ['GeneratedDotEnv.m' file not found](https://github.com/luggit/react-native-config/issues/187#issuecomment-368769123)
-- ['ReactNativeConfig\.h' file not found](https://github.com/luggit/react-native-config/issues/81)
+- ['GeneratedDotEnv.m' file not found](https:https://github.com/luggit/react-native-config/issues/187#issuecomment-368769123)
+- ['ReactNativeConfig\.h' file not found](https:https://github.com/luggit/react-native-config/issues/81)
 
 ## まとめ
 
@@ -137,4 +137,4 @@ react-native の外部ライブラリの設定周り、こんなに不安定で�
 
 > このブログは iOS 側で複数の環境を構築する手順が載っていてわかりやすいです。
 >
-> - [Managing Configuration in React Native – Differential – Medium](https://medium.com/differential/managing-configuration-in-react-native-cd2dfb5e6f7b)
+> - [Managing Configuration in React Native – Differential – Medium](https:https://medium.com/differential/managing-configuration-in-react-native-cd2dfb5e6f7b)

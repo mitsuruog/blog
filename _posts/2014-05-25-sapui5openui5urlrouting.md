@@ -19,7 +19,7 @@ URL が変わらないということは、すべての画面の URL が同じ�
 
 <!-- more -->
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/a1510_000018.jpg)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/a1510_000018.jpg)
 
 ## 目次
 
@@ -62,7 +62,7 @@ sap.ui.core.UIComponent.extend "com.mitsuruog.sapui5.Component",
 
 細かい設定等はこちらです。簡単に紹介します。
 
-[Configuration Parameters for Navigation](https://sapui5.hana.ondemand.com/sdk/#docs/guide/902313063d6f45aeaa3388cc4c13c34e.html)
+[Configuration Parameters for Navigation](https:https://sapui5.hana.ondemand.com/sdk/#docs/guide/902313063d6f45aeaa3388cc4c13c34e.html)
 
 - pattern
   - パターンマッチするハッシュを文字列で指定します。ルーティングテーブルの中で最も大事な設定です
@@ -122,8 +122,8 @@ sap.ui.core.UIComponent.extend "com.mitsuruog.sapui5.Component",
 
 サンプルの例では、次のように呼び出す URL にハッシュを追加することで、望みの画面を表示させることが可能です。
 
-- [https://mitsuruog.github.io/sapui5-showroom/app/routing/#/second](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/second)
-- [https://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2)
+- [https:https://mitsuruog.github.io/sapui5-showroom/app/routing/#/second](https://mitsuruog.github.io/sapui5-showroom/app/routing/#/second)
+- [https:https://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2](https://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2)
 
 では、プログラムから View を切り替え時にハッシュも変更するためにはどうすればよいでしょうか？
 
@@ -194,17 +194,17 @@ EventBus では、ブックマークからの特定画面を起動すること�
 
 SAPUI5/OpenUI5 routing Sample
 
-[https://mitsuruog.github.io/sapui5-showroom/app/routing/](http://mitsuruog.github.io/sapui5-showroom/app/routing/)
+[https:https://mitsuruog.github.io/sapui5-showroom/app/routing/](https://mitsuruog.github.io/sapui5-showroom/app/routing/)
 
 ### ソースコード
 
 sapui5-showroom/app/routing at master · mitsuruog/sapui5-showroom
 
-[https://github.com/mitsuruog/sapui5-showroom/tree/master/app/routing](https://github.com/mitsuruog/sapui5-showroom/tree/master/app/routing)
+[https:https://github.com/mitsuruog/sapui5-showroom/tree/master/app/routing](https://github.com/mitsuruog/sapui5-showroom/tree/master/app/routing)
 
 ### 参考リンク
 
-- [(SAP/Open) UI5 with Routing Tutorial - YouTube](https://www.youtube.com/watch?v=YZqtx2KJ2To)
-- [(SAP/Open) UI5 with dynamic Routing Tutorial - YouTube](https://www.youtube.com/watch?v=hMEkV1ECf2c)
-- [Navigation](https://sapui5.hana.ondemand.com/sdk/#docs/guide/3d18f20bd2294228acb6910d8e8a5fb5.html)
-- [Step 3: Navigation and Routing](https://sapui5.hana.ondemand.com/sdk/#docs/guide/688f36bd758e4ce2b4e682eef4dc794e.html)
+- [(SAP/Open) UI5 with Routing Tutorial - YouTube](https:https://www.youtube.com/watch?v=YZqtx2KJ2To)
+- [(SAP/Open) UI5 with dynamic Routing Tutorial - YouTube](https:https://www.youtube.com/watch?v=hMEkV1ECf2c)
+- [Navigation](https:https://sapui5.hana.ondemand.com/sdk/#docs/guide/3d18f20bd2294228acb6910d8e8a5fb5.html)
+- [Step 3: Navigation and Routing](https:https://sapui5.hana.ondemand.com/sdk/#docs/guide/688f36bd758e4ce2b4e682eef4dc794e.html)

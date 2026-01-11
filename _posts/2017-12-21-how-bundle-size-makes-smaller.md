@@ -5,17 +5,17 @@ date: 2017-12-21 0:00:00 +900
 comments: true
 tags: [webpack]
 categories: ["Blog", "開発ツール"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle.png
 ---
 
-プロジェクトの webpack のバンドルサイズを計測して見たところ、[highlight.js](https://highlightjs.org/)が結構な割合を占めていたので、サイズを小さくする方法を試してみました。
+プロジェクトの webpack のバンドルサイズを計測して見たところ、[highlight.js](https:https://highlightjs.org/)が結構な割合を占めていたので、サイズを小さくする方法を試してみました。
 
 ## はじめに
 
 この辺りの記事を参考にしています。
 
-- [Reducing bundle size of Highlight\.js with Webpack \| Brian Jacobel](https://bjacobel.com/2016/12/04/highlight-bundle-size/)
-- [Reducing bundle size of Highlight\.js with Webpack 2 \| Iris Schaffer](https://irisschaffer.com/reducing-bundle-size-of-highlight.js-with-webpack2)
+- [Reducing bundle size of Highlight\.js with Webpack \| Brian Jacobel](https:https://bjacobel.com/2016/12/04/highlight-bundle-size/)
+- [Reducing bundle size of Highlight\.js with Webpack 2 \| Iris Schaffer](https:https://irisschaffer.com/reducing-bundle-size-of-highlight.js-with-webpack2)
 
 ## import 文の書き方でサイズが小さくなる
 
@@ -28,7 +28,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle
 import highlight from "highlight.js";
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle-before.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle-before.png)
 
 **750.01KB**。うーん。でかい。。。
 なんだか全ての言語ファイルがバンドルされている気がする。。。
@@ -49,7 +49,7 @@ highlight.registerLanguage("java", java);
 highlight.registerLanguage("xml", xml);
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle-after.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/bundle-after.png)
 
 **36.36KB**！！
 かなりスリムになりました。
@@ -78,8 +78,8 @@ module.exports = hljs;
 
 こんな単純なことでバンドルサイズが減らせるとは。恐ろしや。。。
 
-> サイズの測定は一度 webpack でビルドしてから[danvk/source\-map\-explorer](https://github.com/danvk/source-map-explorer)を使って測定しました。
+> サイズの測定は一度 webpack でビルドしてから[danvk/source\-map\-explorer](https:https://github.com/danvk/source-map-explorer)を使って測定しました。
 
 作業していたらこんな記事を見つけました。アプローチは同じです。
 
-- RxJS を小さくバンドルする方法。import 文の書き方で容量が変わる - Qiita <https://qiita.com/clockmaker/items/5e2207b14dac97c4ede1>
+- RxJS を小さくバンドルする方法。import 文の書き方で容量が変わる - Qiita <https:https://qiita.com/clockmaker/items/5e2207b14dac97c4ede1>

@@ -16,7 +16,7 @@ OpenUI5 は UI フレームワークという名前の通り、多くの優れ�
 
 今回のデモはこちらで参照できます。
 
-[https://mitsuruog.github.io/sapui5-showroom/#/controls](http://mitsuruog.github.io/sapui5-showroom/#/controls)
+[https:https://mitsuruog.github.io/sapui5-showroom/#/controls](https://mitsuruog.github.io/sapui5-showroom/#/controls)
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ OpenUI5 は UI フレームワークという名前の通り、多くの優れ�
 
 こちらの公式ページの内容をもとに書いています。
 
-[Developing UI5 Controls in JavaScript](https://openui5.hana.ondemand.com/#docs/guide/91f1703b6f4d1014b6dd926db0e91070.html)
+[Developing UI5 Controls in JavaScript](https:https://openui5.hana.ondemand.com/#docs/guide/91f1703b6f4d1014b6dd926db0e91070.html)
 
 ## 1. 新しい UI コントロールの定義(Definition of UI controls)
 
@@ -46,7 +46,7 @@ Properties とは、その名の通り UI コントロールに外部からア�
 
 - **type**: プロパティのデータタイプを指定します。これを指定する事で OpenUI5 が提供する validation が機能します。デフォルトは`string`です。
 - **defaultValue**: デフォルトを指定します。何も指定しない場合は`undefined`です。
-  Properties にはアクセスレベルが指定できるようです(未検証)。[Object Metadata and Implementation](https://openui5.hana.ondemand.com/docs/guide/91f29fea6f4d1014b6dd926db0e91070.html)
+  Properties にはアクセスレベルが指定できるようです(未検証)。[Object Metadata and Implementation](https:https://openui5.hana.ondemand.com/docs/guide/91f29fea6f4d1014b6dd926db0e91070.html)
 
 ### Events
 
@@ -88,11 +88,11 @@ sap.ui.core.Control.extend "mitsuruog.BlueContainer",
 詳細は公式ベージを確認してください。
 
 - メタデータについての詳細
-  [Defining the Control Metadata](https://openui5.hana.ondemand.com/#docs/guide/7b52540d9d8c4e00b9723151622bbb64.html)
+  [Defining the Control Metadata](https:https://openui5.hana.ondemand.com/#docs/guide/7b52540d9d8c4e00b9723151622bbb64.html)
 - メタデータを定義した場合、使用しない方がいいメソッド名についての注意事項など
-  [Adding Method Implementations](https://openui5.hana.ondemand.com/#docs/guide/91f0a8dc6f4d1014b6dd926db0e91070.html)
+  [Adding Method Implementations](https:https://openui5.hana.ondemand.com/#docs/guide/91f0a8dc6f4d1014b6dd926db0e91070.html)
 - Properties の指定方法の詳細
-  [Defining Control Properties](https://openui5.hana.ondemand.com/#docs/guide/ac56d92162ed47ff858fdf1ce26c18c4.html)
+  [Defining Control Properties](https:https://openui5.hana.ondemand.com/#docs/guide/ac56d92162ed47ff858fdf1ce26c18c4.html)
 
 ## 3. レンダラの実装
 
@@ -142,7 +142,7 @@ sap.ui.core.Control.extend "mitsuruog.BlueContainer",
 ある程度書き慣れてくると、レンダラについてはお決まりのパターンが見えてくるでしょう。また、似たような OpenUI5 のソースを読むのもいいと思います。
 詳細は公式ページを参照してください。
 
-[JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.ui.core.RenderManager](https://openui5.hana.ondemand.com/docs/api/symbols/sap.ui.core.RenderManager.html)
+[JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.ui.core.RenderManager](https:https://openui5.hana.ondemand.com/docs/api/symbols/sap.ui.core.RenderManager.html)
 
 ## 4. 配布、利用
 
@@ -182,10 +182,10 @@ sap.ui.jsview "someView",
 実装の細かい部分は Github 上のサンプルを参照してください。
 
 - UI コンポーネント側
-  - [https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee/controls](https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee/controls)
+  - [https:https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee/controls](https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee/controls)
 - UI コンポーネント利用側
-  - [https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.view.coffee](https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.view.coffee)
-  - [https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.controller.coffee](https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.controller.coffee)
+  - [https:https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.view.coffee](https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.view.coffee)
+  - [https:https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.controller.coffee](https://github.com/mitsuruog/sapui5-showroom/blob/master/coffee/view/Controls.controller.coffee)
 
 私が普段利用している OpenUI5 のモバイル用ライブラリ(sap.m〜)では v1.22 の時点で 73 の UI コントロールを持っています。OpenUI5 自体の UI が優れているため、新規で UI コントロールを作成するケースはあまりないように思えます。  
 また、レンダラを実装していると Java の taglib を思い出して、軽いめまいを覚えますね。(まぁそこは置いといて。)

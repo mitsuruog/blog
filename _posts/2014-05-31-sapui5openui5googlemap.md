@@ -39,11 +39,11 @@ SAPUI5/OpenUI5 を使った場合、SAP のバックエンドのデータと、�
 
     <script
       id="sap-ui-bootstrap"
-      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+      src="https:https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
       data-sap-ui-libs="sap.m"
       data-sap-ui-theme="sap_bluecrystal"
     ></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https:https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   </head>
 
   <body class="sapUiBody" id="content" />
@@ -112,23 +112,23 @@ GoogleMap との連携はよくありそうなシーンなのですが、他の 
 
 ### OpenUI5API
 
-- [JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.m.Dialog](https://sapui5.netweaver.ondemand.com/sdk/docs/api/symbols/sap.m.Dialog.htm)
-- [JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.ui.core.HTML](https://sapui5.hana.ondemand.com/sdk/docs/api/symbols/sap.ui.core.HTML.html)
+- [JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.m.Dialog](https:https://sapui5.netweaver.ondemand.com/sdk/docs/api/symbols/sap.m.Dialog.htm)
+- [JsDoc Report - SAP UI development Toolkit for HTML5 - API Reference - sap.ui.core.HTML](https:https://sapui5.hana.ondemand.com/sdk/docs/api/symbols/sap.ui.core.HTML.html)
 
 ### GoogleMap 関連
 
 GoogleMap の使い方についてはこちらが丁寧です。  
 （AjaxTower さん、毎度ありがとうございます！）
 
-- [Google Maps 入門(Google Maps JavaScript API V3)](https://www.ajaxtower.jp/googlemaps/)
+- [Google Maps 入門(Google Maps JavaScript API V3)](https:https://www.ajaxtower.jp/googlemaps/)
 
 GoogleMap の API のスタートガイド（公式）
 
-- [スタート ガイド - Google Maps JavaScript API v3 — Google Developers](https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja)
+- [スタート ガイド - Google Maps JavaScript API v3 — Google Developers](https:https://developers.google.com/maps/documentation/javascript/tutorial?hl=ja)
 
 ### SAPUI5/OpenUI5 と GoogleMap のサンプル
 
-- [【第 1 回】SAPUI5 と SAP NetWeaver Gateway によるマッシュアップ開発入門（序章） - SAP 技術ブログ | SAP ソリューションの REALTECH Japan（リアルテックジャパン）](https://solution.realtech.jp/blog/2013/10/sapui5sap-netweaver-gateway.html)
-- [SAPUI5 Gateway and Google Maps | Experiences with SAP Gateway](https://mysapgw.wordpress.com/2012/05/19/sapui5-gateway-and-google-maps/)  
+- [【第 1 回】SAPUI5 と SAP NetWeaver Gateway によるマッシュアップ開発入門（序章） - SAP 技術ブログ | SAP ソリューションの REALTECH Japan（リアルテックジャパン）](https:https://solution.realtech.jp/blog/2013/10/sapui5sap-netweaver-gateway.html)
+- [SAPUI5 Gateway and Google Maps | Experiences with SAP Gateway](https:https://mysapgw.wordpress.com/2012/05/19/sapui5-gateway-and-google-maps/)  
   （コードは中のリンク「google code」に入ってます。）
-- [SAPUI5 with Google Maps | SCN](https://scn.sap.com/people/konstantin.anikeev/blog/2013/02/11/sapui5-with-google-maps)
+- [SAPUI5 with Google Maps | SCN](https:https://scn.sap.com/people/konstantin.anikeev/blog/2013/02/11/sapui5-with-google-maps)

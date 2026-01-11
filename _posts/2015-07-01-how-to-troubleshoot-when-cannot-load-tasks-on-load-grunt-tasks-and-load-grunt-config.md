@@ -9,8 +9,8 @@ categories: ["Blog", "開発ツール"]
 
 最近、`Gruntfile.js`が長くて辛いので、楽をするため次の npm モジュールをほぼ利用しています。
 
-- [sindresorhus/load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)
-- [firstandthird/load-grunt-config](https://github.com/firstandthird/load-grunt-config)
+- [sindresorhus/load-grunt-tasks](https:https://github.com/sindresorhus/load-grunt-tasks)
+- [firstandthird/load-grunt-config](https:https://github.com/firstandthird/load-grunt-config)
 
 ただ、内部のタスクロードの仕組みを知らないと、意外なところでつまづくものです。
 今日は、その辺りのハマりポイントについて紹介します。
@@ -80,7 +80,7 @@ require("load-grunt-config")(grunt, {
 ```
 
 > 参考
-> [Grunt --help does not show loaded tasks. · Issue #124 · firstandthird/load-grunt-config](https://github.com/firstandthird/load-grunt-config/issues/124)
+> [Grunt --help does not show loaded tasks. · Issue #124 · firstandthird/load-grunt-config](https:https://github.com/firstandthird/load-grunt-config/issues/124)
 
 これで、`load-grunt-tasks`でも`grunt-`に一致しないタスクを無事ロードすることができます。
 

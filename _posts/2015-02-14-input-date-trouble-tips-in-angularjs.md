@@ -63,7 +63,7 @@ Error: [ngModel:datefmt] Expected `2015-02-05T00:00:00.000Z` to be a date
 
 公式ドキュメントをよく見ると書いてました。有効な ISO-8601 フォーマット(yyyy-MM-dd)と書いてますが、Javascript 的には Date 型に Parse してセットしなければならないようです。
 
-[AngularJS: API: input[date]](https://docs.angularjs.org/api/ng/input/input%5Bdate%5D)
+[AngularJS: API: input[date]](https:https://docs.angularjs.org/api/ng/input/input%5Bdate%5D)
 
 WebAPI から受け取る日付は JSON シリアライズされているので、いちいち Date 型に Perse しなければならないのか。。。本当に面倒くさい。
 
@@ -94,16 +94,16 @@ angular.module("app").factory("ggrks", function ($resource) {
 ```
 
 無理やり感がはんぱないですが、、、これで無事、input[type=date]に対して日付型をデータバインドさせることができました。  
-[W3C の仕様](https://www.w3.org/TR/html5/forms.html#date-state-(type=date)でも、日付として有効な文字列は自動的にParseされるようですし、できればフレームワーク側で判断してPerseして欲しいところですが。。。
+[W3C の仕様](https:https://www.w3.org/TR/html5/forms.html#date-state-(type=date)でも、日付として有効な文字列は自動的にParseされるようですし、できればフレームワーク側で判断してPerseして欲しいところですが。。。
 
 これより良いやり方ご存知の方いらっしゃいましたら、ぜひ教えてください。
 
 ### 参考文献
 
-- [javascript - How to set right date format for editable-date - Stack Overflow](https://stackoverflow.com/questions/26825433/how-to-set-right-date-format-for-editable-date)
-- [javascript - Why is my date input field in AngularJS throwing type error? - Stack Overflow](https://stackoverflow.com/questions/26853173/why-is-my-date-input-field-in-angularjs-throwing-type-error)
-- [Why is my date input field in AngularJS throwing type error? | Arianna](https://hiteshtwo.org/arianna/2015/01/20/why-is-my-date-input-field-in-angularjs-throwing-type-error/)
+- [javascript - How to set right date format for editable-date - Stack Overflow](https:https://stackoverflow.com/questions/26825433/how-to-set-right-date-format-for-editable-date)
+- [javascript - Why is my date input field in AngularJS throwing type error? - Stack Overflow](https:https://stackoverflow.com/questions/26853173/why-is-my-date-input-field-in-angularjs-throwing-type-error)
+- [Why is my date input field in AngularJS throwing type error? | Arianna](https:https://hiteshtwo.org/arianna/2015/01/20/why-is-my-date-input-field-in-angularjs-throwing-type-error/)
 
 少し古いですがこちらに書かれている、dateInput 用のカスタム directive を作成する方法が良さそうな気がします。(未検証)
 
-[javascript - Angular.js and HTML5 date input value -- how to get Firefox to show a readable date value in a date input? - Stack Overflow](https://stackoverflow.com/questions/18061757/angular-js-and-html5-date-input-value-how-to-get-firefox-to-show-a-readable-d)
+[javascript - Angular.js and HTML5 date input value -- how to get Firefox to show a readable date value in a date input? - Stack Overflow](https:https://stackoverflow.com/questions/18061757/angular-js-and-html5-date-input-value-how-to-get-firefox-to-show-a-readable-d)

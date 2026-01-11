@@ -5,15 +5,15 @@ date: 2019-02-15 0:00:00 +900
 comments: true
 tags: [react-native]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-logo.png
 ---
 
-react-native でエラーメッセージなどを表示したいので、何かライブラリなどを選定していたら、[react-native-dropdownalert](https://github.com/testshallpass/react-native-dropdownalert)が割と良さそうなので、[react-native-router-flux](https://github.com/aksonov/react-native-router-flux)と一緒に使ってみました。
+react-native でエラーメッセージなどを表示したいので、何かライブラリなどを選定していたら、[react-native-dropdownalert](https:https://github.com/testshallpass/react-native-dropdownalert)が割と良さそうなので、[react-native-router-flux](https:https://github.com/aksonov/react-native-router-flux)と一緒に使ってみました。
 
 コードは GitHub に置いてあります。Snack Expo で実機でもすぐ試せます。
 
-- [mitsuruog/react-native-dropdownalert-router-sample](https://github.com/mitsuruog/react-native-dropdownalert-router-sample)
-- [Snack Expo](https://snack.expo.io/@mitsuruog/cmVhY3)
+- [mitsuruog/react-native-dropdownalert-router-sample](https:https://github.com/mitsuruog/react-native-dropdownalert-router-sample)
+- [Snack Expo](https:https://snack.expo.io/@mitsuruog/cmVhY3)
 
 ## react-native-dropdownalert の基本的な使い方
 
@@ -43,7 +43,7 @@ export const One = () => (
 
 結果は。。。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo1.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo1.gif)
 
 NavBar の内側に表示されてしまいました。
 どうやら Route 設定しているコンポーネントの外側に置く必要があるみたいです。
@@ -52,7 +52,7 @@ NavBar の内側に表示されてしまいました。
 
 DropdownAlert を Route 設定の外側に置くことは簡単ですが、どうやって他のコンポーネントから操作しようかと頭を悩ませていたところ、こんな Issue があって助かりました。
 
-- [Stack Navigator · Issue \#73 · testshallpass/react\-native\-dropdownalert](https://github.com/testshallpass/react-native-dropdownalert/issues/73)
+- [Stack Navigator · Issue \#73 · testshallpass/react\-native\-dropdownalert](https:https://github.com/testshallpass/react-native-dropdownalert/issues/73)
 
 `DropDownHolder`という DropdownAlert の`ref`の参照を保存するクラスを作成して、これを他のコンポーネントから使う方式です。
 
@@ -114,13 +114,13 @@ export const Three = () => (
 
 結果は正しく出ましたね。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo2.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo2.gif)
 
 ## Android の StatusBar と重なる場合の対処方法
 
 正しく出たと思ったのですが、Android の実機で試したところ、メッセージが StatusBar と重なってしまっていました。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo4.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo4.gif)
 
 あー、やだやだ。クロスプラットフォーム。react-native の闇を垣間見た気がします。
 
@@ -146,7 +146,7 @@ export default class App extends React.Component {
 }
 ```
 
-- [Android statusbar showing on top of alert · Issue \#127 · testshallpass/react\-native\-dropdownalert](https://github.com/testshallpass/react-native-dropdownalert/issues/127)
+- [Android statusbar showing on top of alert · Issue \#127 · testshallpass/react\-native\-dropdownalert](https:https://github.com/testshallpass/react-native-dropdownalert/issues/127)
 
 これで実機でも正しく表示することができました。
 
@@ -154,7 +154,7 @@ export default class App extends React.Component {
 
 GitHub には DropdownAlert を閉じた時に`onClose`のコールバックを受け取るコードも書かれています。興味あれば覗いてみてください。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo3.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/react-native-dropdownalert-demo3.gif)
 
 > 最近、react-native を「`RN`」に省略したい人の気持ちがわかってきた気がします。
 > 自分は頑張って「react-native」と書き続けたいと思います。

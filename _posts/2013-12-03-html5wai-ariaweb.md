@@ -7,13 +7,13 @@ tags: [html5, wai-aria]
 categories: ["Blog", "UI・UX"]
 ---
 
-このエントリは[HTML5 Advent Calendar 2013 ３日目](https://www.adventar.org/calendars/125)の記事です。
+このエントリは[HTML5 Advent Calendar 2013 ３日目](https:https://www.adventar.org/calendars/125)の記事です。
 
 前後の記事はこちらです
 
-← youhei.iwasaki8 [[iwahei の日記]geolocation api を使った位置情報取得](https://d.hatena.ne.jp/iwahei0813/20131202#1385943993)
+← youhei.iwasaki8 [[iwahei の日記]geolocation api を使った位置情報取得](https:https://d.hatena.ne.jp/iwahei0813/20131202#1385943993)
 
-→ あおいたん [[GCG 研究所]手元にあった HTML5 アプリを FxOS と Tizen で動かしてみるの巻](https://www.gcg.bz/labo_blog/?p=590)
+→ あおいたん [[GCG 研究所]手元にあった HTML5 アプリを FxOS と Tizen で動かしてみるの巻](https:https://www.gcg.bz/labo_blog/?p=590)
 
 「Internet of Things」と呼ばれる「モノがインターネットする」時代のコンテンツは、人が目にして理解できる程度では十分ではありません。すべてのモノが理解できるコンテンツ、その鍵は HTML5 が持つ「セマンティック」と「WAI-ARIA」での仕様の標準化だと思います。
 
@@ -28,7 +28,7 @@ categories: ["Blog", "UI・UX"]
 エンタープライズにいるエンジニアとして、「なぜ HTML5 なのか？」「HTML5 になると何かいいのか？」という問いに対する答えを探し続けています。
 まだ、答えは見つけられていませんが、ぼんやりと「セマンティック」の先にある何かではないかと感じています。今日は、そんな頭の中のもやもやを少し文書化してみました。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb1.jpg)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb1.jpg)
 
 ## 私が思うセマンティックとは
 
@@ -40,7 +40,7 @@ categories: ["Blog", "UI・UX"]
 
 ## アクセシビリティと WAI-ARIA
 
-[WAI-ARIA(Accessible Rich Internet Applications)](https://www.w3.org/TR/wai-aria/)とは、
+[WAI-ARIA(Accessible Rich Internet Applications)](https:https://www.w3.org/TR/wai-aria/)とは、
 アクセシビリティ（どのような条件や環境下でも Web を利用できる）の問題を解決するために、W3C が仕様を策定しているもので、現在勧告候補となっています。
 
 一般的にアクセシビリティとは、高齢者や障がい者向けへのブラウザ読み上げ機能を想像していただけると理解しやすいかと思います。
@@ -50,7 +50,7 @@ categories: ["Blog", "UI・UX"]
 そんな、通常の手段（人が目で見て手で操作する）で閲覧することができない場合、デバイス側への代替え手段の提示方法として、WAI-ARIA が存在しています。
 これを人だけではなく、機械（デバイス）が利用してブラウジングできれば面白いですね。
 
-また、WAI-ARIA が持つ一面として、[動的な振る舞いやコンテンツが持つ状態を仕様化](https://www.w3.org/TR/wai-aria/states_and_properties)があります。
+また、WAI-ARIA が持つ一面として、[動的な振る舞いやコンテンツが持つ状態を仕様化](https:https://www.w3.org/TR/wai-aria/states_and_properties)があります。
 
 HTML5 のセマンティックは文書の静的構造についての意味付けを行っており、現在の Web が持つ動的な振る舞いやコンテンツが持つ状態までは当然カバーしていません。
 
@@ -71,7 +71,7 @@ WAI-ARIA 対応されてないマークアップの場合は、VoiceOver はた�
 <a href="//www.google.com" target="_brank">google</a>
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb2.png)
 
 ところが、WAI-ARIA の「aria-haspopup」を使うことで、VoiceOver はポップアップリンクであることを認識しています。
 
@@ -79,7 +79,7 @@ WAI-ARIA 対応されてないマークアップの場合は、VoiceOver はた�
 <a href="//www.google.com" target="_brank" aria-haspopup="true">google</a>
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb3.png)
 
 次は、状態の例です。
 
@@ -104,7 +104,7 @@ HTML のマークアップは次の通りです。
 
 このようにすることで、VoiceOver はコンテンツが動的に変わった瞬間を検知して読み上げてくれます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb4.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb4.png)
 
 必須入力も「aria-required」で知らせてくれます。
 
@@ -112,12 +112,12 @@ HTML のマークアップは次の通りです。
 <input aria-required="true" />
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb5.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/ariaweb5.png)
 
 ほかにも WAI-AREA で定義されている属性は非常に沢山ありますので、詳しくは仕様書を読んでください。
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.0](https://www.w3.org/TR/wai-aria/)
-- [WAI-ARIA（日本語訳）：日立のユニバーサルデザイン](https://www.hitachi.co.jp/universaldesign/wai-aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.0](https:https://www.w3.org/TR/wai-aria/)
+- [WAI-ARIA（日本語訳）：日立のユニバーサルデザイン](https:https://www.hitachi.co.jp/universaldesign/wai-aria/)
 
 ## まとめ
 

@@ -5,18 +5,18 @@ date: 2018-12-08 0:00:00 +900
 comments: true
 tags: [react, redux, redux-observable, typescript]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/type-safe-redux-store.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/type-safe-redux-store.png
 ---
 
-この記事は[React.js その 2 Advent Calendar 2018](https://qiita.com/advent-calendar/2018/react2) 8 日目の記事です。
+この記事は[React.js その 2 Advent Calendar 2018](https:https://qiita.com/advent-calendar/2018/react2) 8 日目の記事です。
 
-半年くらい前に、[React \+ Redux \+ redux\-observable \+ TypeScript の実践的サンプル](https://blog.mitsuruog.info/2018/03/react-redux-observable-typescript)という記事を書いたのですが、Redux の action と reducer の部分の型があまりうまく定義できてなかったので、個人的  に課題だと感じていました。
+半年くらい前に、[React \+ Redux \+ redux\-observable \+ TypeScript の実践的サンプル](https:https://blog.mitsuruog.info/2018/03/react-redux-observable-typescript)という記事を書いたのですが、Redux の action と reducer の部分の型があまりうまく定義できてなかったので、個人的  に課題だと感じていました。
 
-今回はその部分を[typesafe-actions](https://github.com/piotrwitek/typesafe-actions)を使って型安心に実装する方法の紹介です。
+今回はその部分を[typesafe-actions](https:https://github.com/piotrwitek/typesafe-actions)を使って型安心に実装する方法の紹介です。
 
 プロジェクト全体のコードはこちらを参照してください。
 
-- [mitsuruog/react\-redux\-observable\-typescript\-sample: A sample application for React \+ redux\-observable \+ TypeScript](https://github.com/mitsuruog/react-redux-observable-typescript-sample)
+- [mitsuruog/react\-redux\-observable\-typescript\-sample: A sample application for React \+ redux\-observable \+ TypeScript](https:https://github.com/mitsuruog/react-redux-observable-typescript-sample)
 
 ## 以前のコード
 
@@ -45,7 +45,7 @@ switch (action.type) {
 ```
 
 この場合、どうしても Action と Reducer の間で Any 型となってしまい、型安心とは言えない状態でした。
-最近になって[react\-redux\-typescript\-guide](https://github.com/piotrwitek/react-redux-typescript-guide#redux)を読んでいたら、Redux Store 周りを型安心にする方法が載っていたので試してみました。
+最近になって[react\-redux\-typescript\-guide](https:https://github.com/piotrwitek/react-redux-typescript-guide#redux)を読んでいたら、Redux Store 周りを型安心にする方法が載っていたので試してみました。
 
 ## typesafe-actions を使って型安心な Redux Store を実装する
 
@@ -121,7 +121,7 @@ export const weatherReducer = (state: WeatherState = initialState, action: Actio
 
 ## おまけ、redux-observable と一緒に使う
 
-[typesafe-actions に redux-observable についての記載](https://github.com/piotrwitek/typesafe-actions#--the-async-flow)があるのですが、これだけだとうまく行かなかったので、うまく行かなかったポイントを紹介します。
+[typesafe-actions に redux-observable についての記載](https:https://github.com/piotrwitek/typesafe-actions#--the-async-flow)があるのですが、これだけだとうまく行かなかったので、うまく行かなかったポイントを紹介します。
 
 ### Epic の実装
 
@@ -161,8 +161,8 @@ const epicMiddleware = createEpicMiddleware<Action, Action, RootState>();
 
 ## まとめ
 
-説明割愛してしまった部分もありますが、実際に動作しているコードは[GitHub](https://github.com/mitsuruog/react-redux-observable-typescript-sample)を見てください。
+説明割愛してしまった部分もありますが、実際に動作しているコードは[GitHub](https:https://github.com/mitsuruog/react-redux-observable-typescript-sample)を見てください。
 
 > typesafe-actions で意外なハマりポイントがあったので、こちらにも目を通しておくといいです。
 >
-> - [typesafe\-actions の ActionType に動的な文字列を使ってはいけない \| I am mitsuruog](https://blog.mitsuruog.info/2019/01/dont-use-dynamic-string-for-typesafe-actions)
+> - [typesafe\-actions の ActionType に動的な文字列を使ってはいけない \| I am mitsuruog](https:https://blog.mitsuruog.info/2019/01/dont-use-dynamic-string-for-typesafe-actions)

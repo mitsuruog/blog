@@ -5,7 +5,7 @@ date: 2019-05-04 0:00:00 +900
 comments: true
 tags: [roblox, ロブロックス]
 categories: ["Blog", "雑記"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money-logo.png
 ---
 
 今日はコインを拾うだけの簡単なゲームを作ってみましょう。
@@ -13,27 +13,27 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox
 「**Debris(デブリ)**」というビルトインサービスを使って、ゲームフィールド上のランダムな場所にコインを発生させます。
 Debris サービスは Roblox の中でも非常に有用なもので、これを使うことでゲームの中でアイテムやモンスターなどを自由に発生させることができます。
 
-- [Roblox Developers: Debris](https://developer.roblox.com/api-reference/class/Debris)
+- [Roblox Developers: Debris](https:https://developer.roblox.com/api-reference/class/Debris)
 
 完成形のプロジェクトはこちらです。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money0.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money0.png)
 
 ## LeaderBorad を作成する
 
 まず、今プレイヤーが持っているコインの総量を表示するための LeaderBoard を作成します。作り方はこちらを参照してください。
 
-- [Roblox のリーダーボードを作成する | I am mitsuruog](https://blog.mitsuruog.info/2019/04/roblox-setup-leaderboard)
+- [Roblox のリーダーボードを作成する | I am mitsuruog](https:https://blog.mitsuruog.info/2019/04/roblox-setup-leaderboard)
 
 Script の名前は`LeaderBoardScript`として、ServiceScriptService の中に入れておきます。LeaderBoard に表示する名前は`Money`としておきましょう。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money1.png)
 
 ## コインを作る
 
 コインを作りましょう。Part の名前は`Money`とします。形は Cylinder か Ball を使えばいいと思います。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money3.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money3.gif)
 
 一度、Workspace 上でコインの Part を完成させてから、ServiceStorage に移動します。
 ServiceStorage とは、Roblox のオブジェクトの格納庫のようなものです。注意点としては Server 以外からはアクセスできません。
@@ -75,7 +75,7 @@ end
 
 テスト実行するとコインが空から降ってくるようになりました。Debris サービス、超便利です。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money4.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money4.gif)
 
 ## コインに触れたらお金が増えるようにする
 
@@ -123,7 +123,7 @@ end
 
 テスト実行すると、コインに触れるとお金が増えていきます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money5.gif)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-money5.gif)
 
 ## まとめ
 

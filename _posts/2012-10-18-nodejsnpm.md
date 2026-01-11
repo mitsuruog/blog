@@ -40,7 +40,7 @@ npm install module_name@0.0.1
 まだ npm にないとか、自分で Fork したモジュールをインストールしたい場合は、直接 Github のリポジトリを指定してもいいです。
 
 ```
-npm install https://github.com/mitsuruog/socket.io/tarball/master
+npm install https:https://github.com/mitsuruog/socket.io/tarball/master
 ```
 
 「Github の URL/tarball/ブランチ名」となってます。
@@ -108,7 +108,7 @@ npm config delete keyname
 よくやるのが proxy の設定で次のようにやればうまくいきます。
 
 ```
-npm config set proxy http://localhost:8080
+npm config set proxy http:https://localhost:8080
 ```
 
 proxy 以外の設定は恐ろしいので手を出していません。

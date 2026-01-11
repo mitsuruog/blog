@@ -5,7 +5,7 @@ date: 2017-08-01 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "フロントエンド基礎"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/tagmanager_email.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/tagmanager_email.png
 ---
 
 Google tag manager を使った小ネタの紹介です。
@@ -41,13 +41,13 @@ Google tag manager のクリックイベントハンドラでは、ページの 
 まず、変数のタイプは「カスタム JavaScript」とします。
 これを設定することで、Google tag manager 何かのイベントを検知したタイミングで任意の JavaScript を実行して、その結果をユーザー定義変数に格納します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_1.png)
 
 #### Custom Attribute を取得するコードを設定する
 
 続いて、Custom Attribute を取得するために次のコードを入力します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_2.png)
 
 実際のコードはこちらです。
 
@@ -67,11 +67,11 @@ function() {
 
 最後に、Google tag manager のタグの設定の際に、ユーザー定義変数を利用すれば OK です。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_3.png)
 
 変数のリストの中に含まれています。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_4.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gtm_4.png)
 
 ## まとめ
 
@@ -79,4 +79,4 @@ function() {
 
 「こんなことできたらいいなー。」と思っていたのですが、なかなか日本語の情報が見つからなかったのでまとめてみました。
 
-- [Google Tag Manager event tracking using data attribute elements](https://www.thyngster.com/google-tag-manager-event-tracking-using-data-attribute-elements/)
+- [Google Tag Manager event tracking using data attribute elements](https:https://www.thyngster.com/google-tag-manager-event-tracking-using-data-attribute-elements/)

@@ -21,15 +21,15 @@ enja-oss にて Underscore.js の Utility を翻訳した際に、template 関�
 
 翻訳した文書はこちらです。
 
-[https://github.com/enja-oss/Underscore/blob/master/docs/Utility.md](https://github.com/enja-oss/Underscore/blob/master/docs/Utility.md)
+[https:https://github.com/enja-oss/Underscore/blob/master/docs/Utility.md](https://github.com/enja-oss/Underscore/blob/master/docs/Utility.md)
 
 ## まず、template 基本的な使い方
 
-書こうと思ったのですが、[@ahomu](https://twitter.com/ahomu)さんがいい感じまとめていましたので、こちらを参照してください。
+書こうと思ったのですが、[@ahomu](https:https://twitter.com/ahomu)さんがいい感じまとめていましたので、こちらを参照してください。
 
 （version1.3.3 での内容ですが、翻訳時の 1.4.3 でも変わっていないと思います。）
 
-[Underscore.js の template 触ったメモ](https://havelog.ayumusato.com/develop/javascript/e490-underscore_js_template.html)
+[Underscore.js の template 触ったメモ](https:https://havelog.ayumusato.com/develop/javascript/e490-underscore_js_template.html)
 
 ## source プロパティについて
 
@@ -44,12 +44,12 @@ enja-oss にて Underscore.js の Utility を翻訳した際に、template 関�
 
 ```js
 // 最も基本的なTemplate
-//<script type="text/template" id="tmpl-item">
+https://<script type="text/template" id="tmpl-item">
 //  <li><%= title %></li>
-//</script>
+https://</script>
 
 // プリコンパイル後のsourceプロパティ
-//_.template( $('#tmpl-item').html() ).source;
+https://_.template( $('#tmpl-item').html() ).source;
 
 function(obj){
   var __t,
@@ -76,16 +76,16 @@ function(obj){
 
 ```js
 // escapeしているTemplate
-//<script type="text/template" id="tmpl-item">
+https://<script type="text/template" id="tmpl-item">
 //  <li><%- title %></li>
-//</script>
+https://</script>
 
 // プリコンパイル後のsourceプロパティ
-//_.template( $('#tmpl-item').html() ).source;
+https://_.template( $('#tmpl-item').html() ).source;
 
 function(obj){
 
-  //内容同じなので割愛
+  https://内容同じなので割愛
 
   with(obj||{}){
     __p+='\n    <li>'+
@@ -101,18 +101,18 @@ HTML エスケープは内部で Underscore の escape()が使用されている
 
 ```js
 // Template内でLoopを行う場合
-//<script type="text/template" id="tmpl-items">
+https://<script type="text/template" id="tmpl-items">
 //  <% _.each(obj, function(item){  %>
 //    <li><%= item.title %></li>
 //  <% }); %>
-//</script>
+https://</script>
 
 // プリコンパイル後のsourceプロパティ
-//_.template( $('#tmpl-items').html() ).source;
+https://_.template( $('#tmpl-items').html() ).source;
 
 function(obj){
 
-  //内容同じなので割愛
+  https://内容同じなので割愛
 
   with(obj||{}){
     __p+='\n    ';
@@ -137,7 +137,7 @@ source プロパティによってテンプレートのデバックが劇的に�
 
 サイ本（5 版）を読むと with 文は低速なので使用しない方が良いと書かれていましたので、そのように思っていた時期もあったのですが、次のエントリ（2008 年でちょっと古いですが・・・）を読んでみると、現在はあまりパフォーマンス的なネックな存在しないような印象を受けています。
 
-[[404 Blog Not Found]javascript - with(second.thought) // with 再考](https://blog.livedoor.jp/dankogai/archives/51066288.html)
+[[404 Blog Not Found]javascript - with(second.thought) // with 再考](https:https://blog.livedoor.jp/dankogai/archives/51066288.html)
 
 とは言っても、with 文を使用した場合、グローバルスコープの変数が誤って参照され、見つけにくいバグが入り込む可能性があると感じています（上の「変数かプロパティが曖昧ではないか!」の部分です。）。
 ですので、個人的には template はデフォルトで with 句を使用してしまうので、それを避けるために variable を設定するといった方が納得できました。
@@ -147,12 +147,12 @@ source プロパティによってテンプレートのデバックが劇的に�
 
 ```js
 // 最も基本的なTemplate
-//<script type="text/template" id="tmpl-item">
+https://<script type="text/template" id="tmpl-item">
 //  <li><%= data.title %></li>
-//</script>
+https://</script>
 
 // プリコンパイル後のsourceプロパティ
-//_.template($('#tmpl-item').html(), undefined, {variable: 'data'}).source;
+https://_.template($('#tmpl-item').html(), undefined, {variable: 'data'}).source;
 
 function(data){
   var __t,
@@ -179,7 +179,7 @@ _.templateSettings.variable = "data";
 
 variable についてはこちらも参考にさせていただきました。
 
-[Using Underscore.js Templates To Render HTML Partials](https://www.bennadel.com/blog/2411-Using-Underscore-js-Templates-To-Render-HTML-Partials.htm)
+[Using Underscore.js Templates To Render HTML Partials](https:https://www.bennadel.com/blog/2411-Using-Underscore-js-Templates-To-Render-HTML-Partials.htm)
 
 with 文の挙動を確認したコードはこちらです。（興味があったら参考にしてください。）
 
@@ -193,15 +193,15 @@ console.log('global[obj.hoge]->' + obj.hoge);
 with(obj){
     console.log('with[obj.hoge]->' + hoge);
 
-    //これはobj.fugaではなくグローバルfugaを参照...か
+    https://これはobj.fugaではなくグローバルfugaを参照...か
     console.log('with[obj.fuga]->' + fuga);
 
-    //参照元プロパティの内容を変更
+    https://参照元プロパティの内容を変更
     delete obj.hoge;
-    //ななななんと！スコープチェーンを遡ってhogeを参照してしまう...orz
+    https://ななななんと！スコープチェーンを遡ってhogeを参照してしまう...orz
     console.log('with[obj.hoge]->' + hoge);
 }
-//ここではundefined
+https://ここではundefined
 console.log('global[obj.hoge]->' + obj.hoge);
 ```
 

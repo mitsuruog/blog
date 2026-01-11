@@ -5,7 +5,7 @@ date: 2017-09-11 0:00:00 +900
 comments: true
 tags: [react]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-uncontrolled-input.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-uncontrolled-input.png
 ---
 
 たまに見る`uncontrolled input`関連の警告についての小ネタです。
@@ -29,7 +29,7 @@ React でフォームがある画面を開発していると、ちょくちょ�
 Warning: App is changing a controlled input of type checkbox to be uncontrolled.
 Input elements should not switch from controlled to uncontrolled (or vice versa).
 Decide between using a controlled or uncontrolled input element for the lifetime of the component.
-More info: https://fb.me/react-controlled-components
+More info: https:https://fb.me/react-controlled-components
 ```
 
 内容としては、フォーム部品の状態が**何か**の原因で`controlled`から`uncontrolled`になったことを警告している内容です。
@@ -79,4 +79,4 @@ this.setState({
 React のフォームコンポーネントは、割り当てられている State の値が`null`か`undefined`になると、`uncontrolled`になってしまうので注意するべしという話でした。
 
 - react: ^@15.0.0
-- サンプル: <https://codepen.io/mitsuruog/pen/VMZLVj>
+- サンプル: <https:https://codepen.io/mitsuruog/pen/VMZLVj>

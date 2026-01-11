@@ -5,7 +5,7 @@ date: 2017-11-10 0:00:00 +900
 comments: true
 tags: [docker]
 categories: ["Blog", "インフラ"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/docker_hub.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/docker_hub.png
 ---
 
 docker image を docker hub に公開する方法についての小ネタです。
@@ -29,7 +29,7 @@ ENV PATH /home/circleci/.local/bin:${PATH}
 
 # Install AWS CLI
 RUN sudo apt-get install python-dev
-RUN sudo curl -O https://bootstrap.pypa.io/get-pip.py
+RUN sudo curl -O https:https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py --user
 RUN pip install awscli --upgrade --user
 ```
@@ -58,7 +58,7 @@ codeprep/sqlite     latest              0c3ec62e9c37        7 days ago          
 
 docker image をテストします。
 
-テストの方法は「[docker image の中身をデバックする方法](https://blog.mitsuruog.info/2017/11/way-to-debug-docker-image)」にあるとおり image の中に入ってデバックします。
+テストの方法は「[docker image の中身をデバックする方法](https:https://blog.mitsuruog.info/2017/11/way-to-debug-docker-image)」にあるとおり image の中に入ってデバックします。
 
 > image 名には、上で取得した image id を指定します。
 
@@ -66,7 +66,7 @@ docker image をテストします。
 
 ここからは、image を公開するための準備です。
 
-[docker hub](https://hub.docker.com/)のアカウントで docker にログインしておきます。
+[docker hub](https:https://hub.docker.com/)のアカウントで docker にログインしておきます。
 
 ```
 $ export DOCKER_ID_USER="mitsuruog"
@@ -106,7 +106,7 @@ $ docker push mitsuruog/cool-build-frontend
 
 結果は、こんな感じです。
 
-- <https://hub.docker.com/r/mitsuruog/cool-build-frontend/>
+- <https:https://hub.docker.com/r/mitsuruog/cool-build-frontend/>
 
 ## まとめ
 

@@ -5,12 +5,12 @@ date: 2016-02-07 23:59:59 +900
 comments: true
 tags: [vscode, nvm]
 categories: ["Blog", "開発ツール"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/vscode-with-nvm.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/vscode-with-nvm.png
 ---
 
 # vscode と nvm を一緒に使う小ネタ
 
-ローカルの node 環境を[nvm](https://github.com/creationix/nvm)で作ってて、typescript を npm 経由でインストールした時に少しハマったので自分用メモ
+ローカルの node 環境を[nvm](https:https://github.com/creationix/nvm)で作ってて、typescript を npm 経由でインストールした時に少しハマったので自分用メモ
 
 <!-- more -->
 
@@ -34,7 +34,7 @@ nvm use 5; code .
 ~~vscode をターミナルから動かせるようにしておくことが前提条件です。
 設定はこちらを参考にしてください。~~
 
-[Setting up Visual Studio Code](https://code.visualstudio.com/Docs/editor/setup)
+[Setting up Visual Studio Code](https:https://code.visualstudio.com/Docs/editor/setup)
 
 ~~自分の場合は zsh を使っているので、`.zshrc`に追加しました。~~  
 (2016-03-10 追記) vscode のバージョンアップにより path の設定は不要になったようです。
@@ -44,4 +44,4 @@ function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
 ```
 
 参考：
-[VS Code with NVM · Issue #1895 · Microsoft/vscode](https://github.com/Microsoft/vscode/issues/1895)
+[VS Code with NVM · Issue #1895 · Microsoft/vscode](https:https://github.com/Microsoft/vscode/issues/1895)

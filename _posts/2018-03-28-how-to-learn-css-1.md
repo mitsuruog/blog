@@ -5,7 +5,7 @@ date: 2018-03-28 0:00:00 +900
 comments: true
 tags: [css]
 categories: ["Blog", "UI・UX"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout-logo.png
 ---
 
 プライベートで CSS を教える機会があるのですが、CSS に関しては特に苦手にしている人が多く、「どうやったらそうなれますか？」という質問をよくもらいます。
@@ -21,11 +21,11 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-la
 
 今回は次のような、コメントフィード風の UI を作るケースを想定して順に説明していきます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout1.png)
 
 > ちなみに自分の場合、作成時間は 15 分くらいでした。
 > コードはこちらで全て見ることができます。
-> <https://codepen.io/mitsuruog/pen/dmZBLM?editors=1100>
+> <https:https://codepen.io/mitsuruog/pen/dmZBLM?editors=1100>
 
 CSS が苦手な人にやらせた場合、自分が期待した通りにはならないケースが多いと思います。
 ブラウザはスクリーンのサイズが大きく変化するため、絶対位置でレイアウトしても崩れてしまいます。
@@ -47,7 +47,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 今回の UI をレイアウトする場合は、まず外枠のブロックと、アバター画像とコメントエリアの 2 つのブロックをイメージします。
 ブロックレベル要素は横幅全体に広がる特徴があるので、最初アバター画像とコメントエリアは縦に並べておいて、後で CSS で横並びにしていきます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout2.png)
 
 大枠のブロックを設計する上で大事なことは、まず大きな要素を抽出して、**一度縦に並べてから後で CSS を使って横並びにするプロセス**をイメージすることです。
 
@@ -64,7 +64,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 ```
 
 結果はこのようになります。
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout3.png)
 
 ### 各ブロックの中身を設計する
 
@@ -72,7 +72,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 コメントエリアの中の要素は、コメントエリア横幅いっぱいのブロックで良さそうなので、単純に縦に並ます。
 したがって次のようにブロックを設計します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout4.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout4.png)
 
 ```html
 <div class="comment">
@@ -88,7 +88,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 ```
 
 結果はこのようになります。
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout5.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout5.png)
 
 ボタンは横並びに配置すればいいので、インライン要素を使います。
 
@@ -109,7 +109,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 ```
 
 結果はこのようになります。
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout6.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout6.png)
 
 これで基本的な HTML の構造が完成しました。
 
@@ -127,7 +127,7 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 ```
 
 その後は、細かなスタイルを指定すると、最終的な結果はこのようになります。
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout1.png)
 
 レイアウトで大事なことは、まず正しい HTML 構造を意識することですが、これをプロセスに変換すると次のようになります。
 
@@ -144,32 +144,32 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 
 次のような位置に日時を追加する場合です。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout7.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout7.png)
 
 よく見ると右側のエリアのブロックの中に収まりそうです。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout7-1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout7-1.png)
 
 そのため、右側のブロックの最下層のブロックをコンテナにして、その中に 2 つのブロックを横並びに配置します。
 (青の部分が新しく追加するブロック)
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout8.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout8.png)
 
 ### 既存のブロック構造が利用できないケース
 
 次は、下の位置に日時を追加する場合です。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout9.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout9.png)
 
 日時は右側のブロックの最下層のブロックの左側を突き破っています。
 この場合、既存のブロック構造を上下に分けて再設計します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout9-1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout9-1.png)
 
 右側のブロック最下層のボタンと日時を合わせて新しいブロックを構築して、次のように上下にコンテナを再配置します。
 (青の部分が新しく追加するブロック)
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout10.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/css-layout10.png)
 
 > 実は上の大枠を設計する時に、このような拡張を予測して最初から上下に設計することも可能でした。HTML 構造に対するアプローチの仕方は様々です。
 
@@ -182,6 +182,6 @@ CSS が苦手な人にやらせた場合、自分が期待した通りにはな�
 今回は「レイアウト」について、できる人とできない人の視点の違いについて紹介しました。
 デザインを見て HTML 構造をイメージできるのは、一種の「千里眼」っぽいなと感じますが、訓練で誰でもできるようになります。
 
-> ちなみに、自分が作っていた[CODEPREP](https://codeprep.jp/tracks/UI%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%AE%9F%E8%B7%B5)のコンテンツは、ほぼ最初の章が HTML 構造の設計になっています。
+> ちなみに、自分が作っていた[CODEPREP](https:https://codeprep.jp/tracks/UI%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%AE%9F%E8%B7%B5)のコンテンツは、ほぼ最初の章が HTML 構造の設計になっています。
 
 さて、次はなににしようかな。

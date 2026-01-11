@@ -7,13 +7,13 @@ tags: [angularjs, yeoman, nodejs]
 categories: ["Blog", "フレームワーク"]
 ---
 
-最近の AngularJS 開発では[DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)をオレオレカスタムしたものを使っています。 fullstack だけあって使いこなすまで慣れがいると思いますので、私が普段使いしていていいなって思う機能を紹介します。  
+最近の AngularJS 開発では[DaftMonk/generator-angular-fullstack](https:https://github.com/DaftMonk/generator-angular-fullstack)をオレオレカスタムしたものを使っています。 fullstack だけあって使いこなすまで慣れがいると思いますので、私が普段使いしていていいなって思う機能を紹介します。  
 AngularJS 開発の厳しい旅のお供にどうぞ。
 
-この記事は[YEOMAN Advent Calendar 2014 - Adventar](https://www.adventar.org/calendars/356)9 日目の記事です。
+この記事は[YEOMAN Advent Calendar 2014 - Adventar](https:https://www.adventar.org/calendars/356)9 日目の記事です。
 
-- 8 日目[YEOMAN Advent Calendar 8 日目：generator-ember を紹介します - albatrosary's blog](https://albatrosary.hateblo.jp/entry/2014/12/08/120810)
-- 10 日目[YEOMAN Advent Calendar 10 日目：generator-reveal を紹介します - albatrosary's blog](https://albatrosary.hateblo.jp/entry/2014/12/10/143324)
+- 8 日目[YEOMAN Advent Calendar 8 日目：generator-ember を紹介します - albatrosary's blog](https:https://albatrosary.hateblo.jp/entry/2014/12/08/120810)
+- 10 日目[YEOMAN Advent Calendar 10 日目：generator-reveal を紹介します - albatrosary's blog](https:https://albatrosary.hateblo.jp/entry/2014/12/10/143324)
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ AngularJS 開発の厳しい旅のお供にどうぞ。
 
 基本的な使い方はこちらを参照してください。そんなに難しくないはず。
 
-[DaftMonk/generator-angular-fullstack | usage](https://github.com/DaftMonk/generator-angular-fullstack#usage)
+[DaftMonk/generator-angular-fullstack | usage](https:https://github.com/DaftMonk/generator-angular-fullstack#usage)
 
 注意点としては、アプリを generate する際に`mongodbあり`を選択した場合は、mongodb が起動していないと動作しないとこでしょうか・・・
 
@@ -34,14 +34,14 @@ AngularJS 開発の厳しい旅のお供にどうぞ。
 
 アプリケーションの雛形を作成したら、機能を追加する際にこちらのサブジェネレータを利用するとソースコードを自動生成してくれます。
 
-[DaftMonk/generator-angular-fullstack | generators](https://github.com/DaftMonk/generator-angular-fullstack#generators)
+[DaftMonk/generator-angular-fullstack | generators](https:https://github.com/DaftMonk/generator-angular-fullstack#generators)
 
 では、ここから generator-angular-fullstack(以下、fullstack)の便利機能を少し紹介していきます。
 
 ## OAuth 認証テンプレート
 
 fullstack には`google+`, `twitter`, `facebook`の OAuth テンプレートが付属しています。これに加えて`user/password`形式の Form も付属しているので、認証が必要なアプリケーションを作成する場合は、非常に助かると思います。  
-OAuth のモジュールは[Passport](https://passportjs.org/)を利用しています。
+OAuth のモジュールは[Passport](https:https://passportjs.org/)を利用しています。
 
 利用方法は、`serve>config>local.env.sample.js`を同じフォルダにコピーして、`local.env.js`にリネームしてからファイルの中身に AppID などを設定すれば利用できます。
 
@@ -49,7 +49,7 @@ OAuth のモジュールは[Passport](https://passportjs.org/)を利用してい
 
 ```
 module.exports = {
-  DOMAIN:           'http://localhost:9000',
+  DOMAIN:           'http:https://localhost:9000',
   SESSION_SECRET:   'some-secret-key',
 
   FACEBOOK_ID:      'app-id',
@@ -79,7 +79,7 @@ module.exports = {
 
 > まさか、まだ`console.log()`じゃないですよね！そんなあなたのために。
 
-Node.js のデバックには[node-inspector/node-inspector](https://github.com/node-inspector/node-inspector)を使うのが一般的だと思うのですが、
+Node.js のデバックには[node-inspector/node-inspector](https:https://github.com/node-inspector/node-inspector)を使うのが一般的だと思うのですが、
 しばらく触っていないと使い方をすぐ忘れてしまします。幸い fullstack ではサーバーをデバックモードで起動する Grunt タスクとして組み込まれているので忘れにくくなりました。
 
 ```
@@ -88,9 +88,9 @@ grunt serve:debug
 
 コマンドを叩くと、Node inspector が立ち上がってくるのですが、`--debug-brk`指定されているので最初のステップのブレイクポイントで止まっています。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/node-Inspector.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/node-Inspector.png)
 
-ブレイクポイントから処理を進めると通常通りサーバーが起動してくるので`https://localhsot:9000`にてアプリの動作を確認しながら、Node 側のデバックもできます。
+ブレイクポイントから処理を進めると通常通りサーバーが起動してくるので`https:https://localhsot:9000`にてアプリの動作を確認しながら、Node 側のデバックもできます。
 
 ## mongodb テストデータ自動投入
 
@@ -105,7 +105,7 @@ grunt serve:debug
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/someapp-dev'
+    uri: 'mongodb:https://localhost/someapp-dev'
   },
   seedDB: true
 };
@@ -118,7 +118,7 @@ module.exports = {
 
 AngularJS でアプリケーションを作成していると、非常にファイル数が大きくなる傾向にあると思います。ファイル追加のたびにわざわざ`index.html`に`<script>`タグなど追加していくのが、非常に億劫になりますね。
 
-fullstack では[klei/grunt-injector](https://github.com/klei/grunt-injector)を利用することで、面倒な`index.html`へのリソース追加を強力にサポートしてくれます。  
+fullstack では[klei/grunt-injector](https:https://github.com/klei/grunt-injector)を利用することで、面倒な`index.html`へのリソース追加を強力にサポートしてくれます。  
 `index.html`を確認すると見慣れない`<!-- bower:css -->`や`<!-- injector:js -->`のコメントがありますが、この部分に必要な`*.js`や`*.css`を挿入します。bower モジュールも対応しているのがいいですね。
 
 ## 本番ビルド
@@ -182,7 +182,7 @@ generator-angular-fullstack では jsLint は付属していますが、csslint 
 
 ## まとめ
 
-私が普段使いしている[DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)の便利機能について紹介しました。  
+私が普段使いしている[DaftMonk/generator-angular-fullstack](https:https://github.com/DaftMonk/generator-angular-fullstack)の便利機能について紹介しました。  
 まだ他にも便利機能があると思いますので探してみてください。
 
 本格的は AngularJS 開発を行う場合は、このような開発を下支えするツールが必須だと思います。手に馴染んでくると本当に手放せなくなります。

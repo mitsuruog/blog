@@ -5,10 +5,10 @@ date: 2016-01-18 00:00:00 +0900
 comments: true
 tags: [wercker, ci, unit test]
 categories: ["Blog", "開発ツール"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/wercker-frontend.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/wercker-frontend.png
 ---
 
-github private repository も無料で CI テストできるので[wercker](https://wercker.com/)を使うことが多いです。  
+github private repository も無料で CI テストできるので[wercker](https:https://wercker.com/)を使うことが多いです。  
 プロジェクト立ち上げ時に設定した後、安定すると放置になる設定周り。ついつい忘れてしまうので、自分用メモ。  
 フロントエンドエンジニアでも CI テストできる最小構成です。
 
@@ -18,7 +18,7 @@ github private repository も無料で CI テストできるので[wercker](http
 
 まず、自動テストは Node.js で行うようにしていると思うので、Node 用の基本設定をベースにするのがいいと思います。
 
-[wercker - docs - Nodejs](https://devcenter.wercker.com/docs/languages/nodejs.html)
+[wercker - docs - Nodejs](https:https://devcenter.wercker.com/docs/languages/nodejs.html)
 
 ```yml
 box: nodesource/trusty
@@ -43,7 +43,7 @@ build:
 ## Node バージョン指定
 
 Node のバージョンを指定したい場合の設定方法。  
-`box`で指定できます。Docker hub のコンテナを指定できるので、[Docker hub 上の Node の OFFICIAL REPOSITORY](https://hub.docker.com/_/node/)を指定しておきます。バージョン指定はよく間違えるのですが、`node:4.2.2`とします。`@`じゃないです。
+`box`で指定できます。Docker hub のコンテナを指定できるので、[Docker hub 上の Node の OFFICIAL REPOSITORY](https:https://hub.docker.com/_/node/)を指定しておきます。バージョン指定はよく間違えるのですが、`node:4.2.2`とします。`@`じゃないです。
 
 ```yml
 box: node:4.2.2
@@ -76,16 +76,16 @@ build:
 ### CI テストはヘッドレスブラウザを使いましょう
 
 ローカルは実ブラウザを使ったテストしている場合は、ヘッドレスブラウザを使いましょう。  
-ヘッドレスブラウザは[PhantomJS](https://phantomjs.org/)が代表的です。だた、v1.0 系はモダンブラウザとの compatibility の問題があるため、v2.0 以降を使った方がいいです。
+ヘッドレスブラウザは[PhantomJS](https:https://phantomjs.org/)が代表的です。だた、v1.0 系はモダンブラウザとの compatibility の問題があるため、v2.0 以降を使った方がいいです。
 
-CI でも実ブラウザを使いたい場合は、wercker で頑張るより、お金を払って[Sauce Labs](https://saucelabs.com/)使った方がいいと思います。
+CI でも実ブラウザを使いたい場合は、wercker で頑張るより、お金を払って[Sauce Labs](https:https://saucelabs.com/)使った方がいいと思います。
 
 ### テスト結果を hipchat で通知する
 
 テスト結果を hipchat などで通知したい場合は、`build`フェーズの`after-steps`で行います。  
 hipchat の integration の例は公式サイトにあります。
 
-[wercker - docs - Hipchat notifications](https://devcenter.wercker.com/docs/notifications/hipchat.html)
+[wercker - docs - Hipchat notifications](https:https://devcenter.wercker.com/docs/notifications/hipchat.html)
 
 例）
 
@@ -114,11 +114,11 @@ build:
 
 `wercker.yml`はこちらに置いておきます。
 
-https://gist.github.com/mitsuruog/ee724841d81c6ecab5e9
+https:https://gist.github.com/mitsuruog/ee724841d81c6ecab5e9
 
 ### 参考資料
 
 もっと頑張りたい人向け。
 
-- [Wercker の仕組み，独自の box と step のつくりかた | SOTA](https://deeeet.com/writing/2014/10/16/wercker/)
-- [Github のプライベートリポジトリでも無料で使える CI、Wercker を使って rails new から Heroku のデプロイまでやってみる | mah365](https://blog.mah-lab.com/2014/01/08/rails-wercker-heroku-deploy/)
+- [Wercker の仕組み，独自の box と step のつくりかた | SOTA](https:https://deeeet.com/writing/2014/10/16/wercker/)
+- [Github のプライベートリポジトリでも無料で使える CI、Wercker を使って rails new から Heroku のデプロイまでやってみる | mah365](https:https://blog.mah-lab.com/2014/01/08/rails-wercker-heroku-deploy/)

@@ -11,7 +11,7 @@ categories: ["Blog", "開発ツール"]
 
 <!-- more -->
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/yeoman-logo.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/yeoman-logo.png)
 
 ### 目次
 
@@ -23,7 +23,7 @@ categories: ["Blog", "開発ツール"]
 
 ## 1. load-grunt-tasks
 
-[load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)とは package.json に定義されている Grunt タスクを見て、タスク起動時にロードしてくれるモジュールです。これでタスクを変更するたびに Gruntfile.js を変更する必要がなくなりました。
+[load-grunt-tasks](https:https://github.com/sindresorhus/load-grunt-tasks)とは package.json に定義されている Grunt タスクを見て、タスク起動時にロードしてくれるモジュールです。これでタスクを変更するたびに Gruntfile.js を変更する必要がなくなりました。
 
 ```js
 /**
@@ -48,7 +48,7 @@ require("load-grunt-tasks")(grunt);
 
 ## 2. テンプレート
 
-Grunt には[Underscore.js](https://underscorejs.org/#template)ライクなテンプレートエンジンが内包されています。
+Grunt には[Underscore.js](https:https://underscorejs.org/#template)ライクなテンプレートエンジンが内包されています。
 
 `<%=%>`とすることで、中のプロパティが純粋な Javascript として評価され、Gruntfile.js 内に展開されます。
 
@@ -84,7 +84,7 @@ grunt.initConfig({
 
 Gruntfile.js でタスクを書いていると、ファイルのマッチング指定を書く部分がほとんどだと思います。
 
-内部的にファイルのマッチングには Glob と呼ばれる仕組みを使っており、[node-glob](https://github.com/isaacs/node-glob)と[minimatch](https://github.com/isaacs/minimatch)のライブラリが使われています。本当に様々なマッチング機能を提供しているのライブラリなのですが、今回は Yeoman でよく使っている範囲で紹介します。
+内部的にファイルのマッチングには Glob と呼ばれる仕組みを使っており、[node-glob](https:https://github.com/isaacs/node-glob)と[minimatch](https:https://github.com/isaacs/minimatch)のライブラリが使われています。本当に様々なマッチング機能を提供しているのライブラリなのですが、今回は Yeoman でよく使っている範囲で紹介します。
 
 ### 「\*」
 

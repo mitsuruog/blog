@@ -5,7 +5,7 @@ date: 2016-03-15 23:29:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, unit test]
 categories: ["Blog", "テスト"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -38,7 +38,7 @@ Angular2 もテスタビリティを重視したフレームワークとなっ�
 
 ## テストフレームワークは Jasmine が基本
 
-テストフレームワークは[Jasmine](https://jasmine.github.io/2.4/introduction.html)を利用します。
+テストフレームワークは[Jasmine](https:https://jasmine.github.io/2.4/introduction.html)を利用します。
 これは、`angular2/testing`の中で Jasmine の API を overwrap しているためです。
 いまのところ、Angular2 のテストは Jasmine を利用したほうが幸せになれると思います。
 
@@ -113,7 +113,7 @@ describe("Test: 正常系", () => {
 `expect`は用途に応じていくつか種類があり、`angular2/testing`の`expect`は Jasmine の matchar を overwrap しているため、Jasmine の API はそのまま利用できます。
 他にも Angular2 独自で拡張している matchar(NgMatchers)もあります。詳細については割愛します。
 
-[NgMatchers - ts](https://angular.io/docs/ts/latest/api/testing/NgMatchers-interface.html)
+[NgMatchers - ts](https:https://angular.io/docs/ts/latest/api/testing/NgMatchers-interface.html)
 
 ```ts
 expect(testee).not.toBe(undefined);
@@ -121,14 +121,14 @@ expect(testee).not.toBe(undefined);
 
 全体像はこちらで雰囲気を掴んでください。
 
-[app.component.spec.ts](https://github.com/mitsuruog/angular2-minimum-starter/blob/master/app%2Fapp.component.spec.ts)
+[app.component.spec.ts](https:https://github.com/mitsuruog/angular2-minimum-starter/blob/master/app%2Fapp.component.spec.ts)
 
 つづいて Angular2 ならではの機能について紹介します。
 
 ## beforeEachProviders
 
 `beforeEachProviders`はテストで利用するモジュールを override する仕組みです。
-Angular1 の`$provide`を利用したモジュールの上書きや、[angular.mock.inject](https://docs.angularjs.org/api/ngMock/function/angular.mock.inject)(`_moduleName_`の気持ち悪いやつ)と同等です。
+Angular1 の`$provide`を利用したモジュールの上書きや、[angular.mock.inject](https:https://docs.angularjs.org/api/ngMock/function/angular.mock.inject)(`_moduleName_`の気持ち悪いやつ)と同等です。
 
 ```js
 // Angular1($window.locationを上書きする例)
@@ -155,7 +155,7 @@ describe("", () => {
 
 beforeEachProviders では Provider と呼ばれる`Injector`インタフェース(`@Injectable`指定したもの)を持つものや、`@Component`を設定します。(要確認)
 
-[beforeEachProviders - ts](https://angular.io/docs/ts/latest/api/testing/beforeEachProviders-function.html)
+[beforeEachProviders - ts](https:https://angular.io/docs/ts/latest/api/testing/beforeEachProviders-function.html)
 
 ## inject, injectAsync
 
@@ -201,4 +201,4 @@ Angular1 と同じ系譜を辿っていることがわかると思いますが�
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 (もちろんテストもできます！！)
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)

@@ -5,10 +5,10 @@ date: 2019-12-08 0:00:00 +900
 comments: true
 tags: [vscode]
 categories: ["Blog", "開発ツール"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-logo.png
 ---
 
-この記事は[Visual Studio Code Advent Calendar 2019 - Qiita](https://qiita.com/advent-calendar/2019/vscode)8 日目の記事です。
+この記事は[Visual Studio Code Advent Calendar 2019 - Qiita](https:https://qiita.com/advent-calendar/2019/vscode)8 日目の記事です。
 
 現在、仕事で使っている VS Code の LiveShare を使ったリモートペアプログラミングについて紹介します。
 ちなみに利用している技術スタックは、「React+TypeScript」のフロントエンドチームの事例です。
@@ -49,7 +49,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/livesh
 そこで感じたことは、ペアプログラミング(というかペア作業)の一番の醍醐味は「**お互いに 1 つのものを協力して完成させていく過程を楽しみ、そこで生まれる達成感からお互いの信頼関係が深まることではないか**」と思った次第です。
 
 そのため自分がやりたいペアプログラミングを実現するために、同じ PC の画面上で同時に並行作業でき、ナビゲータとドライバーの垣根をなくせるようなツール(道具)が必要でした。
-そこで出会ったのが「**[Live Share](https://visualstudio.microsoft.com/services/live-share/)**」です。
+そこで出会ったのが「**[Live Share](https:https://visualstudio.microsoft.com/services/live-share/)**」です。
 
 ## Live Share とは
 
@@ -58,13 +58,13 @@ Google Doc の共同編集を体験した方であれが想像がしやすいか
 
 Live Share を使うと、下のように VS Code 上で他の人がどこを編集しているか一目でわかるようになります。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-03.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-03.png)
 
-> (画像は本家サイトのもの) https://visualstudio.microsoft.com/services/live-share/
+> (画像は本家サイトのもの) https:https://visualstudio.microsoft.com/services/live-share/
 
 Live Share は VS Code の plugin となっているので、こちらからインストールしてください。
 
-- [Live Share \- Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Live Share \- Visual Studio Marketplace](https:https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 こまかな設定や利用方法については、Web を検索すると様々な情報が見つかるので、そちらを参照してください。
 
@@ -83,23 +83,23 @@ Live Share には**Shared servers**や**Shared terminal**など相手の環境�
 基本的に VS Code を左右 2 ペインにして作業します。
 下の例では左がジュニア、右がシニアです。ジュニア側は React の小さな UI コンポーネントを作成し、シニア側はコンポーネントを検証するコードを書きます。こうすることで 2 人同時に並行作業することができます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-02.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-02.png)
 
-今回は小さな UI コンポーネントを題材にしました。シニアがスタイルガイド([React Styleguidist](https://react-styleguidist.js.org/))に UI コンポーネントの様々なバリエーションを追加していき、これをジュニアが実装していきます。
+今回は小さな UI コンポーネントを題材にしました。シニアがスタイルガイド([React Styleguidist](https:https://react-styleguidist.js.org/))に UI コンポーネントの様々なバリエーションを追加していき、これをジュニアが実装していきます。
 ジュニアがつまづいたりした場合は、ビデオチャットで教えたり、直接コードを変更しながら実装の手順を順番に見せたりします。
 
 最終的に二人で協力しながら 1 つの UI コンポーネントを完成させることを目指します。
 
-> スタイルガイド([React Styleguidist](https://react-styleguidist.js.org/))とは、UI コンポーネントの見本カタログのようなものです。他には[Storybook](https://storybook.js.org/)が有名です。
+> スタイルガイド([React Styleguidist](https:https://react-styleguidist.js.org/))とは、UI コンポーネントの見本カタログのようなものです。他には[Storybook](https:https://storybook.js.org/)が有名です。
 > 個人的な経験として、昨今のフロントエンドの品質を上げるためには、**末端の UI コンポーネントを品質を上げることが非常に重要**なことがわかってきました。そのため、このようなスタイルガイドを利用して様々な状態(レスポンシブ・内包するコンテンツなど)に対応する UI コンポーネントを作り込む作業を非常に重要視しています。
 
 二人で作成したコンポーネントは最終的に下のような美しいスタイルガイドになるため、ペアで作業していてスタイルガイドが順番に完成に近いていく様子や、スタイルが崩れるバリエーションの例(文字が長いとか)を、スタイルガイドに追加してジュニアに見せてワイワイさせたり、終始ペア作業をしていて楽しいです。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-01.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/liveshare-01.png)
 
 また、ネストした構造のコンポーネントをレスポンシブにしていく手順など、これまで教えにくい部分についても、シニアがどのような視点でコンポーネントを完成させていくのか順に見せることで教えやすいように感じています。
 
-> ここでは紹介していませんが、デザインは[Figma](https://www.figma.com/)を使っています。デザイン作業も完全リモートです。
+> ここでは紹介していませんが、デザインは[Figma](https:https://www.figma.com/)を使っています。デザイン作業も完全リモートです。
 
 なにより一緒に作業することで、ジュニアのスキルレベルの把握ができ、どのような課題があって次にそのような挑戦をさせたらしいか、考えることができるようになりました。
 

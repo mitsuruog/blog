@@ -5,10 +5,10 @@ date: 2022-12-18 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "雑記"]
-image: https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-0.png
+image: https:https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-0.png
 ---
 
-所属会社が CTO 協会主催の[Thanks Giving Day 2022](https://eventregist.com/e/gmxATLNsi1KK)にスポンサーとして出展したので、スポンサーとして講演してきました。
+所属会社が CTO 協会主催の[Thanks Giving Day 2022](https:https://eventregist.com/e/gmxATLNsi1KK)にスポンサーとして出展したので、スポンサーとして講演してきました。
 
 久々のオンラインイベントだったことや、基調講演から非常に熱い話が聞けたので、終始熱気に包まれた雰囲気の良いイベントだったと思います。主催の CTO 協会と当日運営されていたメンバーの方々、本当に素晴らしいイベントでした。感謝しています。
 
@@ -38,11 +38,11 @@ image: https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-0.
 
 ## 「これからのエンジニア採用・育成のあり方」　スポンサーセッション
 
-![](https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-1.png)
+![](https:https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-1.png)
 
 小賀理事との対談形式でした。「これからのエンジニア採用・育成のあり方」というテーマでいろいろと話をしました。会場は満員でかなり緊張したことを覚えています。また機会があったら挑戦してみたいです。
 
-![](https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-2.JPG)
+![](https:https://blog-mitsuruog.s3.ap-northeast-1.amazonaws.com/images/2022/cto-2.JPG)
 
 個人的には、セッションの準備の過程で、自社のプロダクトの理念や強みなどを改めて知る機会になって、非常に良かったです。
 

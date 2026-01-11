@@ -5,7 +5,7 @@ date: 2016-02-29 00:35:00 +900
 comments: true
 tags: [angular, angular2, typescript]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2.png
 ---
 
 SPA を構築する場合、Component をまたがったデータの共有をどのように実現するかが重要になってきます。  
@@ -28,18 +28,18 @@ Angular2 の公式ページでよく利用される HeroList を例に説明し�
 
 簡単な図に示すとこのような構造をしていると仮定します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/IMG_20160229_001319.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/IMG_20160229_001319.png)
 
 ## 失敗パターン
 
 すべてのサンプルはこちら  
-[plnkr](https://plnkr.co/edit/R1q9vzDa1gHXHBUClu1s?p=preview)
+[plnkr](https:https://plnkr.co/edit/R1q9vzDa1gHXHBUClu1s?p=preview)
 
 失敗パターンでは、HeroDetailComponent にて Hero を削除しても消えません。  
 これは HeroDetailComponent の`providers`で HeroService を DI した場合、新規でインスタンスを生成してしまうためです。
 結果、HeroListComponent と HeroDetailComponent では、別の HeroService のインスタンスを参照していることになっています。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/IMG_20160229_001409.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/IMG_20160229_001409.png)
 
 HeroDetailComponent で`@Component`を DI している箇所を抜粋します。
 
@@ -69,7 +69,7 @@ export class HeroDetailComponent implements OnInit  {
 ## 成功パターン
 
 すべてのサンプルはこちら  
-[plnkr](https://plnkr.co/edit/iYFMhuldCBqay72eWjay?p=preview)
+[plnkr](https:https://plnkr.co/edit/iYFMhuldCBqay72eWjay?p=preview)
 
 こちらは SharedService として動作しているパターンです。`bootstrap(.., [ServiceA,ServiceB])`で HeroService を指定することで Singleton として扱うことができます。  
 HeroDetailComponent で Hero を削除した場合、HeroListComponent の一覧も消えます。
@@ -93,4 +93,4 @@ Angular2 でのベストプラクティスについてはまだ手探りな感�
 
 とはいえ、Angular1 を慣れている方であれば、Angular2 でも Component 間のデータ共有は SharedService でできることが分かりました。
 
-refs [Angular2 "Services" how to @inject one service into another (singletons) - Stack Overflow](https://stackoverflow.com/questions/33575456/angular2-services-how-to-inject-one-service-into-another-singletons)
+refs [Angular2 "Services" how to @inject one service into another (singletons) - Stack Overflow](https:https://stackoverflow.com/questions/33575456/angular2-services-how-to-inject-one-service-into-another-singletons)

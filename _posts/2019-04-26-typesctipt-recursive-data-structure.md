@@ -5,7 +5,7 @@ date: 2019-04-26 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesctipt-recursive-data-structure-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesctipt-recursive-data-structure-logo.png
 ---
 
 TypeScript の小ネタ。
@@ -105,6 +105,6 @@ const data: JSONValueTypeObject = {
 
 参考リンク
 
-- [recursive type definitions · Issue \#3496 · Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/3496)
+- [recursive type definitions · Issue \#3496 · Microsoft/TypeScript](https:https://github.com/Microsoft/TypeScript/issues/3496)
 
 > もう少し簡単に定義できるようにしたかったみたいですが、実現されなかったみたいですね。。。

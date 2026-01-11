@@ -5,7 +5,7 @@ date: 2017-11-21 0:00:00 +900
 comments: true
 tags: [react, unit test, redux, jest]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/invariant-violation.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/invariant-violation.png
 ---
 
 ニッチ過ぎて誰得なのか全くわからないのですが、同じようなことで苦しめられるであろう**未来の誰かのため**に、ここに手がかりを残しておきます。
@@ -16,7 +16,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/invari
 
 ## はじめに
 
-詰まるところ[create-react-app](https://github.com/facebookincubator/create-react-app)をベースに React アプリを作っているのですが、Redux の`connect`を使っているコンポーネントをテストする際に、次のようなエラーが出ました。
+詰まるところ[create-react-app](https:https://github.com/facebookincubator/create-react-app)をベースに React アプリを作っているのですが、Redux の`connect`を使っているコンポーネントをテストする際に、次のようなエラーが出ました。
 
 これの解決方法を残しておきます。
 
@@ -24,7 +24,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/invari
 Invariant Violation: You must pass a component to the function returned by connect. Instead received undefined
 ```
 
-> <https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md#connected-components>
+> <https:https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md#connected-components>
 
 > これを読むと書いてあるんですが、redux store と一緒テストをする場合は、`<Provider>`でラップする必要があります。
 
@@ -107,6 +107,6 @@ describe('Test Component', () => {
 
 まず、公式ドキュメントに目を通せ！ということでした。
 
-- <https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md#connected-components>
+- <https:https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md#connected-components>
 
 でも、実際に一度困ってみないと、言っている意味がわからないものですねー。

@@ -5,7 +5,7 @@ date: 2017-11-09 0:00:00 +900
 comments: true
 tags: [docker]
 categories: ["Blog", "インフラ"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/docker.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/docker.png
 ---
 
 docker image を作る際のデバック方法についての小ネタです。

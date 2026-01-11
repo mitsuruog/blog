@@ -7,10 +7,10 @@ tags: [backbone, localstorage, jasmine]
 categories: ["Blog", "フレームワーク"]
 ---
 
-このエントリは[Backbone.js Advent Calendar 2012](https://www.adventar.org/calendars/15)の 2 日目の記事です。
+このエントリは[Backbone.js Advent Calendar 2012](https:https://www.adventar.org/calendars/15)の 2 日目の記事です。
 
-Backbone.js には[Backbone.Sync](https://goo.gl/xIbI9)という Model とサーバ側のリソースを常に同期させる仕組みがあり、これを Override することで同期させる仕組みを自体を柔軟に変えることができます。  
-今回は[backbone.localstorage.js](https://goo.gl/qBk6P)のユニットテストを通じて、Backbone.Sync を Override する仕組みについて少しお話したいと思います。
+Backbone.js には[Backbone.Sync](https:https://goo.gl/xIbI9)という Model とサーバ側のリソースを常に同期させる仕組みがあり、これを Override することで同期させる仕組みを自体を柔軟に変えることができます。  
+今回は[backbone.localstorage.js](https:https://goo.gl/qBk6P)のユニットテストを通じて、Backbone.Sync を Override する仕組みについて少しお話したいと思います。
 
 <!-- more -->
 
@@ -23,7 +23,7 @@ Backbone.js には[Backbone.Sync](https://goo.gl/xIbI9)という Model とサー
 
 まず、きっかけですが、backbone.localstorage.js を使って localstorage に Backbone.Model を保存する簡単なサンプルを作ってユニットテストしたところ、思わぬところで fail してしまったことです。  
 Backbone.js 側のコードとユニットテストのコードは次のとおりです。
-（ちなみにユニットテストは[Jasmine](https://goo.gl/IUtf)を使ってます。）
+（ちなみにユニットテストは[Jasmine](https:https://goo.gl/IUtf)を使ってます。）
 
 app.js
 
@@ -47,7 +47,7 @@ describe("test localstorage", function () {
   });
 
   it("test model save()", function () {
-    //Error: A "url" property or function must be specified
+    https://Error: A "url" property or function must be specified
     this.model.save({
       title: "hello",
     });
@@ -132,7 +132,7 @@ Backbone.getSyncMethod = function (model) {
 describe("test localstorage", function () {
   beforeEach(function () {
     this.model = new model();
-    //collectionをmodelにセットする
+    https://collectionをmodelにセットする
     this.collection = new collection();
     this.model.collection = this.collection;
   });
@@ -159,5 +159,5 @@ Model だけをテストする目的であればこれも有りだと思いま�
 
 **Backbone.js Advent Calendar 2012**
 
-- ← 前日　[Backbone.js で今つくっている構成について](https://goo.gl/s9JLG)
-- → 後日　[Backbone.js が自動でやってくれるところについて](https://goo.gl/WxdVo)
+- ← 前日　[Backbone.js で今つくっている構成について](https:https://goo.gl/s9JLG)
+- → 後日　[Backbone.js が自動でやってくれるところについて](https:https://goo.gl/WxdVo)

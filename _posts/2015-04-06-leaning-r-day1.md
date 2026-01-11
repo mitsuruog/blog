@@ -14,7 +14,7 @@ categories: ["Blog", "雑記"]
 
 学習はこちらのサイトをベースに行います。とある弁当屋の統計技師様感謝です！
 
-[とある弁当屋の統計技師（データサイエンティスト）](https://rmecab.jp/ranko/)
+[とある弁当屋の統計技師（データサイエンティスト）](https:https://rmecab.jp/ranko/)
 
 <!-- more -->
 
@@ -23,13 +23,13 @@ categories: ["Blog", "雑記"]
 R をインストールしてから、こちらのコマンドで学習用のパッケージをインストールします。
 
 ```
-install.packages ("Ranko", repos = "https://rmecab.jp/R")
+install.packages ("Ranko", repos = "https:https://rmecab.jp/R")
 ```
 
 なお、プロキシ通す場合はこうする。
 
 ```
-Sys.setenv("http_proxy"="https://<プロキシサーバー>:<ポート>/")
+Sys.setenv("http_proxy"="https:https://<プロキシサーバー>:<ポート>/")
 ```
 
 ## 利用するデータ
@@ -202,13 +202,13 @@ R 上で操作するデータの塊のこと。(Excel の計算シートっぽ�
 
 指定したデータセットのサブセットに対して何かの関数処理をさせて結果を表示する。
 
-[by 関数について質問を受けたのでまとめてみた - 日々のつれづれ、良かった探し](https://d.hatena.ne.jp/myopomme/20120708/1341740574)
+[by 関数について質問を受けたのでまとめてみた - 日々のつれづれ、良かった探し](https:https://d.hatena.ne.jp/myopomme/20120708/1341740574)
 
 `summary`は要約統計量を算出する便利関数みたい。
 
-[R-Source 59. 基本統計量の算出](https://cse.naro.affrc.go.jp/takezawa/r-tips/r/59.html)
+[R-Source 59. 基本統計量の算出](https:https://cse.naro.affrc.go.jp/takezawa/r-tips/r/59.html)
 
-[R で統計: データ集合中の最大、最小、平均、中央値 ? summary()関数](https://www.yukun.info/blog/2008/09/r-summary-mean-median.html)
+[R で統計: データ集合中の最大、最小、平均、中央値 ? summary()関数](https:https://www.yukun.info/blog/2008/09/r-summary-mean-median.html)
 
 summary 関数の戻り値
 
@@ -237,21 +237,21 @@ bento$お店: 正規屋
 
 ### 箱ひげ図(boxplot)
 
-[ボックスプロット | R の boxplot 関数の使い方](https://stat.biopapyrus.net/graph/boxplot.html)
+[ボックスプロット | R の boxplot 関数の使い方](https:https://stat.biopapyrus.net/graph/boxplot.html)
 
 ```
 # 売上個数をお店ごと(水準)に箱ひげ図化
 > boxplot(売上個数~お店, data=bento)
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/leaning-r-1-1.png)}
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/leaning-r-1-1.png)}
 
 ```
 # 売上個数を弁当名ごと(水準)に箱ひげ図化
 > boxplot(売上個数~弁当名, data=omu)
 ```
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/leaning-r-1-2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/leaning-r-1-2.png)
 
 外にある ○ は外れ値みたい。
 

@@ -5,12 +5,12 @@ date: 2017-12-02 0:00:00 +900
 comments: true
 tags: [react, stripe]
 categories: ["Blog", "API・バックエンド連携"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-stripe.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-stripe.png
 ---
 
-この記事は[Stripe Advent Calendar 2017 \- Adventar](https://adventar.org/calendars/2339react-stripe-elements)2 日目の記事です。
+この記事は[Stripe Advent Calendar 2017 \- Adventar](https:https://adventar.org/calendars/2339react-stripe-elements)2 日目の記事です。
 
-自分がフロントエンドをやっている、オンラインプログラミング学習サービス[CODEPREP](https://codeprep.jp/)に、[Stripe](https://stripe.com/)決済を組み込んでみた時の話です。
+自分がフロントエンドをやっている、オンラインプログラミング学習サービス[CODEPREP](https:https://codeprep.jp/)に、[Stripe](https:https://stripe.com/)決済を組み込んでみた時の話です。
 
 > (注意)CODEPREP は**2018 年 1 月 4 日をもってプレミアム会員プランを停止した**ため、このページはもう見ることはできません。
 
@@ -20,14 +20,14 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-
 
 CODEPREP は React で作られているので、こちらの React コンポーネントを使ってみました。
 
-- [stripe/react\-stripe\-elements: React components for Stripe\.js and Stripe Elements](https://github.com/stripe/react-stripe-elements)
+- [stripe/react\-stripe\-elements: React components for Stripe\.js and Stripe Elements](https:https://github.com/stripe/react-stripe-elements)
 
 > 自分がやったのは 2017 年 07 月くらいなので、一部内容が最新ではないものがあります。ご注意ください。
 
 仕上がりはこんな感じです。
 スタイル周りのカスタマイズが結構できたので、サービスに溶け込ませるように組み込むことができました。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-1.png)
 
 ## 導入方法
 
@@ -267,7 +267,7 @@ Stripe のコンポーネントはスタイルをカスタマイズすること�
 自分の場合は、バリデーションエラーのスタイルをカスタマイズする必要がありました。なので、この手順はほぼ必須かと思います。
 最初やり方がわからなかったので Stack Overflow で聞いてみました。
 
-- [reactjs \- How can I put border styling with react\-stripe\-elements input component? \- Stack Overflow](https://stackoverflow.com/questions/43974321/how-can-i-put-border-styling-with-react-stripe-elements-input-component)
+- [reactjs \- How can I put border styling with react\-stripe\-elements input component? \- Stack Overflow](https:https://stackoverflow.com/questions/43974321/how-can-i-put-border-styling-with-react-stripe-elements-input-component)
 
 実際に render された後のコードを見るとわかるのですが、Stripe のコンポーネントは`.StripeElement`というスタイルを持つ DOM にラップされています。
 
@@ -289,11 +289,11 @@ Stripe のコンポーネントはスタイルをカスタマイズすること�
 
 こんな感じでスタイルをカスタマイズできます。
 
-![Stripe custom styling](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-2.png){: w="400" h="166" }
+![Stripe custom styling](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-2.png){: w="400" h="166" }
 
 > 現在は、`Elements`の`style`に CSS スタイルをセットするとスタイルが適用されるようです。便利。
 >
-> - <https://stripe.com/docs/stripe-js/reference#element-options>
+> - <https:https://stripe.com/docs/stripe-js/reference#element-options>
 
 ## まとめ
 
@@ -302,12 +302,12 @@ Stripe のコンポーネントはスタイルをカスタマイズすること�
 
 アップデートが早いようなので、実際に組み込む前に公式のドキュメントを確認した方が良さそうです。
 
-- <https://github.com/stripe/react-stripe-elements>
-- <https://stripe.com/docs/stripe-js/reference>
+- <https:https://github.com/stripe/react-stripe-elements>
+- <https:https://stripe.com/docs/stripe-js/reference>
 
 ### おまけ
 
 導入当時は JCB に対応してなかったので、Stripe が対応してくれた時はチーム全員で大喜びしました。懐かしい記憶です。
 
 > (Slack のログを確認したら、2017-08-22 の出来事のようですね)
-> ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-3.png)
+> ![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/stripe-3.png)

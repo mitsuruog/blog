@@ -5,12 +5,12 @@ date: 2019-02-05 0:00:00 +900
 comments: true
 tags: [react-native, swift]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native-logo.png
 ---
 
 react-native で Swift の Native module を呼び出す方法です。基本的には下の Blog のやり方を真似ています。
 
-- [Swift in React Native \- The Ultimate Guide Part 1: Modules](https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-1-modules-9bb8d054db03)
+- [Swift in React Native \- The Ultimate Guide Part 1: Modules](https:https://teabreak.e-spres-oh.com/swift-in-react-native-the-ultimate-guide-part-1-modules-9bb8d054db03)
 
 紹介する内容は次の通りです。
 
@@ -29,7 +29,7 @@ react-native で Swift の Native module を呼び出す方法です。基本的
 
 プロジェクト全体のコードは GitHub で見ることができます。
 
-- <https://github.com/mitsuruog/react-native-call-native-module-sample>
+- <https:https://github.com/mitsuruog/react-native-call-native-module-sample>
 
 ちなみに Swift と Objecvive-C は初めて書きました。
 
@@ -40,7 +40,7 @@ react-native で Swift の Native module を呼び出す方法です。基本的
 
 このようなダイアログが表示されるはずです。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native1.png)
 
 > Bride Header ファイルは、一度設定されると Xcode のプロジェクトファイルで管理されているため、手動でファイル名などを変更することは避けましょう。
 
@@ -100,7 +100,7 @@ Native Module 側から counter の初期値を返します。
 続いて`requiresMainQueueSetup`メソッドも追加します。これはこのクラスの初期化をメインスレッドかバックグラウンドスレッドのどちらで行うかを指定するためのものです。
  何も指定しない場合、次のような警告が表示されます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/swift-react-native2.png)
 
 ```java
 // Counter.swift

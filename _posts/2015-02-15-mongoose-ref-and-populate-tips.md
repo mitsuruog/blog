@@ -7,7 +7,7 @@ tags: [mongodb, mongoose]
 categories: ["Blog", "API・バックエンド連携"]
 ---
 
-ずっと RDB を使っていると、mongodb など NOSQL のスキーマ設計する際に正規化を意識してちょいちょい思考が固まるのですが、mongodb の O/R マッパーとして有名な[mongoose](https://github.com/learnboost/mongoose)を使う事で、複数の Collection 間のリレーションと join っぽいことをエミュレーションできるので紹介します。
+ずっと RDB を使っていると、mongodb など NOSQL のスキーマ設計する際に正規化を意識してちょいちょい思考が固まるのですが、mongodb の O/R マッパーとして有名な[mongoose](https:https://github.com/learnboost/mongoose)を使う事で、複数の Collection 間のリレーションと join っぽいことをエミュレーションできるので紹介します。
 
 <!-- more -->
 
@@ -16,13 +16,13 @@ categories: ["Blog", "API・バックエンド連携"]
 
 今回の内容は、こちらの公式ドキュメントに基づくものです。
 
-[Mongoose Query Population v3.8.23](https://mongoosejs.com/docs/populate.html)
+[Mongoose Query Population v3.8.23](https:https://mongoosejs.com/docs/populate.html)
 
 ## スキーマ定義
 
 今回のスキーマは「社員(Employee)」と「部署(Unit)」として、以下のような構造をしているとします。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/mongoose-populate.jpg)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/mongoose-populate.jpg)
 
 ## ref を使ったリレーションの表現
 
@@ -172,13 +172,13 @@ var options = {
 
 特にこのやり取りが読んでて興味深かったです。
 
-[node.js - Mongoose populate vs object nesting - Stack Overflow](https://stackoverflow.com/questions/24096546/mongoose-populate-vs-object-nesting)
+[node.js - Mongoose populate vs object nesting - Stack Overflow](https:https://stackoverflow.com/questions/24096546/mongoose-populate-vs-object-nesting)
 
 ちなみにネストした population を多用すると、海外の熱心な mongodb ファンから怒られるので注意です w
 
-[node.js - Mongoose: How to populate 2 level deep population without populating fields of first level? in mongodb - Stack Overflow](https://stackoverflow.com/questions/27168022/mongoose-how-to-populate-2-level-deep-population-without-populating-fields-of-f)
+[node.js - Mongoose: How to populate 2 level deep population without populating fields of first level? in mongodb - Stack Overflow](https:https://stackoverflow.com/questions/27168022/mongoose-how-to-populate-2-level-deep-population-without-populating-fields-of-f)
 
 ## 参考文献
 
-- [Node.js - Mongoose でネストした populate の書き方 - Qiita](https://qiita.com/Teloo/items/824447cfbb9b16dee215)
-- [Can't make nested populate in new mongoose 3.6rc0 · Issue #1377 · LearnBoost/mongoose](https://github.com/LearnBoost/mongoose/issues/1377)
+- [Node.js - Mongoose でネストした populate の書き方 - Qiita](https:https://qiita.com/Teloo/items/824447cfbb9b16dee215)
+- [Can't make nested populate in new mongoose 3.6rc0 · Issue #1377 · LearnBoost/mongoose](https:https://github.com/LearnBoost/mongoose/issues/1377)

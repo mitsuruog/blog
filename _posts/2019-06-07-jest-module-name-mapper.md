@@ -5,10 +5,10 @@ date: 2019-06-07 0:00:00 +900
 comments: true
 tags: [jest, unit test]
 categories: ["Blog", "テスト"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/jest-alias-logo.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/jest-alias-logo.png
 ---
 
-JavaScript のテストフレームワーク[Jest](https://jestjs.io/en/)の小ネタです。
+JavaScript のテストフレームワーク[Jest](https:https://jestjs.io/en/)の小ネタです。
 
 最近 react や react-native のプロジェクトでモジュールの参照に alias を使うことが多いのですが、Jest でこれを扱う方法について紹介です。
 
@@ -36,7 +36,7 @@ alias を使うメリットとしては、`import`文の記述を簡略化する
 
 Jest で alias を扱うためには`moduleNameMapper`を使って alias と実際のパスをマッピングします。
 
-- <https://jestjs.io/docs/en/configuration#modulenamemapper-object-string-string>
+- <https:https://jestjs.io/docs/en/configuration#modulenamemapper-object-string-string>
 
 上の例の場合は次のようになります。
 

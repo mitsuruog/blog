@@ -30,9 +30,9 @@ console.log("Express server listening on port 3000");
 URL とそれを呼び出したときの req.params の内容です。
 
 ```
-http://localhost:3000/content/
-http://localhost:3000/content/aaaa
-http://localhost:3000/content/aaaa/bbbb
+http:https://localhost:3000/content/
+http:https://localhost:3000/content/aaaa
+http:https://localhost:3000/content/aaaa/bbbb
 
 [ '' ]
 [ 'aaaa' ]
@@ -58,11 +58,11 @@ console.log("Express server listening on port 3000");
 URL とそれを呼び出したときの req.params の内容です。
 
 ```
-http://localhost:3000/products/
-http://localhost:3000/products/12
-http://localhost:3000/products/12/edit
-http://localhost:3000/products/12/delete
-http://localhost:3000/products/delete
+http:https://localhost:3000/products/
+http:https://localhost:3000/products/12
+http:https://localhost:3000/products/12/edit
+http:https://localhost:3000/products/12/delete
+http:https://localhost:3000/products/delete
 
 Cannot GET /products/
 [ id: '12', operation: undefined ]
@@ -93,9 +93,9 @@ console.log("Express server listening on port 3000");
 URL とそれを呼び出したときの req.params の内容です。
 
 ```
-http://localhost:3000/node/
-http://localhost:3000/node/10
-http://localhost:3000/node/10..100
+http:https://localhost:3000/node/
+http:https://localhost:3000/node/10
+http:https://localhost:3000/node/10..100
 
 [ undefined, undefined ]
 [ '10', undefined ]

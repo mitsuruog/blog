@@ -7,7 +7,7 @@ tags: [angularjs, es6, babel, jspm]
 categories: ["Blog", "フレームワーク"]
 ---
 
-2015/3/7 に[MSakamaki](https://github.com/MSakamaki)氏に声を掛けられれて一緒に AngularJS ES6 リファクタソンを開催しました。
+2015/3/7 に[MSakamaki](https:https://github.com/MSakamaki)氏に声を掛けられれて一緒に AngularJS ES6 リファクタソンを開催しました。
 
 内容は参加者が 2〜3 人のチームに分かれて ES5 で書かれた Angular1.3 ベースの Web アプリを、ES6 でリファクタするという企画です。
 ES5 のコードの中にクソコードを仕込んでおいて、ついでにリファクタしてくれるかなーなんて思いながら主催側ですが、一緒にリファクタして結構楽しかったです。
@@ -15,11 +15,11 @@ ES5 のコードの中にクソコードを仕込んでおいて、ついでに�
 Angular1.3 を ES6 でリファクタするポイントや、書き換えてみての所感とかまとめようと思います。  
 (注 今回のコードは実験的な試みです。プロダクションコードに適用するかは自己責任でお願いします。)
 
-[AngularJS ES6 リファクタソン - AngularJs Japan User Group | Doorkeeper](https://angularjs-jp.doorkeeper.jp/events/21008)
+[AngularJS ES6 リファクタソン - AngularJs Japan User Group | Doorkeeper](https:https://angularjs-jp.doorkeeper.jp/events/21008)
 
 <!-- more -->
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-refactor.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-refactor.png)
 
 ## Angular1.X 系は ES6 と相性が悪い？？
 
@@ -30,16 +30,16 @@ Angular1.3 を ES6 でリファクタするポイントや、書き換えてみ�
 
 ES6 にはまだブラウザ上で動作しない仕様もあるため、Babel を使って ES6 で書いたコードを ES5 へコンパイルしました。また、最近 Babel とセットで使われることが多い jspm を利用ました。
 
-- [Babel · The transpiler for writing next generation JavaScript](https://babeljs.io/)
-- [jspm.io - Frictionless Browser Package Management](https://jspm.io/)
+- [Babel · The transpiler for writing next generation JavaScript](https:https://babeljs.io/)
+- [jspm.io - Frictionless Browser Package Management](https:https://jspm.io/)
 
 リファクタソンの課題はこちらです。
 
-- [MSakamaki/AngularEs6Son](https://github.com/MSakamaki/AngularEs6Son)
+- [MSakamaki/AngularEs6Son](https:https://github.com/MSakamaki/AngularEs6Son)
 
 こちらがリファクタ  ソンの内容を持ち帰って、私が書き直してみたコードです。今回紹介するコードはこちらのリポジトリにあります。全体を見たい場合はこちらを見てください。
 
-- [mitsuruog/angular-es6](https://github.com/mitsuruog/angular-es6)
+- [mitsuruog/angular-es6](https:https://github.com/mitsuruog/angular-es6)
 
 ## controller
 
@@ -104,7 +104,7 @@ factory も contoller と同様に class を使って置き換えます。
 export default class BeanService {
   constructor($resource) {
     return $resource(
-      "http://localhost:8000/api/beans/:id",
+      "http:https://localhost:8000/api/beans/:id",
       {
         id: "@id",
       },
@@ -328,10 +328,10 @@ app.controller(ListController.name, ListController);
 
 ### 参考
 
-- [Using ES6 with Angular today](https://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html)
-- [Exploring ES6 Classes In AngularJS 1.x](https://www.michaelbromley.co.uk/blog/350/exploring-es6-classes-in-angularjs-1-x)
-- [Writing AngularJS Apps Using ES6](https://www.sitepoint.com/writing-angularjs-apps-using-es6/)
-- [Using ES6 Modules with AngularJS 1.3 — GoCardless Blog](https://gocardless.com/blog/es6-angular/)
-- [gocardless/es6-angularjs](https://github.com/gocardless/es6-angularjs)
-- [lukehoban/es6features](https://github.com/lukehoban/es6features)
-- [yoheiMune/es6features(上の日本語  訳)](https://github.com/yoheiMune/es6features)
+- [Using ES6 with Angular today](https:https://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html)
+- [Exploring ES6 Classes In AngularJS 1.x](https:https://www.michaelbromley.co.uk/blog/350/exploring-es6-classes-in-angularjs-1-x)
+- [Writing AngularJS Apps Using ES6](https:https://www.sitepoint.com/writing-angularjs-apps-using-es6/)
+- [Using ES6 Modules with AngularJS 1.3 — GoCardless Blog](https:https://gocardless.com/blog/es6-angular/)
+- [gocardless/es6-angularjs](https:https://github.com/gocardless/es6-angularjs)
+- [lukehoban/es6features](https:https://github.com/lukehoban/es6features)
+- [yoheiMune/es6features(上の日本語  訳)](https:https://github.com/yoheiMune/es6features)

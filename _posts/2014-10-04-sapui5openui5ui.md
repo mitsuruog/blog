@@ -12,12 +12,12 @@ categories: ["Blog", "フレームワーク"]
 [前回]({{ site.baseurl }}/2014/09/sapui5openui5ui)に引き続き、OpenUI5 にてカスタム UI コントロールを作成する方法の後編です。今回のパートは「既存の UI を拡張する」方法についてです。
 
 今回のデモはこちらで参照できます。
-[https://mitsuruog.github.io/sapui5-showroom/#/controls](http://mitsuruog.github.io/sapui5-showroom/#/controls)
+[https:https://mitsuruog.github.io/sapui5-showroom/#/controls](https://mitsuruog.github.io/sapui5-showroom/#/controls)
 
 <!-- more -->
 
 こちらの公式ページの内容をもとに書いています。
-[Developing UI5 Controls in JavaScript](https://openui5.hana.ondemand.com/#docs/guide/91f1703b6f4d1014b6dd926db0e91070.html)
+[Developing UI5 Controls in JavaScript](https:https://openui5.hana.ondemand.com/#docs/guide/91f1703b6f4d1014b6dd926db0e91070.html)
 
 ### 目次
 

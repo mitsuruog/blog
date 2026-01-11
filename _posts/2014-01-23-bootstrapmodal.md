@@ -7,19 +7,19 @@ tags: [bootstrap]
 categories: ["Blog", "UI・UX"]
 ---
 
-[Bootstrap](https://getbootstrap.com/)の小ネタです。
+[Bootstrap](https:https://getbootstrap.com/)の小ネタです。
 
-[Bootstrap](https://getbootstrap.com/)には[Modal](https://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
+[Bootstrap](https:https://getbootstrap.com/)には[Modal](https:https://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
 ユースケースとしては、一覧から詳細ダイアログを開く際にパラメータを渡す場合などでしょうか。
 
 <!-- more -->
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/bootstrap-modal.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/bootstrap-modal.png)
 
 Modal にパラメータを渡す方法は昔から議論されていて、最近まで変更がされているようです。Github 上の Issue はこちら
 
 Pass data arguments to modal? · Issue #531 · twbs/bootstrap
-[https://github.com/twbs/bootstrap/issues/531](https://github.com/twbs/bootstrap/issues/531)
+[https:https://github.com/twbs/bootstrap/issues/531](https://github.com/twbs/bootstrap/issues/531)
 
 ## 1. 3.0.3 以前
 
@@ -30,14 +30,14 @@ $myModal = $('#myModal').modal({
   person: 'mitsuruog'
 });
 
-//2.3.1と3.0.0ではネームスベースが微妙に異なる
+https://2.3.1と3.0.0ではネームスベースが微妙に異なる
 
-//2.3.1
+https://2.3.1
 $myModal.on('show', function(e) {
   var name = $(this).data('modal').options.person
 };
 
-//3.0.0
+https://3.0.0
 $myModal.on('show.bs.modal', function(e) {
   var name = $(this).data('bs.modal').options.person
 }
@@ -48,7 +48,7 @@ $myModal.on('show.bs.modal', function(e) {
 3.0.3 以降では、以下の用に modal を呼び出す際に、2 つめのパラメータにセットすることで、イベントオブジェクトにセットされてくるように改善されています。
 
 ```js
-//3.0.3以降
+https://3.0.3以降
 $myModal = $('#myModal').modal({}, {
   person: 'mitsuruog'
 });

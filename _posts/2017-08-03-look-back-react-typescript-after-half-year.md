@@ -5,16 +5,16 @@ date: 2017-08-03 0:00:00 +900
 comments: true
 tags: [react, typescript, codeprep]
 categories: ["Blog", "フレームワーク"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript1.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript1.png
 ---
 
-自分は[CODEPREP](https://codeprep.jp/)というオンラインプログラミング学習サービスをやっているのですが、今年の 2 月に React と TypeScript を使ってフロントエンドを再構築し、半年間サービスを走らせてみた結果について振り返ってみたいと思います。
+自分は[CODEPREP](https:https://codeprep.jp/)というオンラインプログラミング学習サービスをやっているのですが、今年の 2 月に React と TypeScript を使ってフロントエンドを再構築し、半年間サービスを走らせてみた結果について振り返ってみたいと思います。
 
 <!-- more -->
 
 ## はじめに
 
-[CODEPREP](https://codeprep.jp/)は月間で 50 万 PV 以上ある Web サービスです。
+[CODEPREP](https:https://codeprep.jp/)は月間で 50 万 PV 以上ある Web サービスです。
 
 そのため、それなりの事態は発生するだろうと思い、フロントエンドにはエラー監視を導入して、ユーザーのブラウザ上で何かエラーが発生したら、直ちに Slack に通知が来て対応できるような万全の準備をしていました。
 
@@ -45,7 +45,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-
 
 ボタン・リンク・タブなどの共通的に利用できそうな UI パーツは、Stateless コンポーネントとして小分けに作成するようにしました。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript2.png)
 
 これにより、Stateless コンポーネントはただ与えられた値を元に UI を描画するだけとなり、props で渡される値のパターンだけ注意すればいい状態となりました。
 
@@ -68,7 +68,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-
 大まかに「ページコンポーネント」が各画面 1 つに対応していて、「Stateless コンポーネント」は共通的に利用する小さい UI 部品のことです。そして「コンテナ」とはいくつかページコンポーネントを束ねるコンポーネントのことです。
 アプリケーションで共通で利用するデータなどを保持してたり、ページへの許可されていないアクセスをブロックする門番のような役割もしています。どちらかというと**Gateway**と言った方がしっくりくるかもしれません。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-typescript3.png)
 
 > 厳密にいうと世にある React のコンテナパターンのように綺麗に責務が別れていません。かなりオリジナル色が強いです。
 
@@ -90,7 +90,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-
 
 これの何が良かったかというと、このようなネストを極力減らすことで、アプリケーション全体の構造をシンプルに保ち、不要なデバックコストを削減できたとです。
 
-普段は[react-devtools](https://github.com/facebook/react-devtools)をデバックに使っているのですが、何かおかしい動きをした時にチェックする場所が固定できる。
+普段は[react-devtools](https:https://github.com/facebook/react-devtools)をデバックに使っているのですが、何かおかしい動きをした時にチェックする場所が固定できる。
 コンポーネントでデータを受け渡しをしている間に、なぜか途中から値が変わっている、なんて悪夢はもうありません。
 
 ## まとめ
@@ -101,7 +101,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-
 
 > こちらが、リニューアル前に話した内容。
 
-> [React+TypeScript もいいぞ](https://www.slideshare.net/mitsuruogawa33/reacttype-script)
+> [React+TypeScript もいいぞ](https:https://www.slideshare.net/mitsuruogawa33/reacttype-script)
 
 ただ結局のところ、React を使い試行錯誤の末、React の流儀に沿って正しくできたことが大きかったかと思います。
 おそらく別のフレームワークを使ったとしたら、戦略レベルでは考えることは一緒であっても、戦術レベルではもう少し違うアプローチをしていたと思います。

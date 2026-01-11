@@ -5,16 +5,16 @@ date: 2019-04-20 0:00:00 +900
 comments: true
 tags: [roblox, ロブロックス]
 categories: ["Blog", "雑記"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox.png
 ---
 
-今日は唐突に[Roblox](https://www.roblox.com)でのゲームプログラミングの話です。
+今日は唐突に[Roblox](https:https://www.roblox.com)でのゲームプログラミングの話です。
 
 ## Roblox!?
 
 > 子供たちがレゴブロックのような感覚で自作のゲームを作り、公開できるプラットフォームが「Roblox（ロブロックス）」だ。
 >
-> - [5000 万人の子供が遊ぶゲーム開発プラットフォーム「Roblox」](https://forbesjapan.com/articles/detail/20288)
+> - [5000 万人の子供が遊ぶゲーム開発プラットフォーム「Roblox」](https:https://forbesjapan.com/articles/detail/20288)
 
 娘と週末に Roblox で遊ぶことがあり、遊んでいる時にふっと「自分でゲームを作って公開できる」と言ったことがありました。
 その時、あまり娘は理解していなかったようだったので、ちょっとどういうことか理解させて驚かせてやろうかと思い、試しに 1 つ作って娘に見せてみたら、目玉が飛び出るくらい興奮して、早速自分も作りたいという話になりました。
@@ -22,7 +22,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox
 
 自分もそこまでくわしくないので、それ以来こっそり教えられるように Roblox でのプログラミングについて調べているという次第です。
 
-ちなみに Roblox では、[Lua](https://www.lua.org/start.html)言語と、[Roblox Studio](https://www.roblox.com/create)を使って、Roblox が提供する API を使いながらゲームを作成します。
+ちなみに Roblox では、[Lua](https:https://www.lua.org/start.html)言語と、[Roblox Studio](https:https://www.roblox.com/create)を使って、Roblox が提供する API を使いながらゲームを作成します。
 
 今回はリーダーボードを作成方法についての紹介です。
 
@@ -31,7 +31,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox
 リーダーボード(LeaderBoard)とは、ゲームの中でプレイヤーの名前や得点などを表示するものです。
 画面の一番見やすい場所に置いてあり、ロブロックスでは画面の右上に表示されています。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard1.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard1.png)
 
 ## リーダーボードの作成
 
@@ -42,7 +42,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox
 
 まず、右側の Explorer の中の**ServerScriptService**の中に新しい Script を作成します。名前は`PlayerSetup`としておきます。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard2.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard2.png)
 
 その Script の中に`onPlayerJoin`という関数を作成します。この関数は`player`というパラメータを受け取ります。
 
@@ -146,13 +146,13 @@ end
 
 これで画面の右上にリーダーボードが表示されるようになりました。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard3.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-leaderboard3.png)
 
 ## まとめ
 
 ほぼ、ここの内容の翻訳です。
 
-- [In-Game Leaderboards](https://developer.roblox.com/articles/Leaderboards)
+- [In-Game Leaderboards](https:https://developer.roblox.com/articles/Leaderboards)
 
 Roblox のプログラミング情報は英語でもほとんど手に入らないので辛いですね。。。
 

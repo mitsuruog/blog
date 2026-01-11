@@ -5,34 +5,34 @@ date: 2018-06-05 0:00:00 +900
 comments: true
 tags: [heroku, minecraft, aws]
 categories: ["Blog", "雑記"]
-image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft01.png
+image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft01.png
 ---
 
-「お父さんと 2 人だけで[マイクラ](https://minecraft.net/ja-jp/)やりたい！」
+「お父さんと 2 人だけで[マイクラ](https:https://minecraft.net/ja-jp/)やりたい！」
 
 GW に娘がそんなこと言い出したので、お父さん、ちょっと頑張ってプライベートサーバーを立ててみたよ！
 
 > 注意：
 > この方法で立てたサーバーには、Minecraft pocket edition からはアクセスできません。Minecraft pocket edition で子供を一緒に遊びたい方は、こちらの記事を参考にしてください。
-> [【親子でマイクラ PE】自宅 Wi\-Fi で同時プレイ！ 2 つの iPhone で同じ世界に入って遊ぶ方法 \| Minecraft（マインクラフト） \| できるネット](https://dekiru.net/article/15596/)
+> [【親子でマイクラ PE】自宅 Wi\-Fi で同時プレイ！ 2 つの iPhone で同じ世界に入って遊ぶ方法 \| Minecraft（マインクラフト） \| できるネット](https:https://dekiru.net/article/15596/)
 
 ## 下調べ
 
-少し調べていると、Mincraft は[サーバーがソフトウェアにて配布されていて](https://minecraft.net/en-us/download/server)これを実行するとプライベートサーバーになるようです。
+少し調べていると、Mincraft は[サーバーがソフトウェアにて配布されていて](https:https://minecraft.net/en-us/download/server)これを実行するとプライベートサーバーになるようです。
 
 これをダウンロードして、自分のローカル PC で動かすとプライベートサーバーが作れるのですが、仕事に行っている間も自宅の PC で Mincraft を動かしているのは抵抗があったので、クラウド上にホスティングすることにしました。
 
-サーバー代あまりかけたくないし、常時動かす必要はないので、こういう場合は「[Heroku](https://jp.heroku.com/home)」一択ですね。
+サーバー代あまりかけたくないし、常時動かす必要はないので、こういう場合は「[Heroku](https:https://jp.heroku.com/home)」一択ですね。
 
 ## 構築手順
 
-基本的にはこの[heroku-buildpack-minecraft](https://github.com/jkutner/heroku-buildpack-minecraft)にある通りに設定すると大丈夫です。
+基本的にはこの[heroku-buildpack-minecraft](https:https://github.com/jkutner/heroku-buildpack-minecraft)にある通りに設定すると大丈夫です。
 
 ### ngrok の token を取得する
 
-[ngrok](https://ngrok.com/)という、ローカル PC にトンネルを作って Internet に接続できるようにするサービスがあるので、無料のアカウントを取得して token を取得します。
+[ngrok](https:https://ngrok.com/)という、ローカル PC にトンネルを作って Internet に接続できるようにするサービスがあるので、無料のアカウントを取得して token を取得します。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft02.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft02.png)
 
 ### git プロジェクトを作成して eula.txt を作成する
 
@@ -53,13 +53,13 @@ eula=true
 
 ### Heroku アプリケーションを作成する
 
-[Heroku toolbelt](https://toolbelt.heroku.com/)をインストールして Heroku アプリケーションを作成します。
+[Heroku toolbelt](https:https://toolbelt.heroku.com/)をインストールして Heroku アプリケーションを作成します。
 途中で buildpack と環境変数(ngrok の token)の指定をします。
 
 ```sh
 heroku create
 heroku buildpacks:add heroku/jvm
-heroku buildpacks:add https://github.com/jkutner/heroku-buildpack-minecraft
+heroku buildpacks:add https:https://github.com/jkutner/heroku-buildpack-minecraft
 heroku config:set NGROK_API_TOKEN="xxxxx"
 git push heroku master
 ```
@@ -80,7 +80,7 @@ heroku open
 
 これを Mincraft で接続先のサーバーに指定すると、プライベートサーバーにアクセスできるようになります。
 
-![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft03.png)
+![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/minecraft03.png)
 
 ## セーブデータを S3 に保存する
 
@@ -97,7 +97,7 @@ heroku config:set AWS_SECRET_KEY=xxx
 ```
 
 > AWS の IAM 設定はこのあたりの記事を参考にしてください。
-> [特定の S3 バケットにだけアクセスできる IAM ユーザーを作る \| I am mitsuruog](https://blog.mitsuruog.info/2017/11/way-to-api-key-access-s3)
+> [特定の S3 バケットにだけアクセスできる IAM ユーザーを作る \| I am mitsuruog](https:https://blog.mitsuruog.info/2017/11/way-to-api-key-access-s3)
 
 これで 60 秒に一回、セーブデータが転送されるようになりました。
 

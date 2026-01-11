@@ -9,11 +9,11 @@ categories: ["Blog", "JavaScript・TypeScript"]
 
 仕事が忙しくアドベントカレンダーシーズンに乗り遅れてしまいました。数年ぶりに平穏な 12 月を過ごしております。
 
-> と思ったら[JavaScript その 2 Advent Calendar 2015 - Qiita](https://qiita.com/advent-calendar/2015/javascript2)の 7 日目が開いていたので急遽参加 w
+> と思ったら[JavaScript その 2 Advent Calendar 2015 - Qiita](https:https://qiita.com/advent-calendar/2015/javascript2)の 7 日目が開いていたので急遽参加 w
 
-ところで、[Javascript のスタイルガイドでは割と有名な Airbnb](https://github.com/airbnb/javascript)の日本語訳をしているのですが、最近本家のスタイルガイドが ES6 対応していたので、日本語訳の方もアップデートしました。
+ところで、[Javascript のスタイルガイドでは割と有名な Airbnb](https:https://github.com/airbnb/javascript)の日本語訳をしているのですが、最近本家のスタイルガイドが ES6 対応していたので、日本語訳の方もアップデートしました。
 
-[Javascript\-style\-guide](https://mitsuruog.github.io/javascript-style-guide/)
+[Javascript\-style\-guide](https:https://mitsuruog.github.io/javascript-style-guide/)
 
 スタイルガイドを ES6 にアップデートする過程で、私なりに ES6 でより良いコードを書くために気づいた点、注意する点などピックアップして紹介したいと思います。  
 この記事は、ES6 でより良いコードを書きたい人向けの ES6 入門です。
@@ -177,7 +177,7 @@ const name = {
 
 ES6 で導入された Class 構文ですが、やはりシングルトンとして利用したいという議論があるのは歴史の流れでしょうか。。。
 
-[javascript - Converting Singleton JS objects to use ES6 classes - Stack Overflow](https://stackoverflow.com/questions/26205565/converting-singleton-js-objects-to-use-es6-classes)
+[javascript - Converting Singleton JS objects to use ES6 classes - Stack Overflow](https:https://stackoverflow.com/questions/26205565/converting-singleton-js-objects-to-use-es6-classes)
 
 singleton パターンを使おうとか、そもそも class にする必要はないとか、なかなか興味深いです。
 

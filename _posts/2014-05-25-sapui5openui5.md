@@ -74,7 +74,7 @@ button.placeAt "content"
     <title>SAPUI5/OpenUI5 Sample</title>
     <script
       id="sap-ui-bootstrap"
-      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+      src="https:https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
       data-sap-ui-libs="sap.m"
       data-sap-ui-theme="sap_bluecrystal"
     ></script>
@@ -89,4 +89,4 @@ button.placeAt "content"
 
 ちなみに、この内容はこちらのやり取りを参考にしています。
 
-[SAPUI5: How do I pass values to an eventhandler | SCN](https://archive.sap.com/discussions/thread/3442827)
+[SAPUI5: How do I pass values to an eventhandler | SCN](https:https://archive.sap.com/discussions/thread/3442827)
