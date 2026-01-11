@@ -28,7 +28,7 @@ Cloudinary とは、画像/動画専門のクラウドホスティングサー�
 
 > （だめでした〜！！）Bandwidth が 5GB/月なんですが、結構アクセス多くってオーバーしてしまいました。結果、S3 に移行することにしました。(2017/06/15)
 
-- [Cloudinary](http://cloudinary.com/)
+- [Cloudinary](https://cloudinary.com/)
 
 ## 移行方法
 

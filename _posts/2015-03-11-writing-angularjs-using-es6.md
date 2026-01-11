@@ -31,7 +31,7 @@ Angular1.3 を ES6 でリファクタするポイントや、書き換えてみ�
 ES6 にはまだブラウザ上で動作しない仕様もあるため、Babel を使って ES6 で書いたコードを ES5 へコンパイルしました。また、最近 Babel とセットで使われることが多い jspm を利用ました。
 
 - [Babel · The transpiler for writing next generation JavaScript](https://babeljs.io/)
-- [jspm.io - Frictionless Browser Package Management](http://jspm.io/)
+- [jspm.io - Frictionless Browser Package Management](https://jspm.io/)
 
 リファクタソンの課題はこちらです。
 
@@ -328,9 +328,9 @@ app.controller(ListController.name, ListController);
 
 ### 参考
 
-- [Using ES6 with Angular today](http://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html)
-- [Exploring ES6 Classes In AngularJS 1.x](http://www.michaelbromley.co.uk/blog/350/exploring-es6-classes-in-angularjs-1-x)
-- [Writing AngularJS Apps Using ES6](http://www.sitepoint.com/writing-angularjs-apps-using-es6/)
+- [Using ES6 with Angular today](https://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html)
+- [Exploring ES6 Classes In AngularJS 1.x](https://www.michaelbromley.co.uk/blog/350/exploring-es6-classes-in-angularjs-1-x)
+- [Writing AngularJS Apps Using ES6](https://www.sitepoint.com/writing-angularjs-apps-using-es6/)
 - [Using ES6 Modules with AngularJS 1.3 — GoCardless Blog](https://gocardless.com/blog/es6-angular/)
 - [gocardless/es6-angularjs](https://github.com/gocardless/es6-angularjs)
 - [lukehoban/es6features](https://github.com/lukehoban/es6features)

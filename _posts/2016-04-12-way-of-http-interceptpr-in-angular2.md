@@ -10,7 +10,7 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/HTTP_I
 
 Way of httpInterceptor in Angular 2
 
-4/10 に開催された[Angular 2 ハンズオン](http://connpass.com/event/28985/)のチューターとして参加してきました。  
+4/10 に開催された[Angular 2 ハンズオン](https://connpass.com/event/28985/)のチューターとして参加してきました。  
 チューターしている合間に、Angular2 での HttpIntercepor のやり方を調べてたので、その辺りを紹介します。
 
 <!-- more -->

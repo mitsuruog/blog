@@ -10,10 +10,10 @@ categories: ["Blog", "フレームワーク"]
 最近の AngularJS 開発では[DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)をオレオレカスタムしたものを使っています。 fullstack だけあって使いこなすまで慣れがいると思いますので、私が普段使いしていていいなって思う機能を紹介します。  
 AngularJS 開発の厳しい旅のお供にどうぞ。
 
-この記事は[YEOMAN Advent Calendar 2014 - Adventar](http://www.adventar.org/calendars/356)9 日目の記事です。
+この記事は[YEOMAN Advent Calendar 2014 - Adventar](https://www.adventar.org/calendars/356)9 日目の記事です。
 
-- 8 日目[YEOMAN Advent Calendar 8 日目：generator-ember を紹介します - albatrosary's blog](http://albatrosary.hateblo.jp/entry/2014/12/08/120810)
-- 10 日目[YEOMAN Advent Calendar 10 日目：generator-reveal を紹介します - albatrosary's blog](http://albatrosary.hateblo.jp/entry/2014/12/10/143324)
+- 8 日目[YEOMAN Advent Calendar 8 日目：generator-ember を紹介します - albatrosary's blog](https://albatrosary.hateblo.jp/entry/2014/12/08/120810)
+- 10 日目[YEOMAN Advent Calendar 10 日目：generator-reveal を紹介します - albatrosary's blog](https://albatrosary.hateblo.jp/entry/2014/12/10/143324)
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ AngularJS 開発の厳しい旅のお供にどうぞ。
 ## OAuth 認証テンプレート
 
 fullstack には`google+`, `twitter`, `facebook`の OAuth テンプレートが付属しています。これに加えて`user/password`形式の Form も付属しているので、認証が必要なアプリケーションを作成する場合は、非常に助かると思います。  
-OAuth のモジュールは[Passport](http://passportjs.org/)を利用しています。
+OAuth のモジュールは[Passport](https://passportjs.org/)を利用しています。
 
 利用方法は、`serve>config>local.env.sample.js`を同じフォルダにコピーして、`local.env.js`にリネームしてからファイルの中身に AppID などを設定すれば利用できます。
 
@@ -90,7 +90,7 @@ grunt serve:debug
 
 ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/node-Inspector.png)
 
-ブレイクポイントから処理を進めると通常通りサーバーが起動してくるので`http://localhsot:9000`にてアプリの動作を確認しながら、Node 側のデバックもできます。
+ブレイクポイントから処理を進めると通常通りサーバーが起動してくるので`https://localhsot:9000`にてアプリの動作を確認しながら、Node 側のデバックもできます。
 
 ## mongodb テストデータ自動投入
 

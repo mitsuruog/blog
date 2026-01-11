@@ -48,7 +48,7 @@ require("load-grunt-tasks")(grunt);
 
 ## 2. テンプレート
 
-Grunt には[Underscore.js](http://underscorejs.org/#template)ライクなテンプレートエンジンが内包されています。
+Grunt には[Underscore.js](https://underscorejs.org/#template)ライクなテンプレートエンジンが内包されています。
 
 `<%=%>`とすることで、中のプロパティが純粋な Javascript として評価され、Gruntfile.js 内に展開されます。
 

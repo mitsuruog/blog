@@ -44,13 +44,13 @@ categories: ["Blog", "フロントエンド基礎"]
 <img src='#' onerror=alert(1) />
 ```
 
-[security - XSS attack with javascript in img src attribute - Stack Overflow](http://stackoverflow.com/questions/1798633/xss-attack-with-javascript-in-img-src-attribute)
+[security - XSS attack with javascript in img src attribute - Stack Overflow](https://stackoverflow.com/questions/1798633/xss-attack-with-javascript-in-img-src-attribute)
 
 わざとタグの中でエラーが起きるような記述をして`onerror`を発火させます。同様に`mousemove`とかでもできます。
 
 もう一つ XSS できる方法があって、SNS に投稿する画像の exif に攻撃コードを注入する方法です。
 
-[EXIF Cross Site Scripting, PHP Fun | Barry Shteiman](http://www.sectorix.com/2013/12/02/exif-cross-site-scripting-php-fun/)
+[EXIF Cross Site Scripting, PHP Fun | Barry Shteiman](https://www.sectorix.com/2013/12/02/exif-cross-site-scripting-php-fun/)
 
 この SNS は画像に付加されている撮影カメラの機種(？)を表示する仕様でした。そこに XSS 脆弱性があった訳です。
 
@@ -67,7 +67,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 手前味噌で恐縮ですが、以前こんな記事書きました。
 
-[JWT(Json Web Token)を利用した WebAPI での Credential の受け渡しについて](http://blog.mitsuruog.info/2014/08/jwtjson-web-tokenwebapicredential.html)
+[JWT(Json Web Token)を利用した WebAPI での Credential の受け渡しについて](https://blog.mitsuruog.info/2014/08/jwtjson-web-tokenwebapicredential.html)
 
 ### ログインに関するもの
 
@@ -158,7 +158,7 @@ Web をより使いやすくするために追加された新機能や手法が�
 
 ### 参考資料
 
-- [安全なウェブサイトの作り方：IPA 独立行政法人 情報処理推進機構](http://www.ipa.go.jp/security/vuln/websecurity.html)
+- [安全なウェブサイトの作り方：IPA 独立行政法人 情報処理推進機構](https://www.ipa.go.jp/security/vuln/websecurity.html)
 - [HTML5 を利用した Web アプリケーションのセキュリティ問題に関する調査報告書](https://www.jpcert.or.jp/research/html5.html)
 - [Android セキュリティ勉強会～ WebView の脆弱性編～(PDF)](https://ierae.co.jp/uploads/webview.pdf)
 - [HTML5 Security Cheatsheet(mala さんに教えていただいた、xss の例がいっぱいのってるサイト)](https://html5sec.org/)

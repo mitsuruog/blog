@@ -158,7 +158,7 @@ Angular2 内部では Angular1 の`dirty checking`に代わる独自の変更検
 
 Angular2 の変更検知サイクルについてはこの記事が詳しいです。
 
-- [Change Detection in Angular 2 | Victor Savkin](http://victorsavkin.com/post/110170125256/change-detection-in-angular-2)
+- [Change Detection in Angular 2 | Victor Savkin](https://victorsavkin.com/post/110170125256/change-detection-in-angular-2)
 
 次のテストコードは、マウスが当たると文字色が red に変わる Component のテストだと仮定します。
 

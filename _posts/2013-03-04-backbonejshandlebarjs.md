@@ -8,9 +8,9 @@ categories: ["Blog", "フレームワーク"]
 image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/handlebar.png
 ---
 
-Backbone.js でアプリケーションを作る場合、ついつい手軽さを求めて[Underscore.js の template()](http://underscorejs.org/#template)を使うことが多いのですが、少し凝った造りのページを作る場合、より専門的なテンプレートエンジンを使いたくなります。
+Backbone.js でアプリケーションを作る場合、ついつい手軽さを求めて[Underscore.js の template()](https://underscorejs.org/#template)を使うことが多いのですが、少し凝った造りのページを作る場合、より専門的なテンプレートエンジンを使いたくなります。
 
-そこで今回は、最近マイブームの[Handlebars.js](http://handlebarsjs.com/)を Backbone と組み合わせて使ってみました。
+そこで今回は、最近マイブームの[Handlebars.js](https://handlebarsjs.com/)を Backbone と組み合わせて使ってみました。
 
 <!-- more -->
 
@@ -24,9 +24,9 @@ Backbone.js でアプリケーションを作る場合、ついつい手軽さ�
 詳細は Google 先生の方が詳しいです（ごめんなさい）。  
 数あるクライアントサイドのテンプレートエンジンの 1 つです。個人的にはプリコンパイルすることでパフォーマンス的に優位なところを注目しています。
 
-[[jsperf]Precompiled Templates](http://jsperf.com/precompiled-hogan-handlebars-ejs)
+[[jsperf]Precompiled Templates](https://jsperf.com/precompiled-hogan-handlebars-ejs)
 
-最近話題の twitter の[Horgan.js](http://twitter.github.com/hogan.js/)ともいい感じに渡り合ってます。
+最近話題の twitter の[Horgan.js](https://twitter.github.com/hogan.js/)ともいい感じに渡り合ってます。
 
 > とは言っても、プリコンパイル前は激遅なんですが。。。
 

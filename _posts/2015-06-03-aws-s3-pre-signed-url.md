@@ -8,7 +8,7 @@ categories: ["Blog", "インフラ"]
 ---
 
 小ネタです。  
-最近、真面目に aws を触っていて、今更ながら[Amazon Web Services クラウドデザインパターン 設計ガイド 改訂版](http://www.amazon.co.jp/gp/product/4822277372/ref=as_li_tf_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4822277372&linkCode=as2&tag=mitsuruog-22)を読み始めました。
+最近、真面目に aws を触っていて、今更ながら[Amazon Web Services クラウドデザインパターン 設計ガイド 改訂版](https://www.amazon.co.jp/gp/product/4822277372/ref=as_li_tf_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4822277372&linkCode=as2&tag=mitsuruog-22)を読み始めました。
 
 本書を読んでみると、AWS について初めて知る機能も多く、本当に AWS を利用してシステム構築するためのバイブルのような本だなと感じました。  
 (もっと早く読んでいれば・・・)
@@ -68,6 +68,6 @@ AWS について、もっと学習しないとなーと思います。
 
 ### 参考
 
-- [[AWS]S3 の期限付き URL を生成する[node] ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/node-pre-signed-url/)
-- [S3 の事前署名付き（期限付き）URL を生成する | cloudpack 技術情報サイト](http://blog.cloudpack.jp/2014/07/08/aws-s3-url-with-expiration-using-php-ruby/)
-- [Uploading Objects Using Pre-Signed URLs - Amazon Simple Storage Service](http://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html)
+- [[AWS]S3 の期限付き URL を生成する[node] ｜ Developers.IO](https://dev.classmethod.jp/cloud/aws/node-pre-signed-url/)
+- [S3 の事前署名付き（期限付き）URL を生成する | cloudpack 技術情報サイト](https://blog.cloudpack.jp/2014/07/08/aws-s3-url-with-expiration-using-php-ruby/)
+- [Uploading Objects Using Pre-Signed URLs - Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html)

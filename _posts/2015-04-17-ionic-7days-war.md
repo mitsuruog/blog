@@ -7,7 +7,7 @@ tags: [cordova, ionic, android]
 categories: ["Blog", "フレームワーク"]
 ---
 
-[Ionic](http://ionicframework.com/)で Android アプリを初めて作って公開してみました。
+[Ionic](https://ionicframework.com/)で Android アプリを初めて作って公開してみました。
 
 ionic で開発自体は AngularJS ベースということもあり、結構スムーズだったのですが、開発以外の部分で意外とハマったので、その辺り紹介しようと思います。
 
@@ -31,7 +31,7 @@ ionic で開発自体は AngularJS ベースということもあり、結構ス
 
 最初に ionic を使ってアプリ scaffold を作成します。こちらは公式サイトの手順通りに行えばいいと思います。
 
-[Getting Started with Ionic - Ionic Framework](http://ionicframework.com/getting-started/)
+[Getting Started with Ionic - Ionic Framework](https://ionicframework.com/getting-started/)
 
 ```sh
 $ npm install -g cordova ionic
@@ -52,8 +52,8 @@ ionic コマンドでアプリ scaffold の作成した場合は、必ず`config
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.mitsuruog.transitbus"
-  version="0.0.1" xmlns="http://www.w3.org/ns/widgets"
-  xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  version="0.0.1" xmlns="https://www.w3.org/ns/widgets"
+  xmlns:cdv="https://cordova.apache.org/ns/1.0">
   <name>アプリ名</name>
 
   ...(省略)
@@ -65,7 +65,7 @@ ionic コマンドでアプリ scaffold の作成した場合は、必ず`config
 ionic は AngularJS ベースですので、UI 部分の開発は比較的 AngularJS の知識が流用できます。  
 今回は、Cordova で利用頻度の高い plugin を AngularJS のモジュールでラップして使いやすくした、`ngCordova`を利用しました。
 
-[ngCordova - Simple extensions for common Cordova Plugins - by the Ionic Framework Team - by the Ionic Framework Team](http://ngcordova.com/)
+[ngCordova - Simple extensions for common Cordova Plugins - by the Ionic Framework Team - by the Ionic Framework Team](https://ngcordova.com/)
 
 導入は、ngCordova の bower モジュールをインストールして、トップレベルの AngularJS モジュールで宣言すると利用できます。
 
@@ -81,7 +81,7 @@ angular.module("yourApp", ["ionic", "ngCordova"]);
 
 ngCordova のそれぞれの plugin を利用するためには、別途 Cordova コマンドにて plugin をインストールする必要があります。詳しくは公式サイトを参照してください。
 
-[ngCordova - Document and Examples - by the Ionic Framework Team](http://ngcordova.com/docs/plugins/)
+[ngCordova - Document and Examples - by the Ionic Framework Team](https://ngcordova.com/docs/plugins/)
 
 ### 実機での実行、デバック(webview)
 
@@ -95,19 +95,19 @@ webview デバックについては、Chrome を立ち上げて`chrome://inspect
 
 手前味噌ですが、以前こんな記事を書いてます。
 
-[Android やってる人で ChromeDevtools の Remote Debugging と Screencasting 知らない人は使ってみた方がいいよ！ - I am mitsuruog](http://blog.mitsuruog.info/2013/12/androidchromedevtoolsremote.html)
+[Android やってる人で ChromeDevtools の Remote Debugging と Screencasting 知らない人は使ってみた方がいいよ！ - I am mitsuruog](https://blog.mitsuruog.info/2013/12/androidchromedevtoolsremote.html)
 
 ### ionic テーマのカスタム
 
 ionic のスタイルは`Sass`で出来ていて、テーマ部分は`_variables.scss`に入っています。上書き用の`.scss`を書いてコマンドを実行すると上書きすることができます。
 
-[Writing a Sass Theme | Formulas | Learn Ionic](http://learn.ionicframework.com/formulas/working-with-sass/)
+[Writing a Sass Theme | Formulas | Learn Ionic](https://learn.ionicframework.com/formulas/working-with-sass/)
 
 通常は、`./scss/ionic.app.scss`にカスタム用の scss ファイルがあるので、こちらにカスタムする内容を書いていきます。Sass の環境構築についてはこちらを参照してください。
 
-[Ionic CLI - Using Sass | Ionic Framework](http://ionicframework.com/docs/cli/sass.html)
+[Ionic CLI - Using Sass | Ionic Framework](https://ionicframework.com/docs/cli/sass.html)
 
-[Sass: Syntactically Awesome Style Sheets](http://sass-lang.com/assets/img/illustrations/glasses-2087d741.svg)
+[Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/assets/img/illustrations/glasses-2087d741.svg)
 
 コマンドの例はこちらです。
 
@@ -160,7 +160,7 @@ ionic ではプラットフォームごとに、`platform-android`のような C
 
 ionic には、プラットフォームでサイズがまちまちで作成が面倒なアイコンやスプラッシュイメージを、ベースのイメージから自動生成する仕組みが備わっています。
 
-[Automating Icons and Splash Screens | The Official Ionic Blog](http://blog.ionic.io/automating-icons-and-splash-screens/)
+[Automating Icons and Splash Screens | The Official Ionic Blog](https://blog.ionic.io/automating-icons-and-splash-screens/)
 
 `resources/android`フォルダの直下にアイコンであれば`icon.png`、スプラッシュイメージであれば`splash.png`を作成して置いてください。
 (ios であれば`resources/ios`に置いてください)
@@ -215,7 +215,7 @@ $scope.$on("$ionicView.beforeEnter", function () {
 
 アプリが出来上がったので、リリース用にビルドします。手順は公式サイトを参照してください。
 
-[Publishing your app - Ionic Framework](http://ionicframework.com/docs/guide/publishing.html)
+[Publishing your app - Ionic Framework](https://ionicframework.com/docs/guide/publishing.html)
 
 まず、アプリをリリースビルドします。
 
@@ -296,7 +296,7 @@ Verification succesful
 
 コマンドを実行した直下に apk ファイルができているので、これを play ストアにう p すればいい。
 
-[Android においてなぜ zipalign をやる必要があるのか - Qiita](http://qiita.com/kazuqqfp/items/8eae69e309c6ed75d661)
+[Android においてなぜ zipalign をやる必要があるのか - Qiita](https://qiita.com/kazuqqfp/items/8eae69e309c6ed75d661)
 
 ### ストア公開用アイコン&宣伝画像
 
@@ -310,7 +310,7 @@ Verification succesful
 
 アプリのデバイス枠はめ込み画像はこちらで作成できます。
 
-[Device Art Generator | Android Developers](http://developer.android.com/distribute/tools/promote/device-art.html)
+[Device Art Generator | Android Developers](https://developer.android.com/distribute/tools/promote/device-art.html)
 
 ### ストア公開用スクリーンショット
 
@@ -322,14 +322,14 @@ Verification succesful
 
 導入はこちら。スクリーンショット撮るときに Android Studio の「Android Device Monitor」を使いますので、一緒にセットアップしておきます。
 
-[Genymotion + Android Studio on Mac - Qiita](http://qiita.com/Sam/items/8d551f575b617fa0be7e)
+[Genymotion + Android Studio on Mac - Qiita](https://qiita.com/Sam/items/8d551f575b617fa0be7e)
 
 Genymotion 上に作成した apk ファイルをどうインストールするか、少し悩んだのですが、起動した Genymotion のエミュレータに対して apk ファイルをドラッグするとインストールできます。
 
 エミュレータでのスクリーンショットですが、Genymotion から取得する場合は有料プランの機能のようです。  
 そこで、下の記事のように Android Device Monitor から実行中のエミュレータをアタッチすることで、スクリーンショットを取得することにしました。
 
-[android emulator - Capture screenshot in GenyMotion - Stack Overflow](http://stackoverflow.com/questions/21771416/capture-screenshot-in-genymotion)
+[android emulator - Capture screenshot in GenyMotion - Stack Overflow](https://stackoverflow.com/questions/21771416/capture-screenshot-in-genymotion)
 
 エミュレータが実行されている状態で Android Device Monitor を起動します。
 

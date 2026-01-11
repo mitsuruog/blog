@@ -12,7 +12,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 下の DEMO サイトに THETA で撮影した画像を Drag&Drop すると、いい感じに全天球にしてくれます。ソースコードもすべて Github に公開してますので参考にしてください。
 
-- DEMO：[http://mitsuruog.github.io/richo-theta-with-threejs](http://mitsuruog.github.io/richo-theta-with-threejs)
+- DEMO：[https://mitsuruog.github.io/richo-theta-with-threejs](http://mitsuruog.github.io/richo-theta-with-threejs)
 - リポジトリ：[https://github.com/mitsuruog/richo-theta-with-threejs](https://github.com/mitsuruog/richo-theta-with-threejs)
 
 <!-- more -->
@@ -42,7 +42,7 @@ categories: ["Blog", "フロントエンド基礎"]
 three.js での全天球処理はこちらの WebGL サンプルを参考にしました。  
 （とは言ってもほとんどコピペですが・・・）
 
-[http://threejs.org/examples/webgl_panorama_equirectangular.html](http://threejs.org/examples/webgl_panorama_equirectangular.html)
+[https://threejs.org/examples/webgl_panorama_equirectangular.html](http://threejs.org/examples/webgl_panorama_equirectangular.html)
 
 全天球処理がさくっと終わったので、欲を出して image ファイルを Drag&Drop して three.js のテクスチャを変えようとおもったのですが、これがハマりました。
 
@@ -85,7 +85,7 @@ droppable.addEventListener("drop", handllerDroppedFile);
 実際にドラックされた image ファイルは`dataURI形式`に変換して、three.js のテクスチャに設定すればうまく行くと思ったのですが、dataURI を読み込む際に同一生成元ポリシー（same origin policy）に抵触していまいエラーとなってしまいました。
 
 dataURI は、通常の Web のリソース命名方式（http とか）ではなく、独自の命名方式（data）で命名されてしまうため、ドラッグした image ファイルを Javascript で再利用しようとすると必ず同一生成元ポリシー違反となってしまいます。  
-（[RFC6454 — The Web Origin Concept の仕様書](http://tools.ietf.org/html/rfc6454#section-5)に書いてありました。）
+（[RFC6454 — The Web Origin Concept の仕様書](https://tools.ietf.org/html/rfc6454#section-5)に書いてありました。）
 
 そのため一度、ダミーの img タグに紐づけてから再利用するような HACK を行う必要があります。
 
@@ -126,17 +126,17 @@ HTML5 の fileAPI を使うことで、ブラウザ上でローカルファイ�
 ### X. 参考資料
 
 - Reading files in JavaScript using the File APIs
-  [http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-selecting-files-dnd](http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-selecting-files-dnd)
+  [https://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-selecting-files-dnd](http://www.html5rocks.com/en/tutorials/file/dndfiles/#toc-selecting-files-dnd)
 - How to develop a HTML5 Image Uploader
   <span id="goog_1930387588"></span>[https://hacks.mozilla.org/2011/01/how-to-develop-a-html5-image-uploader/](https://hacks.mozilla.org/2011/01/how-to-develop-a-html5-image-uploader/)
 - three.js change texture on material
-  [http://stackoverflow.com/questions/13583103/three-js-change-texture-on-material](http://stackoverflow.com/questions/13583103/three-js-change-texture-on-material)
+  [https://stackoverflow.com/questions/13583103/three-js-change-texture-on-material](http://stackoverflow.com/questions/13583103/three-js-change-texture-on-material)
 - Three.js Update Texture image
-  [http://stackoverflow.com/questions/18436431/three-js-update-texture-image](http://stackoverflow.com/questions/18436431/three-js-update-texture-image)
+  [https://stackoverflow.com/questions/18436431/three-js-update-texture-image](http://stackoverflow.com/questions/18436431/three-js-update-texture-image)
 
 **p.s**
 
 同僚が[RICOH THETA](https://theta360.com/ja/)の競合製品を見つけて悶絶していました w
 こちらはウェアラブルです。しかもサイトはしっかり HTML5 でした。もっと頑張れ RICOH
 
-[http://bublcam.com/](http://bublcam.com/)
+[https://bublcam.com/](http://bublcam.com/)

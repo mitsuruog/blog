@@ -122,8 +122,8 @@ sap.ui.core.UIComponent.extend "com.mitsuruog.sapui5.Component",
 
 サンプルの例では、次のように呼び出す URL にハッシュを追加することで、望みの画面を表示させることが可能です。
 
-- [http://mitsuruog.github.io/sapui5-showroom/app/routing/#/second](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/second)
-- [http://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2)
+- [https://mitsuruog.github.io/sapui5-showroom/app/routing/#/second](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/second)
+- [https://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2](http://mitsuruog.github.io/sapui5-showroom/app/routing/#/third/1/tab2)
 
 では、プログラムから View を切り替え時にハッシュも変更するためにはどうすればよいでしょうか？
 
@@ -194,7 +194,7 @@ EventBus では、ブックマークからの特定画面を起動すること�
 
 SAPUI5/OpenUI5 routing Sample
 
-[http://mitsuruog.github.io/sapui5-showroom/app/routing/](http://mitsuruog.github.io/sapui5-showroom/app/routing/)
+[https://mitsuruog.github.io/sapui5-showroom/app/routing/](http://mitsuruog.github.io/sapui5-showroom/app/routing/)
 
 ### ソースコード
 

@@ -7,7 +7,7 @@ tags: [bootstrap, css]
 categories: ["Blog", "UI・UX"]
 ---
 
-いつも非常にお世話になっている[bootstrap](http://twitter.github.com/bootstrap/)ですが、（業務系システムなど）画面の項目が多い場合、どうしても余白が多すぎると感じることが多くあります。
+いつも非常にお世話になっている[bootstrap](https://twitter.github.com/bootstrap/)ですが、（業務系システムなど）画面の項目が多い場合、どうしても余白が多すぎると感じることが多くあります。
 その都度、リセットする CSS を作っていたのですが、同じ悩みを抱える人が結構いるのではと思い公開してみました。
 
 > (2014/11/15 追記)
@@ -63,7 +63,7 @@ Github にて運営してますので、[Issue](https://github.com/mitsuruog/boo
 
 開発環境は[Cloud9](https://c9.io/)上で構築しています。
 
-less を使っているので Build は[grunt.js](http://gruntjs.com/)で自動化しています。非常に快適です。
+less を使っているので Build は[grunt.js](https://gruntjs.com/)で自動化しています。非常に快適です。
 
 また、CSS については本業ではないので、色々勉強しながら作っています。
 コードスタイルに関しては、こちらのエントリに準拠できるよう努力しています。

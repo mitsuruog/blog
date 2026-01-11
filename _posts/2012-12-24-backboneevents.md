@@ -7,7 +7,7 @@ tags: [backbone, jasmine]
 categories: ["Blog", "フレームワーク"]
 ---
 
-[Backbone.js Advent Calendar 2012](http://www.adventar.org/calendars/15)の 22 日目の記事です。
+[Backbone.js Advent Calendar 2012](https://www.adventar.org/calendars/15)の 22 日目の記事です。
 
 今見たら 22 日目の担当がいなかったので、慌てて書いています。ネタが無くなってきました（汗）。
 
@@ -26,7 +26,7 @@ Jasmine 使った Backbone のテストの書き方について、参考にな�
 （0.9.9 のみ once をテストしてます。）
 
 で、きっかけは
-[@ahomu](http://twitter.com/ahomu "http://twitter.com/ahomu")さんの「[render と presenter の分離パターン](http://havelog.ayumusato.com/develop/javascript/e541-backbone_patterns_tips.html)」を読んで、いいなと思ったのですが、その前に Backbone.Events 自体あまり理解して無いと思ったので、自分の認識が合っているかテストをして確認してみた次第です。
+[@ahomu](https://twitter.com/ahomu "https://twitter.com/ahomu")さんの「[render と presenter の分離パターン](https://havelog.ayumusato.com/develop/javascript/e541-backbone_patterns_tips.html)」を読んで、いいなと思ったのですが、その前に Backbone.Events 自体あまり理解して無いと思ったので、自分の認識が合っているかテストをして確認してみた次第です。
 
 テストしてみた結果、少し知っていると便利だなと思ったところを 2 つだけ紹介します。
 

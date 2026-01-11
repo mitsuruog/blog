@@ -45,7 +45,7 @@ Angular1 の場合と同様に、Angular2 でもユニットテストを実行�
 - テストランナー
   - [Karma](https://karma-runner.github.io/0.13/index.html)
 - テスティングフレームワーク
-  - [Jasmine](http://jasmine.github.io/2.4/introduction.html)
+  - [Jasmine](https://jasmine.github.io/2.4/introduction.html)
 
 Karma の設定は次のような形です。
 

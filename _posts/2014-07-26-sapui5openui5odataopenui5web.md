@@ -11,7 +11,7 @@ categories: ["Blog", "API・バックエンド連携"]
 今回は「OpenUI5 と OData を使ってどのように Web システムを作成するか」というチュートリアルを作って見ました。
 
 内容はこちらです。  
-[http://mitsuruog.github.io/Openui5-with-OdataService/](http://mitsuruog.github.io/Openui5-with-OdataService/)
+[https://mitsuruog.github.io/Openui5-with-OdataService/](http://mitsuruog.github.io/Openui5-with-OdataService/)
 
 Gtihub：  
 [https://github.com/mitsuruog/Openui5-with-OdataService](https://github.com/mitsuruog/Openui5-with-OdataService)  
@@ -22,8 +22,8 @@ Gtihub：
 ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/openui5odata1.png)
 
 > (2014/11/13 追記)  
-> このネタで[HTML5Experts.jp](http://html5experts.jp)に寄稿しました。こちらの方が分かりやすく書いてあると思います。  
-> [実例から考える、HTML5 時代のエンタープライズ・アーキテクチャ | HTML5Experts.jp](http://html5experts.jp/mitsuruog/9518/) > ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/exjp_odata.png)
+> このネタで[HTML5Experts.jp](https://html5experts.jp)に寄稿しました。こちらの方が分かりやすく書いてあると思います。  
+> [実例から考える、HTML5 時代のエンタープライズ・アーキテクチャ | HTML5Experts.jp](https://html5experts.jp/mitsuruog/9518/) > ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/exjp_odata.png)
 
 ## 目次
 
@@ -58,13 +58,13 @@ OData の仕様は一見非常に難解です。OData の仕様に則ったデ�
 こちらは「CompanyName」を「Alfr」で前方一致検索するためのクエリです。
 
 ```
-http://services.odata.org/Northwind/Northwind.svc/Customers?$filter=startswith(CompanyName, ‘Alfr’) eq true
+https://services.odata.org/Northwind/Northwind.svc/Customers?$filter=startswith(CompanyName, ‘Alfr’) eq true
 ```
 
 こんなものもあります。
 
 ```
-http://services.odata.org/OData/OData.svc/Categories?$select=Name,Products&$expand=Products
+https://services.odata.org/OData/OData.svc/Categories?$select=Name,Products&$expand=Products
 ```
 
 `$select`とか`$expand`とは一体どんな意味があるのでしょうか。。。（詳しくはチュートリアルの中で触れています。）

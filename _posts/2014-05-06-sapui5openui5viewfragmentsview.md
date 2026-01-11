@@ -22,7 +22,7 @@ SAPUI5 にて UI 部品が多い View を構築する場合、すぐに 1000 行
 最近、SAPUI5 を生の Javascript で書くと「}」とか「)}」とかしんどいので coffeeScript で書いて楽しています。また、すべてのソースコードをのせると非常に冗長なため、抜粋したソースコードを載せています。実際に動作するサンプルとソースコードは GIthub 上にありますので、そちらを参照してください。
 
 サンプル
-<http://mitsuruog.github.io/sapui5-showroom/#/fragment>
+<https://mitsuruog.github.io/sapui5-showroom/#/fragment>
 
 ソースコード
 

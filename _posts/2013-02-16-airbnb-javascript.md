@@ -22,7 +22,7 @@ categories: ["Blog", "JavaScript・TypeScript"]
 
 Airbnb とはアメリカのサンフランシスコにある、個性的な宿を扱うスタートアップ企業です。詳細は下の記事を読んでください。
 
-[旅行のソーシャル化は「現実世界の Facebook」、AirBnB CEO に聞いた。](http://www.atmarkit.co.jp/ait/articles/1211/30/news123.html)
+[旅行のソーシャル化は「現実世界の Facebook」、AirBnB CEO に聞いた。](https://www.atmarkit.co.jp/ait/articles/1211/30/news123.html)
 
 [Airbnb（JP）](https://www.airbnb.jp/)
 

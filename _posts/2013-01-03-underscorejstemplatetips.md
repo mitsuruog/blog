@@ -29,7 +29,7 @@ enja-oss にて Underscore.js の Utility を翻訳した際に、template 関�
 
 （version1.3.3 での内容ですが、翻訳時の 1.4.3 でも変わっていないと思います。）
 
-[Underscore.js の template 触ったメモ](http://havelog.ayumusato.com/develop/javascript/e490-underscore_js_template.html)
+[Underscore.js の template 触ったメモ](https://havelog.ayumusato.com/develop/javascript/e490-underscore_js_template.html)
 
 ## source プロパティについて
 
@@ -137,7 +137,7 @@ source プロパティによってテンプレートのデバックが劇的に�
 
 サイ本（5 版）を読むと with 文は低速なので使用しない方が良いと書かれていましたので、そのように思っていた時期もあったのですが、次のエントリ（2008 年でちょっと古いですが・・・）を読んでみると、現在はあまりパフォーマンス的なネックな存在しないような印象を受けています。
 
-[[404 Blog Not Found]javascript - with(second.thought) // with 再考](http://blog.livedoor.jp/dankogai/archives/51066288.html)
+[[404 Blog Not Found]javascript - with(second.thought) // with 再考](https://blog.livedoor.jp/dankogai/archives/51066288.html)
 
 とは言っても、with 文を使用した場合、グローバルスコープの変数が誤って参照され、見つけにくいバグが入り込む可能性があると感じています（上の「変数かプロパティが曖昧ではないか!」の部分です。）。
 ですので、個人的には template はデフォルトで with 句を使用してしまうので、それを避けるために variable を設定するといった方が納得できました。
@@ -179,7 +179,7 @@ _.templateSettings.variable = "data";
 
 variable についてはこちらも参考にさせていただきました。
 
-[Using Underscore.js Templates To Render HTML Partials](http://www.bennadel.com/blog/2411-Using-Underscore-js-Templates-To-Render-HTML-Partials.htm)
+[Using Underscore.js Templates To Render HTML Partials](https://www.bennadel.com/blog/2411-Using-Underscore-js-Templates-To-Render-HTML-Partials.htm)
 
 with 文の挙動を確認したコードはこちらです。（興味があったら参考にしてください。）
 

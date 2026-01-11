@@ -7,10 +7,10 @@ tags: [angularjs, yeoman, fullstack]
 categories: ["Blog", "フレームワーク"]
 ---
 
-この記事は[AngularJS Advent Calendar 2014 - Adventar](http://www.adventar.org/calendars/350)の 3 日目の記事です。
+この記事は[AngularJS Advent Calendar 2014 - Adventar](https://www.adventar.org/calendars/350)の 3 日目の記事です。
 
-- 2 日目[AngularJS BootstrapUI を利用した FilterSelect(@takeyama)](http://qiita.com/takeyama/items/f6e0fbac4d3b4907193e)
-- 4 日目[初心者マークの Angular.js - Uemmra3 のフルスタックエンジニア？日記(@Uemmra3)](http://d.hatena.ne.jp/Uemmra3/20141204/1417696122)
+- 2 日目[AngularJS BootstrapUI を利用した FilterSelect(@takeyama)](https://qiita.com/takeyama/items/f6e0fbac4d3b4907193e)
+- 4 日目[初心者マークの Angular.js - Uemmra3 のフルスタックエンジニア？日記(@Uemmra3)](https://d.hatena.ne.jp/Uemmra3/20141204/1417696122)
 
 AngularJS でそれなりの規模のアプリケーションを書く場合、プロジェクトの構成って結構悩みます。  
 いつも悩んでます。。。  
@@ -28,7 +28,7 @@ AngularJS のプロジェクトの構成については、結構以前から議�
 
 - [angular/angular-seed](https://github.com/angular/angular-seed)
 - [johnpapa/angularjs-styleguide](https://github.com/johnpapa/angularjs-styleguide#application-structure)
-- [Brian Ford/Building Huuuuuge Apps with AngularJS](http://briantford.com/blog/huuuuuge-angular-apps)
+- [Brian Ford/Building Huuuuuge Apps with AngularJS](https://briantford.com/blog/huuuuuge-angular-apps)
 - [Angular Best Practice for App Structure (Public)](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
 
 私の場合は[DaftMonk/generator-angular-fullstack](https://github.com/DaftMonk/generator-angular-fullstack)を利用することが多いので、基本的には generator-angular-fullstack 構成に

@@ -38,7 +38,7 @@ Angular2 もテスタビリティを重視したフレームワークとなっ�
 
 ## テストフレームワークは Jasmine が基本
 
-テストフレームワークは[Jasmine](http://jasmine.github.io/2.4/introduction.html)を利用します。
+テストフレームワークは[Jasmine](https://jasmine.github.io/2.4/introduction.html)を利用します。
 これは、`angular2/testing`の中で Jasmine の API を overwrap しているためです。
 いまのところ、Angular2 のテストは Jasmine を利用したほうが幸せになれると思います。
 

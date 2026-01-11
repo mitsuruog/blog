@@ -64,8 +64,8 @@ JWS 構造の JWT を簡単に図解すると「ヘッダー」「クレーム�
 JWT についての詳細は下記のブログを参照してください。おそらく私よりかなり正確な理解をされていると思います。(JWT の日本語情報はかなり希少です)
 特に hiyosi’s blog さんの記事は JWT の仕様と JWS 構造の JWT の作成・検証(ただし scala)まで含まれており、非常に有用です。
 
-[JSON Web Token (JWT) - OAuth.jp](http://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
-[JWT について簡単にまとめてみた - hiyosi’s blog](http://hiyosi.tumblr.com/post/70073770678/jwt)
+[JSON Web Token (JWT) - OAuth.jp](https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
+[JWT について簡単にまとめてみた - hiyosi’s blog](https://hiyosi.tumblr.com/post/70073770678/jwt)
 
 ## 4.Token を利用した場合の課題など
 
@@ -100,11 +100,11 @@ JWT を利用した証明情報の受け渡し方法いかがでしたでしょ�
 
 - **Blog**
   - [Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
-  - [JSON Web Token (JWT) - OAuth.jp](http://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
-  - [JWT について簡単にまとめてみた - hiyosi’s blog](http://hiyosi.tumblr.com/post/70073770678/jwt)
+  - [JSON Web Token (JWT) - OAuth.jp](https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
+  - [JWT について簡単にまとめてみた - hiyosi’s blog](https://hiyosi.tumblr.com/post/70073770678/jwt)
 - **仕様**
-  - [JSON Web Token (JWT) draft25](http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
-  - [JSON Web Token (JWT) -日本語 draft11-](http://openid-foundation-japan.github.io/draft-ietf-oauth-json-web-token-11.ja.html)
+  - [JSON Web Token (JWT) draft25](https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
+  - [JSON Web Token (JWT) -日本語 draft11-](https://openid-foundation-japan.github.io/draft-ietf-oauth-json-web-token-11.ja.html)
 - **ライブラリ**
   - [auth0/express-jwt(nodejs/express ミドルウェア)](https://github.com/auth0/express-jwt)
   - [auth0/node-jsonwebtoken(nodejs/JWS 形式の JWT 作成)](https://github.com/auth0/node-jsonwebtoken)

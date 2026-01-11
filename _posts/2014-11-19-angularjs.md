@@ -7,7 +7,7 @@ tags: [angularjs, その他]
 categories: ["Blog", "フレームワーク"]
 ---
 
-だいぶ前のことですが、9/22 に行われた[AngularJS リファレンス」出版記念会](http://html5experts.jp/albatrosary/10855/)にて SIer での AngularJS の取り組みについて話させていただきました。
+だいぶ前のことですが、9/22 に行われた[AngularJS リファレンス」出版記念会](https://html5experts.jp/albatrosary/10855/)にて SIer での AngularJS の取り組みについて話させていただきました。
 
 先日、その資料を見て興味を持ってくれた他の SIer にて AngularJS について講演させていただく機会をいただいたこともあり、なぜ AngularJS をいいと感じているのかや、AngularJS に期待することなど、個人的な思いを書いてみたいと思います。(あくまで SIer 目線です。)
 

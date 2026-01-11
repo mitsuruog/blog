@@ -10,14 +10,14 @@ categories: ["Blog", "フレームワーク"]
 先日、HTML5j エンタープライズ部のメンバーと最近気になっていた Flux アーキテクチャについて味見してみました。
 巷の AngularJS のサンプルは ES6 で書かれたもの多いので、実務でも使える ES5 で書きなおしてみました。
 
-- デモはこちら [Angular Flux ES5](http://mitsuruog.github.io/angular-flux-es5/)
+- デモはこちら [Angular Flux ES5](https://mitsuruog.github.io/angular-flux-es5/)
 - コードはこちら [mitsuruog/angular-flux-es5](https://github.com/mitsuruog/angular-flux-es5)
 
 <!-- more -->
 
 Flux の概要については[@albatrosary](https://twitter.com/albatrosary)さんのブログを参照してください。
 
-[What’s Flux? - albatrosary's blog](http://albatrosary.hateblo.jp/entry/2014/10/22/131302)
+[What’s Flux? - albatrosary's blog](https://albatrosary.hateblo.jp/entry/2014/10/22/131302)
 
 ## 雑感
 
@@ -28,7 +28,7 @@ Backbone の時もそうだったのですが、SPA でフロント側を作っ�
 AngularJS の場合は`shared services`を使うか、`$rootScope.$broadcast`を使うことが王道かなと思います。
 個人的には`shared services`の方が小さくて好みです。
 
-[AngularJS - Angular JS で複数のコントローラ間でモデル（状態や値）を共有する方法 3 種類 - Qiita](http://qiita.com/sunny4381/items/aeae1e154346b5cf6009)
+[AngularJS - Angular JS で複数のコントローラ間でモデル（状態や値）を共有する方法 3 種類 - Qiita](https://qiita.com/sunny4381/items/aeae1e154346b5cf6009)
 
 Flux アーキテクチャを使った場合は、Angular way にならないので、これはこれでありかなと思いました。
 ただ、Observer の制御を間違えるとメッセージパッシングが無限ループしだして死にます。(参加メンバーはもれなく無限ループを体験していました w)

@@ -82,5 +82,5 @@ image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gym.pn
 
 ちなみに、この記事は 3 年前にデブサミに一緒に出た知り合いが、最近マッチョになっていくのを Facebook の TL で見てインスパイアされて書いたものです w。
 
-- [筋トレを始めて半年経ったので振り返ります \- ニクニクドットミー](http://blog.nikuniku.me/entry/2017/12/18/141807)
+- [筋トレを始めて半年経ったので振り返ります \- ニクニクドットミー](https://blog.nikuniku.me/entry/2017/12/18/141807)
 - [デブサミ 2014 で 35 歳からフロントエンジニアにキャリアチェンジして 35 歳定年説を覆した話をしてきた \| I am mitsuruog](https://blog.mitsuruog.info/2014/02/20143535.html)

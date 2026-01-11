@@ -7,9 +7,9 @@ tags: [bootstrap]
 categories: ["Blog", "UI・UX"]
 ---
 
-[Bootstrap](http://getbootstrap.com/)の小ネタです。
+[Bootstrap](https://getbootstrap.com/)の小ネタです。
 
-[Bootstrap](http://getbootstrap.com/)には[Modal](http://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
+[Bootstrap](https://getbootstrap.com/)には[Modal](https://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
 ユースケースとしては、一覧から詳細ダイアログを開く際にパラメータを渡す場合などでしょうか。
 
 <!-- more -->

@@ -7,9 +7,9 @@ tags: [html5]
 categories: ["Blog", "フロントエンド基礎"]
 ---
 
-2014/5/19 に[HTML5fun](http://html5fun.jp/)の立ち上げイベントで話す機会をいただきまして、「エンタープライズでの HTML5」について最近思うことを、割と自由に話してきました。イベント開催レポートはこちらです。
+2014/5/19 に[HTML5fun](https://html5fun.jp/)の立ち上げイベントで話す機会をいただきまして、「エンタープライズでの HTML5」について最近思うことを、割と自由に話してきました。イベント開催レポートはこちらです。
 
-[HTML5fun -全国に HTML5 の楽しさを-](http://html5fun.jp/event/event_001.html)
+[HTML5fun -全国に HTML5 の楽しさを-](https://html5fun.jp/event/event_001.html)
 
 また、2014/5/22 に行った[Java Day Tokyo 2014](https://oj-events.jp/public/application/add/170)での内容も絡めて、少し補足したいと思います。
 
@@ -61,5 +61,5 @@ HTML5 の中でも特別扱いされている感がある「Websocket」も、�
 
 企業システムのフロントエンドエンジニアなりたいという人が少しでも増えるといいなと思っています。これからも微力ながら活動していきたいです。
 
-[HTML5fun](http://html5fun.jp/)のスタッフの皆さん本当にありがとうございました。  
+[HTML5fun](https://html5fun.jp/)のスタッフの皆さん本当にありがとうございました。  
 全国に HTML5 の楽しさを伝えるような活動を今後も行ってください。

@@ -7,9 +7,9 @@ tags: [nodejs, websocket]
 categories: ["Blog", "API・バックエンド連携"]
 ---
 
-本ブログは[東京 Node 学園祭 2012 アドベントカレンダー](http://atnd.org/events/33022)の 6 日目の記事です。
+本ブログは[東京 Node 学園祭 2012 アドベントカレンダー](https://atnd.org/events/33022)の 6 日目の記事です。
 
-今回は[nodejitsu](http://nodejitsu.com/)を使って sockect.io を使ったアプリをホスティングしたところ、websocket（以下、ws）まわりで思わぬハマりポイントがあったというお話しをします。  
+今回は[nodejitsu](https://nodejitsu.com/)を使って sockect.io を使ったアプリをホスティングしたところ、websocket（以下、ws）まわりで思わぬハマりポイントがあったというお話しをします。  
 （同じようなトラブルで悩む方に少しでもヒントをあげられたらと考えています。）
 
 <!-- more -->
@@ -28,8 +28,8 @@ categories: ["Blog", "API・バックエンド連携"]
 
 サーバを正しく実装したにも関わらず ws が届かないようなときは、そもそもクライアントが ws 受信できる状態なのか、次の 2 つのサイトにて確認してみてください。
 
-- [http://websocketstest.com/](http://websocketstest.com/)（ws と Comet の疎通確認ができるサイトです。）
-- [http://wsping.jit.su/](http://wsping.jit.su/)（nodejitsu の websoketPing サイトです。）
+- [https://websocketstest.com/](http://websocketstest.com/)（ws と Comet の疎通確認ができるサイトです。）
+- [https://wsping.jit.su/](http://wsping.jit.su/)（nodejitsu の websoketPing サイトです。）
 
 例えばですが、80 ポートの ws がブロックされている場合は次のような結果となります。
 
@@ -58,7 +58,7 @@ Status Code:101 Switching Protocols
 Request Headersview source
 Connection:Upgrade
 Host:wsping.jit.su
-Origin:http://wsping.jit.su
+Origin:https://wsping.jit.su
 Sec-WebSocket-Extensions:x-webkit-deflate-frame
 Sec-WebSocket-Key:4EjkGu1WajTwi0MOvQjOyw==
 Sec-WebSocket-Version:13
@@ -81,7 +81,7 @@ Upgrade:websocket
 
 ## nodejitsu なかなか好いよ。
 
-最後に 2 か月くらい[nodejitsu](http://nodejitsu.com/)使って遊んでますが。良かった点を書き連ねてみます。（CEO の[
+最後に 2 か月くらい[nodejitsu](https://nodejitsu.com/)使って遊んでますが。良かった点を書き連ねてみます。（CEO の[
 Charlie Robbins 氏](https://twitter.com/indexzero)も来ることですし。）
 
 - websocket が使える。

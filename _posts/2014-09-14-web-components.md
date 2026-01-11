@@ -7,7 +7,7 @@ tags: [html5, web components, ハンズオン]
 categories: ["Blog", "フロントエンド基礎"]
 ---
 
-2014/09/09 に美人で有名なおだんみつさんのいる[21cafe](http://www.ni-ichicafe.com/)で「[エンタープライヤーのための Web Components ハンズオン](https://atnd.org/events/55761)」を開催しました。内容は「Web 名刺」を Web Components で作るというものです。
+2014/09/09 に美人で有名なおだんみつさんのいる[21cafe](https://www.ni-ichicafe.com/)で「[エンタープライヤーのための Web Components ハンズオン](https://atnd.org/events/55761)」を開催しました。内容は「Web 名刺」を Web Components で作るというものです。
 
 Web Components についての解説記事はそこそこ出てきましたが、ハンズオンだと国内初の試みかと思います。それなりに難しい技術に関するハンズオンでしたが、なかなか好評だったようですので少し振り返ってみます。
 
@@ -19,7 +19,7 @@ Web Components についての解説記事はそこそこ出てきましたが�
 
 ## Web Components とは
 
-UI 部品がコンポーネント化して再利用しやすくすることが出来る技術です。詳細は Google のえーじさんが[なぜ Web Components はウェブ開発に革命を起こすのか](http://blog.agektmr.com/2014/05/web-components.html)で書いている記事が分かりやすいかと思います。とにかく将来の Web 開発に革命を起こすと言われる技術です。
+UI 部品がコンポーネント化して再利用しやすくすることが出来る技術です。詳細は Google のえーじさんが[なぜ Web Components はウェブ開発に革命を起こすのか](https://blog.agektmr.com/2014/05/web-components.html)で書いている記事が分かりやすいかと思います。とにかく将来の Web 開発に革命を起こすと言われる技術です。
 
 ## 苦労したポイント
 
@@ -67,7 +67,7 @@ UI 部品がコンポーネント化して再利用しやすくすることが�
 
 今回、[エンタープライヤーのための Web Components ハンズオン](https://atnd.org/events/55761)を開催しました。2 時間で参加者が満足できるハンズオンができるか不安でしたが、なんとか成功させることができたようです。
 
-お忙しい中、参加していただいた皆さんありがとうございました。チューターの[@albatrosary さん](https://twitter.com/albatrosary)、[@can_i_do_web](https://twitter.com/can_i_do_web)さんありがとう！あなた達のフォローがなかったら成功しなかったです。会場提供の[21cafe](http://www.ni-ichicafe.com/)さんもありがとうございました。
+お忙しい中、参加していただいた皆さんありがとうございました。チューターの[@albatrosary さん](https://twitter.com/albatrosary)、[@can_i_do_web](https://twitter.com/can_i_do_web)さんありがとう！あなた達のフォローがなかったら成功しなかったです。会場提供の[21cafe](https://www.ni-ichicafe.com/)さんもありがとうございました。
 
 作成した Web 名刺
 

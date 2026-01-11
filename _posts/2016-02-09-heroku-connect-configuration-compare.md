@@ -8,7 +8,7 @@ categories: ["Blog", "インフラ"]
 image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect.png
 ---
 
-前回、[Heroku Connect の Configuration ファイルが辛いので美しくするモジュールを書いた](http://blog.mitsuruog.info/2016/02/heroku-connect-configuration-comb.html)の続きっぽいもの。
+前回、[Heroku Connect の Configuration ファイルが辛いので美しくするモジュールを書いた](https://blog.mitsuruog.info/2016/02/heroku-connect-configuration-comb.html)の続きっぽいもの。
 
 通常のシステム開発では、開発、ステージング、本番など複数環境を利用することが多いので、複数環境間で Configuration ファイルの差分を出すモジュールを書いてみました。
 

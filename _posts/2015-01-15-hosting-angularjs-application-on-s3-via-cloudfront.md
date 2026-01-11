@@ -54,7 +54,7 @@ S3 の Static Website Hosting 機能はお手軽で非常に魅力を感じる�
 
 そこで利用するのが CloudFront です。いろいろ探していたら、こちらの記事が参考になりました。ありがとうございます！
 
-[[CloudFront + S3]特定バケットに特定ディストリビューションのみからアクセスできるよう設定する ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/cloudfront-s3-origin-access-identity/)
+[[CloudFront + S3]特定バケットに特定ディストリビューションのみからアクセスできるよう設定する ｜ Developers.IO](https://dev.classmethod.jp/cloud/aws/cloudfront-s3-origin-access-identity/)
 
 手順としては次のような形です。
 
@@ -111,7 +111,7 @@ CloudFront で Distributions を選択すると「`Invalidations`」というタ
 今回の「S3 ＋ CloudFront」はまだ**大関**構成なようですね。個人的には頑張ったと思うのですが。。。orz  
 こちらの記事を読むと、この上の「S3 ＋ CloudFront ＋ Route53」**横綱**構成があるようです。
 
-[AWS における静的コンテンツ配信パターンカタログ（アンチパターン含む） ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/static-contents-delivery-patterns/)
+[AWS における静的コンテンツ配信パターンカタログ（アンチパターン含む） ｜ Developers.IO](https://dev.classmethod.jp/cloud/aws/static-contents-delivery-patterns/)
 
 もっと稽古します。
 

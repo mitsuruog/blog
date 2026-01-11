@@ -7,7 +7,7 @@ tags: [backbone, sastruts, seaser2]
 categories: ["Blog", "API・バックエンド連携"]
 ---
 
-[Backbone.js Advent Calendar 2012](http://www.adventar.org/calendars/15)と[青森アドベントカレンダー](http://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/aomori-web-adevent-calendar-2012.html)17 日目の記事です。青森ネタは最後のほうに気持ち程度あります。
+[Backbone.js Advent Calendar 2012](https://www.adventar.org/calendars/15)と[青森アドベントカレンダー](https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/aomori-web-adevent-calendar-2012.html)17 日目の記事です。青森ネタは最後のほうに気持ち程度あります。
 SAStruts+Seaser2 構成のバックエンドに対して、Backbone.Sync から Form を POST して ActionForm で受け取る方法です。  
 （青森とは関係ありませんのであしからず。。。）
 
@@ -31,7 +31,7 @@ SAStruts+Seaser2 構成のバックエンドに対して、Backbone.Sync から 
 ## SAStruts -> Backbone.Sync GET の場合
 
 Backbone の Collection や Model にて fatch を呼び出すと、Backbone.Sync がサーバに対して GET で URL リソースを取得します。この部分は比較的簡単で、以下のように SAStruts の Action 側の実装を少し変えるのみで JSON でレスポンスを返すことができます。
-（ちなみに、JSON のライブラリは[jsonic](http://jsonic.sourceforge.jp/)を使用しています。）
+（ちなみに、JSON のライブラリは[jsonic](https://jsonic.sourceforge.jp/)を使用しています。）
 
 サーバ側(IndexAction.get.java)
 
@@ -137,10 +137,10 @@ public class IndexAction {
 
 **Backbone.js Advent Calendar 2012**
 
-- ← 前日　[Node.js + WebSocket + Backbone.js のすすめ](http://takesy.cocolog-nifty.com/atico/2012/12/nodejs-websocke.html)[](http://www.blogger.com/)（@takeshy）
-- → 後日　[おさわり。backbone の ajax 周りの処理とか。](http://1000ch.net/2012/12/18/AjaxOfBackbone/)（@1000ch）
+- ← 前日　[Node.js + WebSocket + Backbone.js のすすめ](https://takesy.cocolog-nifty.com/atico/2012/12/nodejs-websocke.html)[](https://www.blogger.com/)（@takeshy）
+- → 後日　[おさわり。backbone の ajax 周りの処理とか。](https://1000ch.net/2012/12/18/AjaxOfBackbone/)（@1000ch）
 
 **Aomori Advent Calendar 2012**
 
-- ← 前日　[茄子的　今年一番ヒットしたツールは・・・](http://nasunoblog.blogspot.jp/2012/12/blog-post.html)（@nasunotw）
-- → 後日　[なぜ Facebook は僕の中で今年一番ヒットしたのか？](http://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/facebook.html)（@kzki）
+- ← 前日　[茄子的　今年一番ヒットしたツールは・・・](https://nasunoblog.blogspot.jp/2012/12/blog-post.html)（@nasunotw）
+- → 後日　[なぜ Facebook は僕の中で今年一番ヒットしたのか？](https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/facebook.html)（@kzki）

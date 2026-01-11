@@ -16,7 +16,7 @@ OpenUI5 は UI フレームワークという名前の通り、多くの優れ�
 
 今回のデモはこちらで参照できます。
 
-[http://mitsuruog.github.io/sapui5-showroom/#/controls](http://mitsuruog.github.io/sapui5-showroom/#/controls)
+[https://mitsuruog.github.io/sapui5-showroom/#/controls](http://mitsuruog.github.io/sapui5-showroom/#/controls)
 
 <!-- more -->
 

@@ -7,7 +7,7 @@ tags: [android, chrome devtools]
 categories: ["Blog", "開発ツール"]
 ---
 
-2013/10/30 に「[Frontrend x Chrome Tech Talk Night E<span id="goog_1836471854"></span><span id="goog_1836471855"></span>xtended](http://frontrend.github.io/events/chrome/)」が開催され、Addy 氏、Jake 氏、Paul 氏が来日して、最新のモバイル開発のための様々な手法を紹介してくれました。
+2013/10/30 に「[Frontrend x Chrome Tech Talk Night E<span id="goog_1836471854"></span><span id="goog_1836471855"></span>xtended](https://frontrend.github.io/events/chrome/)」が開催され、Addy 氏、Jake 氏、Paul 氏が来日して、最新のモバイル開発のための様々な手法を紹介してくれました。
 そこで聞いた内容をもとに、エンタープライズで適用できそうなものを、中立な目線で評価・検証していたのですが、ChromeDevtools のが凄すぎて、終わってみたら ChromeDevtools ばっかり評価・検証していた（おいおい！）という話をします。
 
 ちなみに、Android 開発はほとんどやったことはありません。  
@@ -15,9 +15,9 @@ categories: ["Blog", "開発ツール"]
 
 <!-- more -->
 
-これの記事は[Frontrend Advent Calendar 2013](http://www.adventar.org/calendars/62)の 12 日目の記事です。  
+これの記事は[Frontrend Advent Calendar 2013](https://www.adventar.org/calendars/62)の 12 日目の記事です。  
 前日の記事は[light Chen さん]・・・まだ書いてない＞＜;  
-明日の記事は[[pocotan001 さん]Gist Slides（仮）を作った。 - pocotumblr](http://pocotumblr.tumblr.com/post/69868810750/gist-slides)
+明日の記事は[[pocotan001 さん]Gist Slides（仮）を作った。 - pocotumblr](https://pocotumblr.tumblr.com/post/69868810750/gist-slides)
 
 ## はじめに
 
@@ -143,7 +143,7 @@ Remote Debugging と Screencasting。非常に強力でしたね。これらを�
 
 ### 謝辞
 
-最後に、この内容は 2013/10/30 にサイバーエージェントで開催された「[Frontrend x Chrome Tech Talk Night Extended](http://frontrend.github.io/events/chrome/)」で聞いた内容を元にしています。
+最後に、この内容は 2013/10/30 にサイバーエージェントで開催された「[Frontrend x Chrome Tech Talk Night Extended](https://frontrend.github.io/events/chrome/)」で聞いた内容を元にしています。
 
 本当にサイバーエージェントの Frontrend の方々、最高です！！
 ありがとう！！

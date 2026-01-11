@@ -7,7 +7,7 @@ tags: [backbone, localstorage, jasmine]
 categories: ["Blog", "フレームワーク"]
 ---
 
-このエントリは[Backbone.js Advent Calendar 2012](http://www.adventar.org/calendars/15)の 5 日目の記事です。
+このエントリは[Backbone.js Advent Calendar 2012](https://www.adventar.org/calendars/15)の 5 日目の記事です。
 
 [前回](2012/12/backbonelocalstoragejsbackbonesync)の Backbone.Sync と backbone.localstorage.js の話の続きで、Backbone.Model から見る Backbone.Collection との関連性についてお話します。
 
@@ -19,8 +19,8 @@ categories: ["Blog", "フレームワーク"]
 
 ## はじめに
 
-前回のテストコードですが、[Backbone.localstorage.js 本家](http://goo.gl/v1gFX)のテストコードを見たところ、どうやら Backbone.Collection の create()を使うのが正しい使い方ようなので、次のように書き直しました。  
-（ちなみにユニットテストは[Jasmine](http://goo.gl/IUtf)を使ってます。）
+前回のテストコードですが、[Backbone.localstorage.js 本家](https://goo.gl/v1gFX)のテストコードを見たところ、どうやら Backbone.Collection の create()を使うのが正しい使い方ようなので、次のように書き直しました。  
+（ちなみにユニットテストは[Jasmine](https://goo.gl/IUtf)を使ってます。）
 
 ```js
 describe("test localstorage", function () {
@@ -110,14 +110,14 @@ model.collection = this;
 
 他にも Collection の中で`_prepareModel()`呼んでいる場所を調べたところ、`create()`も含めて 4 箇所ありました。
 
-- [add](http://backbonejs.org/#Collection-add)
-- [push](http://backbonejs.org/#Collection-push)
-- [unshift](http://backbonejs.org/#Collection-unshift)
-- [create](http://backbonejs.org/#Collection-create)
+- [add](https://backbonejs.org/#Collection-add)
+- [push](https://backbonejs.org/#Collection-push)
+- [unshift](https://backbonejs.org/#Collection-unshift)
+- [create](https://backbonejs.org/#Collection-create)
 
 まだ Backbone の全体を見通せてないので、作ってて所々（？）となることがあります。ソースコード印刷して電車で読むことにしました。
 
 **Backbone.js Advent Calendar 2012**
 
-- ← 前日　[Backbone.js の MVC について](http://goo.gl/J28KM)（@tomof）
-- → 後日　[Backbone.js 日本語リファレンス](http://ando19721226.github.com/Backbone/)[](http://www.blogger.com/blogger.g?blogID=5596737312884238083)（@ando）
+- ← 前日　[Backbone.js の MVC について](https://goo.gl/J28KM)（@tomof）
+- → 後日　[Backbone.js 日本語リファレンス](https://ando19721226.github.com/Backbone/)[](https://www.blogger.com/blogger.g?blogID=5596737312884238083)（@ando）

@@ -16,7 +16,7 @@ categories: ["Blog", "API・バックエンド連携"]
 
 今回の内容は、こちらの公式ドキュメントに基づくものです。
 
-[Mongoose Query Population v3.8.23](http://mongoosejs.com/docs/populate.html)
+[Mongoose Query Population v3.8.23](https://mongoosejs.com/docs/populate.html)
 
 ## スキーマ定義
 
@@ -172,13 +172,13 @@ var options = {
 
 特にこのやり取りが読んでて興味深かったです。
 
-[node.js - Mongoose populate vs object nesting - Stack Overflow](http://stackoverflow.com/questions/24096546/mongoose-populate-vs-object-nesting)
+[node.js - Mongoose populate vs object nesting - Stack Overflow](https://stackoverflow.com/questions/24096546/mongoose-populate-vs-object-nesting)
 
 ちなみにネストした population を多用すると、海外の熱心な mongodb ファンから怒られるので注意です w
 
-[node.js - Mongoose: How to populate 2 level deep population without populating fields of first level? in mongodb - Stack Overflow](http://stackoverflow.com/questions/27168022/mongoose-how-to-populate-2-level-deep-population-without-populating-fields-of-f)
+[node.js - Mongoose: How to populate 2 level deep population without populating fields of first level? in mongodb - Stack Overflow](https://stackoverflow.com/questions/27168022/mongoose-how-to-populate-2-level-deep-population-without-populating-fields-of-f)
 
 ## 参考文献
 
-- [Node.js - Mongoose でネストした populate の書き方 - Qiita](http://qiita.com/Teloo/items/824447cfbb9b16dee215)
+- [Node.js - Mongoose でネストした populate の書き方 - Qiita](https://qiita.com/Teloo/items/824447cfbb9b16dee215)
 - [Can't make nested populate in new mongoose 3.6rc0 · Issue #1377 · LearnBoost/mongoose](https://github.com/LearnBoost/mongoose/issues/1377)

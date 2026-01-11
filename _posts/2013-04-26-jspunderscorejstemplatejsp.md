@@ -19,7 +19,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/underscore.png)
 
-まず、手軽にクライアントサイドテンプレートを導入するのであれば、[jQueryTmplate](https://github.com/jquery/jquery-tmpl)か[Underscore.js](http://underscorejs.org/)を使うのが良いと思います。
+まず、手軽にクライアントサイドテンプレートを導入するのであれば、[jQueryTmplate](https://github.com/jquery/jquery-tmpl)か[Underscore.js](https://underscorejs.org/)を使うのが良いと思います。
 特に、Underscore.js は Java でいう apache commons のような、かゆいところに手が届く系の Utility 関数の詰め合わせなので、template 以外でも使いどころがありオススメです。
 
 ## JSP で underscore.js のテンプレートを使う際に少しハマッたこと

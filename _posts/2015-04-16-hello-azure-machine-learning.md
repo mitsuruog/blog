@@ -10,13 +10,13 @@ categories: ["Blog", "雑記"]
 機械学習(以下、ML)についてもそろそろやったおかないといけないので、Azure Machine Learning(以下、AzureML)を試してみました。
 内容はこちらにあるチュートリアルです。
 
-[Create a simple experiment in Machine Learning Studio | Azure](http://azure.microsoft.com/en-us/documentation/articles/machine-learning-create-experiment/)
+[Create a simple experiment in Machine Learning Studio | Azure](https://azure.microsoft.com/en-us/documentation/articles/machine-learning-create-experiment/)
 
 <!-- more -->
 
 こちらが上の日本語版です。
 
-[Machine Learning Studio での簡単な実験の作成 | Azure](http://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)
+[Machine Learning Studio での簡単な実験の作成 | Azure](https://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)
 
 AzureML の中では、一連の ML の流れを`experiment(実験)`と呼んでいるようです。  
 このチュートリアルでは、自動車の価格データを元に分析モデルを機械学習で構築するものです。  
@@ -102,7 +102,7 @@ AzureML の中では、一連の ML の流れを`experiment(実験)`と呼んで
 ここまでで、データの作成部分が終わりました。  
 情報処理の世界にある、「ガーベジイン・ガーベジアウト」という言葉について、ML の世界では特に大事な気がします。
 
-[GIGO](http://www.itmedia.co.jp/im/articles/0609/11/news088.html)
+[GIGO](https://www.itmedia.co.jp/im/articles/0609/11/news088.html)
 
 ## 2. モデルのトレーニング
 
@@ -112,7 +112,7 @@ AzureML の中では、一連の ML の流れを`experiment(実験)`と呼んで
 
 - 分類(Classification)は、色 (赤、青、または緑) のような定義された一連の値から予測するために使用します。
 - 回帰(Regression)は、人の年齢のような連続した一連の値から予測するために使用します。
-  > > [Machine Learning Studio での簡単な実験の作成 | Azure](http://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)より
+  > > [Machine Learning Studio での簡単な実験の作成 | Azure](https://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)より
 
 今回予測する自動車の価格は、連続した値をとると予測できるので、最も単純な`線形回帰`を用いて学習させていきます。
 
@@ -207,7 +207,7 @@ volvo が突出して高いですね。
 
 > 各誤差の統計値は、小さいほど優れています。つまり値が小さくなるほど、予測が実際の値に近くなることを意味します。
 > 決定係数では、値が 1 (1.0) に近づくほど、予測の精度が高くなります。  
-> [Machine Learning Studio での簡単な実験の作成 | Azure](http://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)より
+> [Machine Learning Studio での簡単な実験の作成 | Azure](https://azure.microsoft.com/ja-jp/documentation/articles/machine-learning-create-experiment/)より
 
 す、すみません。まったくわかりません。
 
@@ -229,4 +229,4 @@ ML を行う上で大事な事は「分析モデル」だなと感じました�
 
 既に面白いことやられている方もいるようで、目的に応じてカジュアルに使いこなせるようになるといいなと思います。
 
-[Azure Machine Learning と IoT を駆使して室温予測システムを構築してみた - がりらぼ](http://garicchi.hatenablog.jp/entry/2015/03/01/155845)
+[Azure Machine Learning と IoT を駆使して室温予測システムを構築してみた - がりらぼ](https://garicchi.hatenablog.jp/entry/2015/03/01/155845)

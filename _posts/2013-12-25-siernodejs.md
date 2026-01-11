@@ -20,7 +20,7 @@ categories: ["Blog", "キャリア・働き方"]
 
 ## 1. 教材について
 
-はじめに、教材の利用とリポジトリの Fork 許可してくれた[@yosuke_furukawa](http://twitter.com/yosuke_furukawa)さん、本当にありがとうございました！
+はじめに、教材の利用とリポジトリの Fork 許可してくれた[@yosuke_furukawa](https://twitter.com/yosuke_furukawa)さん、本当にありがとうございました！
 
 本家のリソースはこちらです。
 

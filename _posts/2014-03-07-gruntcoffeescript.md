@@ -21,7 +21,7 @@ Grunt での CoffeeScript のコンパイル方法について、個人的に調
 4.  まとめ
 
 最初に、CoffeeScript をコンパイルする Grunt プラグインですが、こちらを使います。
-[https://github.com/gruntjs/grunt-contrib-coffee](http://gruntjs/grunt-contrib-coffee)
+[https://github.com/gruntjs/grunt-contrib-coffee](https://gruntjs/grunt-contrib-coffee)
 
 node.js がインストールされている環境で、次のコマンドを実行してください。
 
@@ -80,7 +80,7 @@ coffee: {
 Grunt では、ファイルの指定を動的に行うための DynamicMapping という仕組みを持っていて、今回はこれを使ってます。詳しくは本家のページをどうぞ。
 
 Configuring tasks - Grunt: The JavaScript Task Runner
-[ http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically](http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically)
+[ https://gruntjs.com/configuring-tasks#building-the-files-object-dynamically](http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically)
 
 ## 3.マルチ（n->n）＋ちょっとカスタム
 

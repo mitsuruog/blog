@@ -10,11 +10,11 @@ categories: ["Blog", "テスト"]
 socket.io で有名な LearnBoost が公開している Node 製 SeleniumServer クライアントをさくっと紹介します。
 だって、フロントエンドエンジニアは Javascript で Selenium 動かしたいんだもん。
 
-この記事は[Selenium Advent Calendar 2013](http://www.adventar.org/calendars/128)の 19 日目の記事です。
+この記事は[Selenium Advent Calendar 2013](https://www.adventar.org/calendars/128)の 19 日目の記事です。
 
-前の記事は[[hinac0 さん]Selenium vs Mercury](http://0dan5.wordpress.com/2013/12/18/1-3/)
+前の記事は[[hinac0 さん]Selenium vs Mercury](https://0dan5.wordpress.com/2013/12/18/1-3/)
 
-次の記事は[[らんさぶさん]Selenium Tips - つれづれなるままに。](http://dolias2010.hatenablog.com/entry/2013/12/20/012714)
+次の記事は[[らんさぶさん]Selenium Tips - つれづれなるままに。](https://dolias2010.hatenablog.com/entry/2013/12/20/012714)
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ brew install selenium-server-standalone
 ```
 
 公式サイトからダウンロードしても、もちろん構いません。
-[http://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/)
+[https://www.seleniumhq.org/download/](http://www.seleniumhq.org/download/)
 
 brew でインストールすると起動用のコマンドが表示されまうので、一旦覚えておきます。
 面倒なかたは ailas 張った方がいいでしょう。

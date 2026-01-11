@@ -25,7 +25,7 @@ categories: ["Blog", "開発ツール"]
 
 という訳で、行き着いたのが NorthWind の無料 ODataService でした。
 
-[http://services.odata.org/Northwind/Northwind.svc/](http://services.odata.org/Northwind/Northwind.svc/)
+[https://services.odata.org/Northwind/Northwind.svc/](http://services.odata.org/Northwind/Northwind.svc/)
 
 正攻法で攻めると localhost で実行している Web アプリケーションに対して、services.odata.org のドメインから取得したデータをマッシュアップするので、立派な同一生成元ポリシー違反が成立します。
 
@@ -53,7 +53,7 @@ categories: ["Blog", "開発ツール"]
 Windows には Windows の作法がある！早速、Microsoft 謹製のデバック用プロキシツール「Fiddler」を使う事にしました。
 Fiddler2 でのリバースプロキシ作成方法の公式ドキュメントはこちらです。
 
-[Use Fiddler as a Reverse Proxy](http://docs.telerik.com/fiddler/configure-fiddler/tasks/usefiddlerasreverseproxy)
+[Use Fiddler as a Reverse Proxy](https://docs.telerik.com/fiddler/configure-fiddler/tasks/usefiddlerasreverseproxy)
 
 レジストリを変更する方法と、直接ルールを変更する方法の 2 種類あるのですが、今回は URL に対する細かい指定を行いたいので、直接ルールを書き換える方法にしました。
 
@@ -83,11 +83,11 @@ static function OnBeforeRequest(oSession: Session) {
 
 こちらの記事も参考になりました。
 
-[Using Fiddler as a Reverse Proxy - Stack Overflow](http://stackoverflow.com/questions/9831044/using-fiddler-as-a-reverse-proxy)
+[Using Fiddler as a Reverse Proxy - Stack Overflow](https://stackoverflow.com/questions/9831044/using-fiddler-as-a-reverse-proxy)
 
 ルールファイルの細かな設定方法はこちら。（ちょっと読みにくいです。）
 
-[Fiddler Web Debugger - Script Samples](http://fiddlerbook.com/Fiddler/dev/ScriptSamples.asp)
+[Fiddler Web Debugger - Script Samples](https://fiddlerbook.com/Fiddler/dev/ScriptSamples.asp)
 
 リバースプロキシって素敵。
 
