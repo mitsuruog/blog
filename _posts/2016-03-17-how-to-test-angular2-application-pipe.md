@@ -19,16 +19,16 @@ Angular2 の実装の方法は記事をよく目にする機会が増えたの�
 
 ## Angular2 Unit Testing
 
-1. [準備](/2016/03/how-to-test-angular2-application-1.html)
-1. [基本](/2016/03/how-to-test-angular2-application-basic.html)
+1. [準備](/2016/03/how-to-test-angular2-application-1/)
+1. [基本](/2016/03/how-to-test-angular2-application-basic/)
 1. Mock, Spy の基本(TBD)
-1. [DOM のテスト](/2016/03/how-to-test-angular2-application-dom.html)
-1. [XHR のテスト](/2016/03/how-to-test-angular2-application-xhr.html)
+1. [DOM のテスト](/2016/03/how-to-test-angular2-application-dom/)
+1. [XHR のテスト](/2016/03/how-to-test-angular2-application-xhr/)
 1. Component のテスト(TBD)
 1. Service のテスト(TBD)
-1. [Pipe のテスト](/2016/03/how-to-test-angular2-application-pipe.html)
+1. [Pipe のテスト](/2016/03/how-to-test-angular2-application-pipe/)
 1. Directive のテスト(TBD)
-1. [カバレッジ](/2016/03/how-to-test-angular2-application-coverage.html)
+1. [カバレッジ](/2016/03/how-to-test-angular2-application-coverage/)
 
 ## Pipe のテスト
 
