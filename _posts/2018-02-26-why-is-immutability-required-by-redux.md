@@ -5,7 +5,7 @@ date: 2018-02-26 0:00:00 +900
 comments: true
 tags: [react, redux]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-logo.png
 ---
 
 今日は Redux ユーザーが最もハマるポイントだと個人的に思っている、state の不正変更とその検出方法について紹介します。
@@ -15,7 +15,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/
 
 まず最初に Redux の state 変更検知の仕組みについておさらいします。概要だけ紹介するため、詳細は公式ドキュメントも合わせて参照してください。
 
-- Immutable Data - Redux <https:https://redux.js.org/faq/immutable-data>
+- Immutable Data - Redux <https://redux.js.org/faq/immutable-data>
 
 Redux の state の変更検知には「**shallow equality checking**」という仕組みを使っています。
 shallow equality とは、あるネストしたオブジェクトがあった場合、**全ての値をチェックしているのではなく、このオブジェクトが格納されている参照(マシンメモリの番地)が正しいことをチェックする**ことです。そのため「reference equality」とも言われているようです。
@@ -62,7 +62,7 @@ componentWillReceiveProps(nextProps) {
 
 この状態を redux-dev-tool で見ると次のようになります。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-01.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-01.png)
 
 > state を変更しているはずだが、redux-dev-tool の diff には何も現れてこない。
 
@@ -72,15 +72,15 @@ componentWillReceiveProps(nextProps) {
 
 公式に「Immutable Update Patterns」というドキュメントがあるので、これに習って state を変更します。(これくらい state の更新には細心の注意が必要です)
 
-- Immutable Update Patterns · Redux <https:https://redux.js.org/docs/recipes/reducers/ImmutableUpdatePatterns.html>
+- Immutable Update Patterns · Redux <https://redux.js.org/docs/recipes/reducers/ImmutableUpdatePatterns.html>
 
 Immutable Update Patterns を見るとわかるのですが、かなり面倒です。
 そのため通常は、なんからのユーティリティライブラリの力を借りている方も多いかと思います。
 
 - kolodny/immutability-helper: mutate a copy of data without changing the original source
-  <https:https://github.com/kolodny/immutability-helper>
+  <https://github.com/kolodny/immutability-helper>
 - debitoor/dot-prop-immutable: Immutable version of dot-prop with some extensions
-  <https:https://github.com/debitoor/dot-prop-immutable>
+  <https://github.com/debitoor/dot-prop-immutable>
 
 しかし、上で話した通り JavaScript の言語仕様もあり、うっかり事故が絶えません。
 そのため個人的には、なんからの**検知の仕組みをプロジェクトに導入するのが上策**だと考えました。
@@ -90,7 +90,7 @@ Immutable Update Patterns を見るとわかるのですが、かなり面倒で
 Redux の middleware に state の不正変更を検知するものがあったので、これを使います。
 
 - leoasis/redux-immutable-state-invariant: Redux middleware that detects mutations between and outside redux dispatches. For development use only.
-  <https:https://github.com/leoasis/redux-immutable-state-invariant>
+  <https://github.com/leoasis/redux-immutable-state-invariant>
 
 ### redux-immutable-state-invariant を導入する
 
@@ -118,7 +118,7 @@ const store = createStore(reducers, applyMiddleware(...middleware));
 
 middleware を導入した状態で、state を不正変更すると次のようなエラーが発生します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-02.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-02.png)
 
 **警告ではなくエラー**なので注意が必要です。既に state を不正変更コードがある場合、最悪アプリケーションが動作しなくなります。
 

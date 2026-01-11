@@ -19,7 +19,7 @@ D3.js まだまだ奥が深いので、私が紹介する以外にもっとい�
 
 Codepen にサンプル作りました。
 
-[TimeChart](https:https://codepen.io/mitsuruog/pen/bzqgKG/)
+[TimeChart](https://codepen.io/mitsuruog/pen/bzqgKG/)
 
 ## 苦労したこと
 
@@ -60,7 +60,7 @@ var xAxis = d3.svg.axis().scale(xScale).orient("top").ticks(d3.time.minute, 60);
 細かな単位の指定などはこちら
 (Intervals を指定すればいいと思われる。)
 
-[Time Intervals · mbostock/d3 Wiki](https:https://github.com/mbostock/d3/wiki/Time-Intervals)
+[Time Intervals · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Time-Intervals)
 
 ### 時間軸のラベルフォーマットしたい
 
@@ -76,7 +76,7 @@ var xAxis = d3.svg
 
 フォーマット書式はこちら
 
-[Time Formatting · mbostock/d3 Wiki](https:https://github.com/mbostock/d3/wiki/Time-Formatting)
+[Time Formatting · mbostock/d3 Wiki](https://github.com/mbostock/d3/wiki/Time-Formatting)
 
 よく使いそうなもの
 
@@ -89,7 +89,7 @@ var xAxis = d3.svg
 %S - second as a decimal number [00,61].
 ```
 
-[javascript - how to format time on xAxis use d3.js - Stack Overflow](https:https://stackoverflow.com/questions/15471224/how-to-format-time-on-xaxis-use-d3-js)
+[javascript - how to format time on xAxis use d3.js - Stack Overflow](https://stackoverflow.com/questions/15471224/how-to-format-time-on-xaxis-use-d3-js)
 
 ### 軸のメモリ線(？)を消したい
 
@@ -107,7 +107,7 @@ var xAxis = d3.svg
 
 ここの記事がわかりやすかったので、これを見れば十分。
 
-[D3.js の折れ線グラフにグリッド線を追加する | Qaramell Blog](https:https://blog.qaramell.com/?p=12911)
+[D3.js の折れ線グラフにグリッド線を追加する | Qaramell Blog](https://blog.qaramell.com/?p=12911)
 
 ### 画面サイズに応じて軸ラベルを回転させたい
 
@@ -167,7 +167,7 @@ var xAxis = d3.svg
   });
 ```
 
-[javascript - Give d3 ordinal axis labels different from scale names - Stack Overflow](https:https://stackoverflow.com/questions/19994328/give-d3-ordinal-axis-labels-different-from-scale-names)
+[javascript - Give d3 ordinal axis labels different from scale names - Stack Overflow](https://stackoverflow.com/questions/19994328/give-d3-ordinal-axis-labels-different-from-scale-names)
 
 ### ラベルの文字が長い場合に改行したい
 
@@ -204,7 +204,7 @@ svg
 }
 ```
 
-[nvd3.js - How to do wordwrap for chart labels using d3.js - Stack Overflow](https:https://stackoverflow.com/questions/16039693/how-to-do-wordwrap-for-chart-labels-using-d3-js)
+[nvd3.js - How to do wordwrap for chart labels using d3.js - Stack Overflow](https://stackoverflow.com/questions/16039693/how-to-do-wordwrap-for-chart-labels-using-d3-js)
 
 ### 軸の domain 範囲を超えたデータがある場合に表示させない
 
@@ -236,7 +236,7 @@ window.addEventListener("resize", function () {
 d3.select("svg").selectAll("*").remove();
 ```
 
-[d3.js - how do I remove all children elements from a node and them apply them again with different color and size? - Stack Overflow](https:https://stackoverflow.com/questions/14422198/how-do-i-remove-all-children-elements-from-a-node-and-them-apply-them-again-with)
+[d3.js - how do I remove all children elements from a node and them apply them again with different color and size? - Stack Overflow](https://stackoverflow.com/questions/14422198/how-do-i-remove-all-children-elements-from-a-node-and-them-apply-them-again-with)
 
 ### 雑感
 
@@ -249,10 +249,10 @@ D3.js でタイムチャートで作ってみましたが、1 点ものの作品
 
 このあたりが有名どこでしょうか。簡単なチャートであれば積極的に使っていきたいです。
 
-- [C3.js | D3-based reusable chart library](https:https://c3js.org/)
-- [Epoch by Fastly](https:https://fastly.github.io/epoch/)
-- [Angular-charts](https:https://chinmaymk.github.io/angular-charts/#)
+- [C3.js | D3-based reusable chart library](https://c3js.org/)
+- [Epoch by Fastly](https://fastly.github.io/epoch/)
+- [Angular-charts](https://chinmaymk.github.io/angular-charts/#)
 
 D3.js じゃないけど、気になってるやつ
 
-- [Chart.js | Documentation](https:https://www.chartjs.org/docs/#radar-chart)
+- [Chart.js | Documentation](https://www.chartjs.org/docs/#radar-chart)

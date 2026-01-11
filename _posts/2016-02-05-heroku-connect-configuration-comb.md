@@ -5,10 +5,10 @@ date: 2016-02-05 00:00:00 +900
 comments: true
 tags: [heroku, heroku connect, nodejs]
 categories: ["Blog", "インフラ"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect.png
 ---
 
-[Heroku Connect](https:https://www.heroku.com/connect)は、Salesforce と Heroku 上の postgres とを接続するアドオンです。
+[Heroku Connect](https://www.heroku.com/connect)は、Salesforce と Heroku 上の postgres とを接続するアドオンです。
 
 Heroku Connect を使うことで、ほぼリアルタイムに Salesforce と Heroku のデータを同期させることができます。
 これにより、Heroku 上で Salesforce のデータを利用することができ、これまでの Salesforce の常識にとらわれない新しい Saleforce の使い方が可能になります。
@@ -20,7 +20,7 @@ Heroku Connect を実際に利用して、Configuration ファイル仕様が辛
 ## モチベーション
 
 ここでの Configuration とは、Salesforce 上のオブジェクトと Heroku の postgres 上のカラムを紐付けている Mapping 定義のことです。
-Configuration は Heroku Connect のダッシュボードや[heroku コマンドのプラグイン](https:https://github.com/heroku/heroku-connect-plugin)をインストールすることで、JSON としてエクスポートすることができます。
+Configuration は Heroku Connect のダッシュボードや[heroku コマンドのプラグイン](https://github.com/heroku/heroku-connect-plugin)をインストールすることで、JSON としてエクスポートすることができます。
 
 こちらがエクスポートしたものです。
 
@@ -159,7 +159,7 @@ Mapping を変更していないにも関わらず、エクスポートするた
 システム開発を行う過程で Mapping の変更はそれなりの頻度があり、Configuration ファイルにて変更点を管理したいのですが、これでは変更点がわかりません。
 そこで、アルファベット順でソートする node モジュールを書きました。
 
-[mitsuruog/heroku-connect-configuration-comb: Makes your Heroku Connect Configuration beautiful](https:https://github.com/mitsuruog/heroku-connect-configuration-comb)
+[mitsuruog/heroku-connect-configuration-comb: Makes your Heroku Connect Configuration beautiful](https://github.com/mitsuruog/heroku-connect-configuration-comb)
 
 ## 使い方
 

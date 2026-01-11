@@ -15,10 +15,10 @@ categories: ["Blog", "フロントエンド基礎"]
 
 <!-- more -->
 
-ちなみにこの記事は[Frontrend Advent Calendar 2014 - Qiita](https:https://qiita.com/advent-calendar/2014/frontrend)の 6 日目の記事です。
+ちなみにこの記事は[Frontrend Advent Calendar 2014 - Qiita](https://qiita.com/advent-calendar/2014/frontrend)の 6 日目の記事です。
 
-- 5 日目[はじめての CSS 設計 - Qiita(@moschann)](https:https://qiita.com/moschann/items/c7cbf62056d77cbc1d66)
-- 7 日目[CSS のプリプロセスとポストプロセス、そして Rework と PostCSS(@morishitter)](https:https://morishitter.hatenablog.com/entry/2014/12/07/000205)
+- 5 日目[はじめての CSS 設計 - Qiita(@moschann)](https://qiita.com/moschann/items/c7cbf62056d77cbc1d66)
+- 7 日目[CSS のプリプロセスとポストプロセス、そして Rework と PostCSS(@morishitter)](https://morishitter.hatenablog.com/entry/2014/12/07/000205)
 
 ## 良いスタイルガイドとは
 
@@ -57,7 +57,7 @@ var items = new Array();
 var items = [];
 ```
 
-> [mitsuruog/Javacript-style-guide | オブジェクト](https:https://mitsuruog.github.io/javacript-style-guide/#objects)より
+> [mitsuruog/Javacript-style-guide | オブジェクト](https://mitsuruog.github.io/javacript-style-guide/#objects)より
 
 スタイルガイドを読むことで基本的な部分では悩まなくなります。基本的なことで悩まないということは、本当にやるべきところで悩むことに集中するために大切なことです。
 
@@ -92,7 +92,7 @@ Dashboard.$inject = ["$location", "$routeParams", "common", "dataservice"];
 function Dashboard($location, $routeParams, common, dataservice) {}
 ```
 
-> [johnpapa/angularjs-styleguide | Manually Identify Dependencies](https:https://github.com/johnpapa/angularjs-styleguide#style-y091)より
+> [johnpapa/angularjs-styleguide | Manually Identify Dependencies](https://github.com/johnpapa/angularjs-styleguide#style-y091)より
 
 また、DI の部分を以下のように省略して書いてしまうとソースコードを Minify したときにエラーになるという地雷も発見することができました。
 
@@ -116,7 +116,7 @@ function Dashboard(common, dataservice) {
 }
 ```
 
-> [johnpapa/angularjs-styleguide | UnSafe from Minification](https:https://github.com/johnpapa/angularjs-styleguide#style-y090)より
+> [johnpapa/angularjs-styleguide | UnSafe from Minification](https://github.com/johnpapa/angularjs-styleguide#style-y090)より
 
 これらの先人たちの地と涙を汗の結晶である**地雷源情報**を参考にしない手はありませんね。
 
@@ -156,42 +156,42 @@ server.listen(port, ip, function () {
 
 ### Javascript
 
-airbnb のスタイルガイドを私が翻訳したものです。(本家はこちら[airbnb/javascript](https:https://github.com/airbnb/javascript))  
+airbnb のスタイルガイドを私が翻訳したものです。(本家はこちら[airbnb/javascript](https://github.com/airbnb/javascript))  
 有名なスタイルガイドは他にもいくつかあるのですが、内容とボリュームがちょうどいいと思います。
 
-- [mitsuruog/Javacript-style-guide](https:https://mitsuruog.github.io/javacript-style-guide/)
+- [mitsuruog/Javacript-style-guide](https://mitsuruog.github.io/javacript-style-guide/)
 
 もうちょっと手が動く様になるとこちらも読むといいです。
 
-- [JavaScript Garden](https:https://bonsaiden.github.io/JavaScript-Garden/ja/)
+- [JavaScript Garden](https://bonsaiden.github.io/JavaScript-Garden/ja/)
 
 ### Backbone
 
-スタイルガイドというかパターン集ですね。最近の Backbone は[Marionette.js](https:https://marionettejs.com/)を併用することが多いので、これはもうあまり出番がないかも。。。
+スタイルガイドというかパターン集ですね。最近の Backbone は[Marionette.js](https://marionettejs.com/)を併用することが多いので、これはもうあまり出番がないかも。。。
 
-- [rstacruz/Backbone patterns](https:https://ricostacruz.com/backbone-patterns/)
+- [rstacruz/Backbone patterns](https://ricostacruz.com/backbone-patterns/)
 
 ### AngularJS
 
 AngularJS はこれを読んでおけばいいです。
 
-- [johnpapa/angularjs-styleguide](https:https://github.com/johnpapa/angularjs-styleguide)
+- [johnpapa/angularjs-styleguide](https://github.com/johnpapa/angularjs-styleguide)
 
 ### CSS
 
 基本ですね。
 
-- [idiomatic-css/translations/ja-JP](https:https://github.com/necolas/idiomatic-css/tree/master/translations/ja-JP)
+- [idiomatic-css/translations/ja-JP](https://github.com/necolas/idiomatic-css/tree/master/translations/ja-JP)
 
 本格的に勉強したい場合はまずこちらを読むといいです。
 
-- [SMACSS E-book 日本語](https:https://shop.smacss.com/products/smacss-e-book)
+- [SMACSS E-book 日本語](https://shop.smacss.com/products/smacss-e-book)
 
 ### HTML
 
 結構マークアップで悩む事が多いので、参考になります。
 
-- [hail2u/html-best-practices](https:https://github.com/hail2u/html-best-practices)
+- [hail2u/html-best-practices](https://github.com/hail2u/html-best-practices)
 
 ## まとめ
 

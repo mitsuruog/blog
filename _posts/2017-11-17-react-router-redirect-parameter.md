@@ -5,10 +5,10 @@ date: 2017-11-17 0:00:00 +900
 comments: true
 tags: [react, react-router, reacr-router-4]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-router-4.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/react-router-4.png
 ---
 
-[react-router v4](https:https://github.com/ReactTraining/react-router)の小ネタ。
+[react-router v4](https://github.com/ReactTraining/react-router)の小ネタ。
 
 <!-- more -->
 
@@ -51,4 +51,4 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/
 
 > 同じようなこと考えて PR 送ってくれている人いるんですが、こりゃマージされないな。。。
 >
-> - <https:https://github.com/ReactTraining/react-router/pull/5368>
+> - <https://github.com/ReactTraining/react-router/pull/5368>

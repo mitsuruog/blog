@@ -7,20 +7,20 @@ tags: [angularjs, webapi]
 categories: ["Blog", "フレームワーク"]
 ---
 
-AngularJS を利用するメリットの 1 つとして、AngularJS が内包している[$resource](https:https://docs.angularjs.org/api/ngResource/service/$resource)を利用することで、バックエンドが提供する REST API との対話部分が簡潔に記述できることが挙げられます。
+AngularJS を利用するメリットの 1 つとして、AngularJS が内包している[$resource](https://docs.angularjs.org/api/ngResource/service/$resource)を利用することで、バックエンドが提供する REST API との対話部分が簡潔に記述できることが挙げられます。
 
 ところが、$resource の表面的な振る舞いを理解しただけでは、意外なところにハマりポイントがあるものです。今日はその辺りを少し紹介します。
 
 <!-- more -->
 
-[AngularJS Advent Calendar 2014 \- Adventar](https:https://adventar.org/calendars/350)16 日目の記事です。
+[AngularJS Advent Calendar 2014 \- Adventar](https://adventar.org/calendars/350)16 日目の記事です。
 
-- 15 日目[AngularJS - Promise を使おう - Qiita(@teyosh)](https:https://qiita.com/teyosh/items/d7d3c17f954318c88882)
-- 17 日目[AngularJS 1.3 へのアップデート(@kon.yuichi)](https:https://note.mu/konpyu/n/n1eb6c13c69d6)
+- 15 日目[AngularJS - Promise を使おう - Qiita(@teyosh)](https://qiita.com/teyosh/items/d7d3c17f954318c88882)
+- 17 日目[AngularJS 1.3 へのアップデート(@kon.yuichi)](https://note.mu/konpyu/n/n1eb6c13c69d6)
 
 ## $resource の使い方
 
-> $resourceの細かい内容については[本家ドキュメント](https:https://docs.angularjs.org/api/ngResource/service/$resource)か[Qiita](https:https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=angular+%24resource)でググるといいと思います。
+> $resourceの細かい内容については[本家ドキュメント](https://docs.angularjs.org/api/ngResource/service/$resource)か[Qiita](https://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=angular+%24resource)でググるといいと思います。
 
 $resourceにURLを渡すだけで以下のような基本的なWebAPIが実行できるようになります。$resource を使う場合、`service`か`factory`の中で利用することがほとんどですね。
 
@@ -106,12 +106,12 @@ function MainCtrl(user, socket) {
 angular.module("app").controller("MainCtrl", MainCtrl);
 ```
 
-こちらの Stack Overflow を参考にしたのですが、改めて[公式ドキュメント](https:https://docs.angularjs.org/api/ngResource/service/$resource#usage_returns)読むと書いてありましたね。
+こちらの Stack Overflow を参考にしたのですが、改めて[公式ドキュメント](https://docs.angularjs.org/api/ngResource/service/$resource#usage_returns)読むと書いてありましたね。
 
 > It is important to realize that invoking a $resource object method immediately returns an empty reference  
 > ($resource を実行するとね、すぐに空の参照を返すから、心して使え。このボケがぁ！・・・超約)
 
-[json - AngularJs using $resource service. Promise is not resolved by GET request - Stack Overflow](https:https://stackoverflow.com/questions/20008244/angularjs-using-resource-service-promise-is-not-resolved-by-get-request/20008380?stw=2#20008380)
+[json - AngularJs using $resource service. Promise is not resolved by GET request - Stack Overflow](https://stackoverflow.com/questions/20008244/angularjs-using-resource-service-promise-is-not-resolved-by-get-request/20008380?stw=2#20008380)
 
 ## $resource との正しい(安全な)付き合いかた
 
@@ -135,10 +135,10 @@ function MainCtrl(user, socket) {
 angular.module("app").controller("MainCtrl", MainCtrl);
 ```
 
-各コントローラで promise を処理するのが面倒な場合は、15 日目[AngularJS - Promise を使おう - Qiita(@teyosh)](https:https://qiita.com/teyosh/items/d7d3c17f954318c88882)で紹介されているような、promise を処理するための factory を作ってラップするといいと思います。  
-(たしか、<a target="_blank" href="https:https://www.amazon.co.jp/gp/product/4873116678/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4873116678&linkCode=as2&tag=mitsuruog-22&linkId=bdd0c9b0152b6260907ab4e64036c67a">AngularJS アプリケーション開発ガイド</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=mitsuruog-22&l=am2&o=9&a=4873116678" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />のサンプルもそうなってたはず。)
+各コントローラで promise を処理するのが面倒な場合は、15 日目[AngularJS - Promise を使おう - Qiita(@teyosh)](https://qiita.com/teyosh/items/d7d3c17f954318c88882)で紹介されているような、promise を処理するための factory を作ってラップするといいと思います。  
+(たしか、<a target="_blank" href="https://www.amazon.co.jp/gp/product/4873116678/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4873116678&linkCode=as2&tag=mitsuruog-22&linkId=bdd0c9b0152b6260907ab4e64036c67a">AngularJS アプリケーション開発ガイド</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=mitsuruog-22&l=am2&o=9&a=4873116678" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />のサンプルもそうなってたはず。)
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https:https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=mitsuruog-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4873116678&linkId=d152ad4c622d40713fb4691ba63bcb90&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=mitsuruog-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4873116678&linkId=d152ad4c622d40713fb4691ba63bcb90&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
     </iframe>
     
 ## まとめ

@@ -5,7 +5,7 @@ date: 2016-03-08 00:35:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, unit test]
 categories: ["Blog", "テスト"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -36,16 +36,16 @@ Angular1 の場合と同様に、Angular2 でもユニットテストを実行�
 今回は、Angular1 経験者向けに変更点などを紹介します。
 
 サンプルはこちらを参考にしてください。
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)
 
 ## Karma ＋ Jasmine の構成はそのまま利用できる
 
 ユニットテストの構成は Angular1 と同じ構成です。
 
 - テストランナー
-  - [Karma](https:https://karma-runner.github.io/0.13/index.html)
+  - [Karma](https://karma-runner.github.io/0.13/index.html)
 - テスティングフレームワーク
-  - [Jasmine](https:https://jasmine.github.io/2.4/introduction.html)
+  - [Jasmine](https://jasmine.github.io/2.4/introduction.html)
 
 Karma の設定は次のような形です。
 
@@ -72,7 +72,7 @@ module.exports = function (config) {
     basePath: "",
 
     // frameworks to use
-    // available frameworks: https:https://npmjs.org/browse/keyword/karma-adapter
+    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ["jasmine"],
 
     // list of files / patterns to load in the browser
@@ -87,12 +87,12 @@ module.exports = function (config) {
     exclude: [],
 
     // preprocess matching files before serving them to the browser
-    // available preprocessors: https:https://npmjs.org/browse/keyword/karma-preprocessor
+    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {},
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
-    // available reporters: https:https://npmjs.org/browse/keyword/karma-reporter
+    // available reporters: https://npmjs.org/browse/keyword/karma-reporter
     reporters: ["mocha"],
 
     // web server port
@@ -109,7 +109,7 @@ module.exports = function (config) {
     autoWatch: true,
 
     // start these browsers
-    // available browser launchers: https:https://npmjs.org/browse/keyword/karma-launcher
+    // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ["Chrome"],
 
     // Continuous Integration mode
@@ -130,7 +130,7 @@ module.exports = function (config) {
 
 ## モジュールロードシステムが独自から systemjs に変更となった
 
-Angular2 で大きく変わった点の一つは、モジュールロードシステムが[systemjs](https:https://github.com/systemjs/systemjs)に変更された点です。
+Angular2 で大きく変わった点の一つは、モジュールロードシステムが[systemjs](https://github.com/systemjs/systemjs)に変更された点です。
 
 Angular1 はモジュール名の名前解決による独自のモジュールロードシステムを持っていました。
 基本的には`<script>`タグでロードした外部スクリプトを、Angular 上でモジュールとして再ロードすることで利用していました。
@@ -150,7 +150,7 @@ Angular2 では systemjs の設定ファイルにて利用する外部スクリ�
 1. テスト用のブラウザと接続
 1. Spec をロード&テスト実行
 
-[refs](https:https://github.com/mitsuruog/angular2-minimum-starter/blob/master/karma.shim.js)
+[refs](https://github.com/mitsuruog/angular2-minimum-starter/blob/master/karma.shim.js)
 
 ## サンプル Spec を作成して実行してみる
 
@@ -207,7 +207,7 @@ karma start karma.conf.js
 
 テストを実行すると結果が表示されます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-1-run.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/testing-angular2-1-run.png)
 
 ## まとめ
 
@@ -218,9 +218,9 @@ karma start karma.conf.js
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 (もちろんすぐテストできます！！)
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)
 
 ### 参考
 
-- [juliemr/ng2-test-seed: Work in Progress - Example, cloneable setup for an Angular2 application with tests.](https:https://github.com/juliemr/ng2-test-seed)
-- [ghpabs/angular2-seed-project: Angular 2 Seed Project – Gulp, TypeScript, Typings, Karma, Protractor, Sass and more.](https:https://github.com/ghpabs/angular2-seed-project)
+- [juliemr/ng2-test-seed: Work in Progress - Example, cloneable setup for an Angular2 application with tests.](https://github.com/juliemr/ng2-test-seed)
+- [ghpabs/angular2-seed-project: Angular 2 Seed Project – Gulp, TypeScript, Typings, Karma, Protractor, Sass and more.](https://github.com/ghpabs/angular2-seed-project)

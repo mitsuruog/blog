@@ -5,10 +5,10 @@ date: 2016-10-19 23:58:00 +900
 comments: true
 tags: [react, react-intl, i18n]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/localization.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/localization.png
 ---
 
-[react-intl](https:https://github.com/yahoo/react-intl)を使って React アプリを国際化してみたところ、結構良かったので紹介します。
+[react-intl](https://github.com/yahoo/react-intl)を使って React アプリを国際化してみたところ、結構良かったので紹介します。
 
 <!-- more -->
 
@@ -19,7 +19,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/
 
 ## react-intl とは
 
-[react-intl](https:https://github.com/yahoo/react-intl)は、React アプリの国際化を支援するための Component と幾つかの API を提供する、Yahoo 製のライブラリです。
+[react-intl](https://github.com/yahoo/react-intl)は、React アプリの国際化を支援するための Component と幾つかの API を提供する、Yahoo 製のライブラリです。
 メッセージだけではなく数値(通貨も含む)、日付など幅広く対応しています。
 
 今回は、メッセージの部分に特化して紹介します。
@@ -159,6 +159,6 @@ const MyComponent = () => {
 
 ## まとめ
 
-[react-intl](https:https://github.com/yahoo/react-intl)を使うと国際化が非常に楽です。
+[react-intl](https://github.com/yahoo/react-intl)を使うと国際化が非常に楽です。
 
 一工夫することで、pure な utility function としても使うことができるので、非常に利用用途が広い優秀なライブラリだと思います。

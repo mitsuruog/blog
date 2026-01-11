@@ -13,7 +13,7 @@ categories: ["Blog", "開発ツール"]
 
 <!-- more -->
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/fiddler2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/fiddler2.png)
 
 1.  背景
 2.  grunt-connect-proxy を使う
@@ -25,13 +25,13 @@ categories: ["Blog", "開発ツール"]
 
 という訳で、行き着いたのが NorthWind の無料 ODataService でした。
 
-[https:https://services.odata.org/Northwind/Northwind.svc/](https://services.odata.org/Northwind/Northwind.svc/)
+[https://services.odata.org/Northwind/Northwind.svc/](https://services.odata.org/Northwind/Northwind.svc/)
 
 正攻法で攻めると localhost で実行している Web アプリケーションに対して、services.odata.org のドメインから取得したデータをマッシュアップするので、立派な同一生成元ポリシー違反が成立します。
 
 そこで今回はリバースプロキシサーバーを立てて、サーバーで受け取ったリクエストの中で、特定の URL の一部（例えば「`http:https://localhost/Northwind`」の「`/Northwind/`」）にマッチしたリクエストを、NorthWind の OdataService に代わりに要求します。そして結果をフロント側に返します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/reverse.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/reverse.png)
 
 異なるドメインへのリクエストを裏でプロキシサーバーが代替わりしてくれるため、フロント側から見ると、サーバーは localhost しか見えないようになり、同一生成元ポリシー違反にならないのです。
 
@@ -39,12 +39,12 @@ categories: ["Blog", "開発ツール"]
 
 まず最初に試したことは、使い慣れた Grunt タスクを使うことでした。幸い、「grunt-contrib-connect」の兄弟分で「grunt-connect-proxy」というリバースプロキシが使えそうでしたので、試してみました。
 
-- [gruntjs/grunt-contrib-connect](https:https://github.com/gruntjs/grunt-contrib-connect)
-- [drewzboto/grunt-connect-proxy](https:https://github.com/drewzboto/grunt-connect-proxy)
+- [gruntjs/grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
+- [drewzboto/grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy)
 
 ところが、何度も試行錯誤したのですがうまく行きません。調べて見るとこんな Issue が w。（まじ、windows で動かないってなんなのー！orz）
 
-[Can't get proxy working with a basic test odata service: ECONNREFUSED · Issue #46 · drewzboto/grunt-connect-proxy](https:https://github.com/drewzboto/grunt-connect-proxy/issues/46)
+[Can't get proxy working with a basic test odata service: ECONNREFUSED · Issue #46 · drewzboto/grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy/issues/46)
 
 という訳で違う方法を試すことにしました。
 
@@ -53,7 +53,7 @@ categories: ["Blog", "開発ツール"]
 Windows には Windows の作法がある！早速、Microsoft 謹製のデバック用プロキシツール「Fiddler」を使う事にしました。
 Fiddler2 でのリバースプロキシ作成方法の公式ドキュメントはこちらです。
 
-[Use Fiddler as a Reverse Proxy](https:https://docs.telerik.com/fiddler/configure-fiddler/tasks/usefiddlerasreverseproxy)
+[Use Fiddler as a Reverse Proxy](https://docs.telerik.com/fiddler/configure-fiddler/tasks/usefiddlerasreverseproxy)
 
 レジストリを変更する方法と、直接ルールを変更する方法の 2 種類あるのですが、今回は URL に対する細かい指定を行いたいので、直接ルールを書き換える方法にしました。
 
@@ -83,11 +83,11 @@ static function OnBeforeRequest(oSession: Session) {
 
 こちらの記事も参考になりました。
 
-[Using Fiddler as a Reverse Proxy - Stack Overflow](https:https://stackoverflow.com/questions/9831044/using-fiddler-as-a-reverse-proxy)
+[Using Fiddler as a Reverse Proxy - Stack Overflow](https://stackoverflow.com/questions/9831044/using-fiddler-as-a-reverse-proxy)
 
 ルールファイルの細かな設定方法はこちら。（ちょっと読みにくいです。）
 
-[Fiddler Web Debugger - Script Samples](https:https://fiddlerbook.com/Fiddler/dev/ScriptSamples.asp)
+[Fiddler Web Debugger - Script Samples](https://fiddlerbook.com/Fiddler/dev/ScriptSamples.asp)
 
 リバースプロキシって素敵。
 

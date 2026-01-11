@@ -5,7 +5,7 @@ date: 2019-01-15 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "マネジメント"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations-logo.png
 ---
 
 （完全に自分用のメモです。）
@@ -13,9 +13,9 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/
 いくつか翻訳のプロジェクトを GitHub 持っているのですが、更新が年単位の間隔が開くことも珍しくないので、自分のために作業のワークフローを残しておこう。
 
 - Airbnb の JavaScript スタイルガイド
-  - <https:https://github.com/mitsuruog/javascript-style-guide>
+  - <https://github.com/mitsuruog/javascript-style-guide>
 - Clean Code For JavaScript
-  - <https:https://github.com/mitsuruog/clean-code-javascript>
+  - <https://github.com/mitsuruog/clean-code-javascript>
 
 ## アップデートのワークフロー
 
@@ -41,17 +41,17 @@ git remote add upstream <リポジトリURL>
 
 これは GitHub 上の GUI で作業できるので、 翻訳用のリポジトリ「New pull request」画面に移動して「compare accoss forks」の画面へ移動します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations1.png)
 
 ここで本家から翻訳用のリポジトリの`upstream`へ pull request を作ります。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/translations2.png)
 
 (左側に翻訳用リポジトリ。右側に本家です。)
 
 > 実際の pull request:
 >
-> - <https:https://github.com/mitsuruog/clean-code-javascript/pull/4>
+> - <https://github.com/mitsuruog/clean-code-javascript/pull/4>
 
 これでファイルの差分がわかるので、地道に  文書をアップデートしていきます。ちなみにここでマージした`upstream`が次回アップデートするためのスナップショットです。
 

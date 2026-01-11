@@ -7,7 +7,7 @@ tags: [html5, security, xss, cordova]
 categories: ["Blog", "フロントエンド基礎"]
 ---
 
-3/21 に[Web セキュリティ・ハンズオン 〜攻撃して学ぶ、HTML5 のセキュリティ〜](https:https://firefox-os.doorkeeper.jp/events/21218)に参加してきました。
+3/21 に[Web セキュリティ・ハンズオン 〜攻撃して学ぶ、HTML5 のセキュリティ〜](https://firefox-os.doorkeeper.jp/events/21218)に参加してきました。
 
 セキュリティ業界のガチ勢を目の前に、最近の Web のセキュリティについて自分はまだまだ素人だと思い知りました。
 いろいろ収穫のあったので忘れないうちにまとめておきたいと思います。
@@ -44,13 +44,13 @@ categories: ["Blog", "フロントエンド基礎"]
 <img src='#' onerror=alert(1) />
 ```
 
-[security - XSS attack with javascript in img src attribute - Stack Overflow](https:https://stackoverflow.com/questions/1798633/xss-attack-with-javascript-in-img-src-attribute)
+[security - XSS attack with javascript in img src attribute - Stack Overflow](https://stackoverflow.com/questions/1798633/xss-attack-with-javascript-in-img-src-attribute)
 
 わざとタグの中でエラーが起きるような記述をして`onerror`を発火させます。同様に`mousemove`とかでもできます。
 
 もう一つ XSS できる方法があって、SNS に投稿する画像の exif に攻撃コードを注入する方法です。
 
-[EXIF Cross Site Scripting, PHP Fun | Barry Shteiman](https:https://www.sectorix.com/2013/12/02/exif-cross-site-scripting-php-fun/)
+[EXIF Cross Site Scripting, PHP Fun | Barry Shteiman](https://www.sectorix.com/2013/12/02/exif-cross-site-scripting-php-fun/)
 
 この SNS は画像に付加されている撮影カメラの機種(？)を表示する仕様でした。そこに XSS 脆弱性があった訳です。
 
@@ -67,7 +67,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 手前味噌で恐縮ですが、以前こんな記事書きました。
 
-[JWT(Json Web Token)を利用した WebAPI での Credential の受け渡しについて](https:https://blog.mitsuruog.info/2014/08/jwtjson-web-tokenwebapicredential.html)
+[JWT(Json Web Token)を利用した WebAPI での Credential の受け渡しについて](https://blog.mitsuruog.info/2014/08/jwtjson-web-tokenwebapicredential.html)
 
 ### ログインに関するもの
 
@@ -82,7 +82,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 国によっては聞いてはいけない設問もあるようですので、こちらでチェックされるのがいいそうです。
 
-[Choosing and Using Security Questions Cheat Sheet - OWASP](https:https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
+[Choosing and Using Security Questions Cheat Sheet - OWASP](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
 
 最近は、パスワードや個人情報を持つこと自体がリスクな場合は、認証自体を SNS 認証(OAuth など)に置き換えるのもありだと思いました。
 
@@ -105,7 +105,7 @@ postMessage の targetOrigin が指定されていないため、悪意のある
 このことは、MDN 読めば書いてあるのですが普段から脅威に気づいていないと読み飛ばしてしまいそうです。  
 新しい機能を利用する場合は、セキュリティに関する留意点を確認すること。
 
-[window.postMessage セキュリティに関すること- Web API インターフェイス | MDN](https:https://developer.mozilla.org/ja/docs/Web/API/Window/postMessage#Security_concerns)
+[window.postMessage セキュリティに関すること- Web API インターフェイス | MDN](https://developer.mozilla.org/ja/docs/Web/API/Window/postMessage#Security_concerns)
 
 ### Cordova(WebView の XSS)
 
@@ -125,9 +125,9 @@ XSS の続きなんですが、XSS の攻撃コードに Cordova のプラグイ
 XSS をさせないのが一番だと思いますが、開発中にちょっと試してインストールしたような、不要なプラグインは気付いたら削除するべきですね。
 あと、万が一何かあった場合は、Webview から外にデータは流れないようにするべきだとおもいました。
 
-[Crosswalk - xwalk_hosts](https:https://crosswalk-project.org/documentation/manifest/xwalk_hosts.html)
+[Crosswalk - xwalk_hosts](https://crosswalk-project.org/documentation/manifest/xwalk_hosts.html)
 
-[Crosswalk - Content security policy](https:https://crosswalk-project.org/documentation/manifest/content_security_policy.html)
+[Crosswalk - Content security policy](https://crosswalk-project.org/documentation/manifest/content_security_policy.html)
 
 ふうふう。。。
 
@@ -158,7 +158,7 @@ Web をより使いやすくするために追加された新機能や手法が�
 
 ### 参考資料
 
-- [安全なウェブサイトの作り方：IPA 独立行政法人 情報処理推進機構](https:https://www.ipa.go.jp/security/vuln/websecurity.html)
-- [HTML5 を利用した Web アプリケーションのセキュリティ問題に関する調査報告書](https:https://www.jpcert.or.jp/research/html5.html)
-- [Android セキュリティ勉強会～ WebView の脆弱性編～(PDF)](https:https://ierae.co.jp/uploads/webview.pdf)
-- [HTML5 Security Cheatsheet(mala さんに教えていただいた、xss の例がいっぱいのってるサイト)](https:https://html5sec.org/)
+- [安全なウェブサイトの作り方：IPA 独立行政法人 情報処理推進機構](https://www.ipa.go.jp/security/vuln/websecurity.html)
+- [HTML5 を利用した Web アプリケーションのセキュリティ問題に関する調査報告書](https://www.jpcert.or.jp/research/html5.html)
+- [Android セキュリティ勉強会～ WebView の脆弱性編～(PDF)](https://ierae.co.jp/uploads/webview.pdf)
+- [HTML5 Security Cheatsheet(mala さんに教えていただいた、xss の例がいっぱいのってるサイト)](https://html5sec.org/)

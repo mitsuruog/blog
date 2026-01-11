@@ -5,7 +5,7 @@ date: 2018-03-09 0:00:00 +900
 comments: true
 tags: [webpack]
 categories: ["Blog", "開発ツール"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bandle-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bandle-logo.png
 ---
 
 最近、割と耳にするようになってきた、Webpack の bundle.js のサイズを減らす話。自分でもやってみたので、結果を紹介します。
@@ -23,7 +23,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/
 
 最初の状態はこちらです。サードパーティのライブラリ(node_modules)のサイズが大きいことがわかります。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle1.png)
 
 ```txt
 File sizes after gzip:
@@ -49,11 +49,11 @@ joi-browser   382KB(40KB)
 
 やりかたは前に書いた自分の記事を参考に。。。
 
-- [highlight\.js を小さくバンドルする方法 \| I am mitsuruog](https:https://blog.mitsuruog.info/2017/12/how-bundle-size-makes-smaller)
+- [highlight\.js を小さくバンドルする方法 \| I am mitsuruog](https://blog.mitsuruog.info/2017/12/how-bundle-size-makes-smaller)
 
 結果:
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle2.png)
 
 ```txt
 File sizes after gzip:
@@ -70,11 +70,11 @@ File sizes after gzip:
 
 やりかたはこれを参考にしました。
 
-- [RxJS を小さくバンドルする方法。import 文の書き方で容量が変わる \- Qiita](https:https://qiita.com/clockmaker/items/5e2207b14dac97c4ede1)
+- [RxJS を小さくバンドルする方法。import 文の書き方で容量が変わる \- Qiita](https://qiita.com/clockmaker/items/5e2207b14dac97c4ede1)
 
 結果:
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle3.png)
 
 ```txt
 File sizes after gzip:
@@ -91,7 +91,7 @@ File sizes after gzip:
 
 `C3.js`と`joi-browser`はパッとみた感じ減らすのちょっと難しそうだと感じたので、`lodash`のサイズを減らしてみることにしました。
 
-通常の`lodash`は ES6 のモジュール形式ではないので、ES6 モジュール形式でビルドされている[lodash-es](https:https://www.npmjs.com/package/lodash-es)の方を使います。
+通常の`lodash`は ES6 のモジュール形式ではないので、ES6 モジュール形式でビルドされている[lodash-es](https://www.npmjs.com/package/lodash-es)の方を使います。
 
 これまで import していた箇所をこのように変えていきます。
 
@@ -102,7 +102,7 @@ File sizes after gzip:
 
 結果:
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle4.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/bundle4.png)
 
 ```txt
 File sizes after gzip:
@@ -131,4 +131,4 @@ build/static/js/applicant.js
 Webpack 便利なのでついライブラリ追加してしまいがちですが、バンドルサイズが大きくなってないか常に気をつけたいですね。
 バンドルサイズの測定は**webpack-bundle-analyzer**を使って行いました。
 
-- [webpack-contrib/webpack-bundle-analyzer](https:https://github.com/webpack-contrib/webpack-bundle-analyzer)
+- [webpack-contrib/webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)

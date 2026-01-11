@@ -25,12 +25,12 @@ S3 でのサイト公開は非常に簡単です。次の 3 ステップで即�
 - AngularJS で作成した SPA をアップロードする。
 - Bucket の Static Website Hosting を ON にする。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-1.png)
 
 Static Website Hosting を ON にすることでアクセス可能な URL が取得できます。  
 アクセスした際に「`AccessDenied`」エラーになる場合は、アップロードしたファイルの`Permissions`が**Everyone アクセス可能**になっていないことが多いです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-2.png)
 
 しかし、この**Everyone アクセス可能**状態はあまりいい状態ではありませんので、CloudFront を利用します。  
 (後で紹介しますが、S3 は CloudFront 経由のアクセスのみ有効にする設定を推奨します。)
@@ -54,7 +54,7 @@ S3 の Static Website Hosting 機能はお手軽で非常に魅力を感じる�
 
 そこで利用するのが CloudFront です。いろいろ探していたら、こちらの記事が参考になりました。ありがとうございます！
 
-[[CloudFront + S3]特定バケットに特定ディストリビューションのみからアクセスできるよう設定する ｜ Developers.IO](https:https://dev.classmethod.jp/cloud/aws/cloudfront-s3-origin-access-identity/)
+[[CloudFront + S3]特定バケットに特定ディストリビューションのみからアクセスできるよう設定する ｜ Developers.IO](https://dev.classmethod.jp/cloud/aws/cloudfront-s3-origin-access-identity/)
 
 手順としては次のような形です。
 
@@ -62,7 +62,7 @@ S3 の Static Website Hosting 機能はお手軽で非常に魅力を感じる�
 - Origin Domain Name に S3 の Bucket を指定
 - Restrict Bucket Access で「Yes」を設定して S3 へのアクセスを制限
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-3.png)
 
 これで CloudFront 経由で S3 へアクセスすることができますが、SPA をホスティングするに当たって追加で以下の設定をしました。
 
@@ -73,14 +73,14 @@ S3 の Static Website Hosting 機能はお手軽で非常に魅力を感じる�
 しかも、デフォルトの(\*.cloudfront.net)ドメインであれば SSL 証明書までついてきます。  
 まじで至れり尽くせりです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-5.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-5.png)
 
 ### Behaviors > Viewer Protocol Policy
 
 新しい Behavior を作成して`Viewer Protocol Policy`にて`Redirect HTTP to HTTPS`を選択します。これで HTTP でアクセスされた場合に、HTTPS にリダイレクトすることが可能です。  
 (あまりこだわりなければ`Path Pattern`は`Default (*)`1 つで事足りるはず。)
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-4.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-4.png)
 
 ## CloudFront 利用上の注意点
 
@@ -95,7 +95,7 @@ CloudFront には Invalidations というキャッシュクリアをする仕組
 
 CloudFront で Distributions を選択すると「`Invalidations`」というタブがあるので、ここで「`Create Invalidation`」ボタンをクリックします。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-6.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2015/angular-s3-cloudfront-6.png)
 
 クリアするファイルを指定する必要があるので、例えば「`/index.html`」とか入力します。  
 私の場合、フロントのリソースは結合＆minify＆バージョニングして最適化してしまうので、普段は`index.html`だけで十分です。
@@ -111,7 +111,7 @@ CloudFront で Distributions を選択すると「`Invalidations`」というタ
 今回の「S3 ＋ CloudFront」はまだ**大関**構成なようですね。個人的には頑張ったと思うのですが。。。orz  
 こちらの記事を読むと、この上の「S3 ＋ CloudFront ＋ Route53」**横綱**構成があるようです。
 
-[AWS における静的コンテンツ配信パターンカタログ（アンチパターン含む） ｜ Developers.IO](https:https://dev.classmethod.jp/cloud/aws/static-contents-delivery-patterns/)
+[AWS における静的コンテンツ配信パターンカタログ（アンチパターン含む） ｜ Developers.IO](https://dev.classmethod.jp/cloud/aws/static-contents-delivery-patterns/)
 
 もっと稽古します。
 

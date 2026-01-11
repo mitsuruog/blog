@@ -5,12 +5,12 @@ date: 2018-01-05 0:00:00 +900
 comments: true
 tags: [lambda, aws, s3]
 categories: ["Blog", "インフラ"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3.png
 ---
 
 あけましておめでとうございます。
 
-[PageSpeed Insights](https:https://developers.google.com/speed/pagespeed/insights/)を使ってこのブログを計測したところ、画像の最適化とキャッシュを提案されたので、年末年始は[AWS Lambda](https:https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/welcome.html)を使って画像の最適化を試していました。
+[PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)を使ってこのブログを計測したところ、画像の最適化とキャッシュを提案されたので、年末年始は[AWS Lambda](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/welcome.html)を使って画像の最適化を試していました。
 
 ## はじめに
 
@@ -18,15 +18,15 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/
 
 ブログの画像ファイルは全て S3 から配信しているので、特定の S3 バケットに画像がアップロードして、それを Lambda 関数で最適化して他のバケットにアップロードすると言った、よくあるユースケースを実現してみました。
 
-![](https:https://docs.aws.amazon.com/lambda/latest/dg/images/s3-admin-iser-walkthrough-20.png)
+![](https://docs.aws.amazon.com/lambda/latest/dg/images/s3-admin-iser-walkthrough-20.png)
 
 出来上がったものは、下のリポジトリにおいてあります。
 
-- <https:https://github.com/mitsuruog/s3-image-optimizer>
+- <https://github.com/mitsuruog/s3-image-optimizer>
 
 正直なところ下の AWS 公式チュートリアルを少し改造しただけなので、これをそのまま使うよりはチュートリアルで自分で試して見た方がいいと思います。
 
-- <https:https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html>
+- <https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html>
 
 ## カスタマイズした点
 
@@ -59,11 +59,11 @@ s3.putObject({
 });
 ```
 
-- [Class: AWS\.S3 — AWS SDK for JavaScript](https:https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putObject-property)
+- [Class: AWS\.S3 — AWS SDK for JavaScript](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putObject-property)
 
 S3 バケットのメタデータを確認すると、次のように表示されます。(上の値と違いますが。。。)
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3-01.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3-01.png)
 
 ### 画像をアップロード時に「public」設定にする
 
@@ -106,9 +106,9 @@ Lambda の動作確認にちょうどいい感じだったので、正月休み�
 出始めの頃と比べると GUI でできる範囲が増えたので楽でした。
 
 > こちらは GUI の Designer で確認することができる、関数の概要図です。わかりやすい。
-> ![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3-02.png)
+> ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/lambda-s3-02.png)
 
 もう少しいいものがあるので、自分で試さない場合はこのあたりもチェックしてみてください。
 
-- <https:https://github.com/sourcey/s3-image-optimizer>
-- [kraken.io(有料)](https:https://kraken.io/)
+- <https://github.com/sourcey/s3-image-optimizer>
+- [kraken.io(有料)](https://kraken.io/)

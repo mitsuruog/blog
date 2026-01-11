@@ -40,7 +40,7 @@ npm install module_name@0.0.1
 まだ npm にないとか、自分で Fork したモジュールをインストールしたい場合は、直接 Github のリポジトリを指定してもいいです。
 
 ```
-npm install https:https://github.com/mitsuruog/socket.io/tarball/master
+npm install https://github.com/mitsuruog/socket.io/tarball/master
 ```
 
 「Github の URL/tarball/ブランチ名」となってます。

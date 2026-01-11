@@ -7,15 +7,15 @@ tags: [html5]
 categories: ["Blog", "フロントエンド基礎"]
 ---
 
-2014/5/19 に[HTML5fun](https:https://html5fun.jp/)の立ち上げイベントで話す機会をいただきまして、「エンタープライズでの HTML5」について最近思うことを、割と自由に話してきました。イベント開催レポートはこちらです。
+2014/5/19 に[HTML5fun](https://html5fun.jp/)の立ち上げイベントで話す機会をいただきまして、「エンタープライズでの HTML5」について最近思うことを、割と自由に話してきました。イベント開催レポートはこちらです。
 
-[HTML5fun -全国に HTML5 の楽しさを-](https:https://html5fun.jp/event/event_001.html)
+[HTML5fun -全国に HTML5 の楽しさを-](https://html5fun.jp/event/event_001.html)
 
-また、2014/5/22 に行った[Java Day Tokyo 2014](https:https://oj-events.jp/public/application/add/170)での内容も絡めて、少し補足したいと思います。
+また、2014/5/22 に行った[Java Day Tokyo 2014](https://oj-events.jp/public/application/add/170)での内容も絡めて、少し補足したいと思います。
 
 <!-- more -->
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/html5fun.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/html5fun.png)
 
 1.  エンタープライズで HTML5 は必要なのか？
 2.  IoT とバリューチェーン
@@ -23,7 +23,7 @@ categories: ["Blog", "フロントエンド基礎"]
 
 発表したスライドはこちらです。よかったら「Like」してください。
 
-[エンタープライズと HTML5〜エンタープライズで HTML5 って本当に必要なのか？](https:https://www.slideshare.net/mitsuruogawa33/html5-34860465)
+[エンタープライズと HTML5〜エンタープライズで HTML5 って本当に必要なのか？](https://www.slideshare.net/mitsuruogawa33/html5-34860465)
 
 ## エンタープライズで HTML5 は必要なのか？
 
@@ -43,7 +43,7 @@ categories: ["Blog", "フロントエンド基礎"]
 その一方で、IoT 時代の企業システムが生み出すバリューチェーンについても改めて考える必要があると感じています。
 その象徴的なものが、Java One Tokyo 2014 の基調講演にて Nandini Ramani 氏が語ったこのスライドでしょう。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/IMG_20140522_104924.jpg)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/IMG_20140522_104924.jpg)
 
 両側に「データセンター」「デバイス」があって、その間を「繋ぐ」３層レイアーになっています。
 
@@ -61,5 +61,5 @@ HTML5 の中でも特別扱いされている感がある「Websocket」も、�
 
 企業システムのフロントエンドエンジニアなりたいという人が少しでも増えるといいなと思っています。これからも微力ながら活動していきたいです。
 
-[HTML5fun](https:https://html5fun.jp/)のスタッフの皆さん本当にありがとうございました。  
+[HTML5fun](https://html5fun.jp/)のスタッフの皆さん本当にありがとうございました。  
 全国に HTML5 の楽しさを伝えるような活動を今後も行ってください。

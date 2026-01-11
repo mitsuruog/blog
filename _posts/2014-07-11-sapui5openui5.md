@@ -42,4 +42,4 @@ new sap.m.Text({
 
 こちらに載っていた情報です。
 
-[javascript - SAPUI5: How to directly bind two data properties into one control property using OData model? - Stack Overflow](https:https://stackoverflow.com/questions/22320475/sapui5-how-to-directly-bind-two-data-properties-into-one-control-property-using)
+[javascript - SAPUI5: How to directly bind two data properties into one control property using OData model? - Stack Overflow](https://stackoverflow.com/questions/22320475/sapui5-how-to-directly-bind-two-data-properties-into-one-control-property-using)

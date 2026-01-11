@@ -5,21 +5,21 @@ date: 2019-03-15 0:00:00 +900
 comments: true
 tags: [react-native, react-native-router-flux]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf-logo.png
 ---
 
-[react-native-router-flux](https:https://github.com/aksonov/react-native-router-flux)の小ネタです。
+[react-native-router-flux](https://github.com/aksonov/react-native-router-flux)の小ネタです。
 
 react-native-router-flux で毎日頭を悩ませています。
 うーん、なんだろう。。。初見は使いやすそうなんですが、いざ本番となるといろいろ制約があって悩ましいライブラリですね。
 
 > Part2
-> [react\-native\-router\-flux の onRight をカスタマイズする(part2) \| I am mitsuruog](https:https://blog.mitsuruog.info/2019/08/rnrf-customizable-onright)
+> [react\-native\-router\-flux の onRight をカスタマイズする(part2) \| I am mitsuruog](https://blog.mitsuruog.info/2019/08/rnrf-customizable-onright)
 
 今回はアプリの NavBar の右側にあるボタンをクリックした時に、次の画面に props を渡したいようなユースケースを想定しています。例えば参照画面から編集画面に移動するときなどです。
 ボタンは次のイメージのような感じです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf1.png)
 
 この時 react-native-router-flux は`onRight`を発火するのですが、これに動的に値を渡すために少し工夫が必要でした。
 

@@ -5,7 +5,7 @@ date: 2018-03-13 0:00:00 +900
 comments: true
 tags: [react, redux, redux-observable, typescript]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable-logo.png
 ---
 
 新規プロダクトで「React + Redux + redux-observable + TypeScript」を使ってみました。
@@ -15,23 +15,23 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/
 
 > 続きがあるので、読み終わったらこちらも見てみてください。2019 年 1 月段階の最新です。
 >
-> - [typesafe\-actions を使って型安心な Redux Store を実装する \| I am mitsuruog](https:https://blog.mitsuruog.info/2018/12/typesafe-redux-store)
+> - [typesafe\-actions を使って型安心な Redux Store を実装する \| I am mitsuruog](https://blog.mitsuruog.info/2018/12/typesafe-redux-store)
 
 ## デモ
 
 作ったものはこちらの Github でみれます。
 
-- [mitsuruog/react\-redux\-observable\-typescript\-sample: A sample application for React \+ redux\-observable \+ TypeScript](https:https://github.com/mitsuruog/react-redux-observable-typescript-sample)
+- [mitsuruog/react\-redux\-observable\-typescript\-sample: A sample application for React \+ redux\-observable \+ TypeScript](https://github.com/mitsuruog/react-redux-observable-typescript-sample)
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable01.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable01.png)
 
-GoogleMap と[OpenWeatherMap](https:https://openweathermap.org/)の API を連動させて、マップをクリックした地点の天気を表示する単純なサンプルです。
+GoogleMap と[OpenWeatherMap](https://openweathermap.org/)の API を連動させて、マップをクリックした地点の天気を表示する単純なサンプルです。
 
 ## はじめに
 
 まずこの構成で始めようと思った方は、最初にこれに目を通すべきです。
 
-- [piotrwitek/react\-redux\-typescript\-guide: A comprehensive guide to static typing in "React & Redux" apps using TypeScript](https:https://github.com/piotrwitek/react-redux-typescript-guide)
+- [piotrwitek/react\-redux\-typescript\-guide: A comprehensive guide to static typing in "React & Redux" apps using TypeScript](https://github.com/piotrwitek/react-redux-typescript-guide)
 
 最初はよくわからないと思います。ある程度理解すると内容がわかってくると思うので、常にそばにおいて参照してください。
 
@@ -46,9 +46,9 @@ Flux を経験した身として、Redux の主な特徴は次の 2 点だと感
 
 Flux の説明としては下の図が有名ですね。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable02.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/redux-observable02.png)
 
-> <https:https://github.com/facebook/flux/tree/master/examples/flux-concepts> より
+> <https://github.com/facebook/flux/tree/master/examples/flux-concepts> より
 
 通常は登場人物は以上なのですが、今回は Redux で副作用を処理部分に edux-observable を使っているため、もう一人「**Epic**」が登場します。
 
@@ -78,7 +78,7 @@ export const WEATHER_GET = "@@weather/GET";
 
 基本的には`@@XXX/SET`を Reducer 用、それ以外(例えば`@@XXX/GET`)を Epic で使うようにしています。(そこまで厳密じゃないです。)
 
-Action 名は重複すると見つけにくい不具合の原因になるため、[typesafe-actions](https:https://github.com/piotrwitek/typesafe-actions)を使って定義していきます。
+Action 名は重複すると見つけにくい不具合の原因になるため、[typesafe-actions](https://github.com/piotrwitek/typesafe-actions)を使って定義していきます。
 
 ```typescript
 export const weatherGetAction = createAction(WEATHER_GET, (params = {}) => ({
@@ -202,7 +202,7 @@ Action(@@XXX/GET) => API call => Action(@@XXX/SET) => Reducer => Store => Re-ren
 ## Connect
 
 次に、Connect を作ります。
-Connect は React と Flux の実装パターン(たぶん、コンテナパターン)の一種で、[react-redux](https:https://github.com/reactjs/react-redux)が採用しているものです。
+Connect は React と Flux の実装パターン(たぶん、コンテナパターン)の一種で、[react-redux](https://github.com/reactjs/react-redux)が採用しているものです。
 
 React コンポーネントを「**Connect**」というコンテナでラップして、Redux の Store との橋渡しをします。
 実際には次の 2 つの橋渡しです。
@@ -265,13 +265,13 @@ ReactDOM.render(
 
 ## まとめ
 
-ちょっと詳細割愛してしまった部分もありますが、細かな部分は実際の[Github リポジトリ](https:https://github.com/mitsuruog/react-redux-observable-typescript-sample)を見てもらえれば雰囲気わかるかと思います。
+ちょっと詳細割愛してしまった部分もありますが、細かな部分は実際の[Github リポジトリ](https://github.com/mitsuruog/react-redux-observable-typescript-sample)を見てもらえれば雰囲気わかるかと思います。
 
 正直「Redux + redux-observable」は学習コスト高めです。使う人を選びます。
 自分は習得できたし、他の人に教えることもできると思うので次のプロダクトでも機会があれば使うと思います。しかし、他の人にはあまり気持ちよく勧められない部分もあるのも事実です。とはいえ、やりごたえはあると思うので、興味がある方はトライしてみては如何でしょうか。
 
 その他、個人的に目を通しておいた方がいいと思うもの。
 
-- [Redux ユーザーが最もハマる state の不正変更とその検出方法 \| I am mitsuruog](https:https://blog.mitsuruog.info/2018/02/why-is-immutability-required-by-redux)
-- [Immutable Update Patterns \- Redux](https:https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns)
-- [Ecosystem \- Redux](https:https://redux.js.org/introduction/ecosystem)
+- [Redux ユーザーが最もハマる state の不正変更とその検出方法 \| I am mitsuruog](https://blog.mitsuruog.info/2018/02/why-is-immutability-required-by-redux)
+- [Immutable Update Patterns \- Redux](https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns)
+- [Ecosystem \- Redux](https://redux.js.org/introduction/ecosystem)

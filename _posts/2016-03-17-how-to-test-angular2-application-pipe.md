@@ -5,7 +5,7 @@ date: 2016-03-17 1:29:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, unit test]
 categories: ["Blog", "テスト"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -115,11 +115,11 @@ Pipe のテストは以上です。
 Pipe は構造がシンプルなためテストも簡単です。テストの最初にトライするものとしては最適だと思います。
 サンプルコードはこちらを参照してください。
 
-[mitsuruog/\_angular2_pipe](https:https://github.com/mitsuruog/_angular2_pipe)
+[mitsuruog/\_angular2_pipe](https://github.com/mitsuruog/_angular2_pipe)
 
 ### PR
 
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 (もちろんテストもできます！！)
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)

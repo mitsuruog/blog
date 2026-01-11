@@ -5,10 +5,10 @@ date: 2017-11-28 0:00:00 +900
 comments: true
 tags: [circleci, unit test]
 categories: ["Blog", "開発ツール"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0.png
 ---
 
-[create-react-app](https:https://github.com/facebookincubator/create-react-app)で作っている React アプリを Circle CI 2.0 でビルドする手順について紹介します。
+[create-react-app](https://github.com/facebookincubator/create-react-app)で作っている React アプリを Circle CI 2.0 でビルドする手順について紹介します。
 
 今回説明するのは、CircleCI 2.0 を使う上での大まかな流れについてです。
 
@@ -32,7 +32,7 @@ root
 定義ファイルのシンタックスについては v1.0 と比べると結構変わっているので注意が必要です。
 Slack の作業ログを見ると、Dashboard のどこかで定義ファイルが生成できたようですが、どこだか忘れてしまいました。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-1.png)
 
 定義ファイルを生成すると次のようなファイルが作成されます。
 
@@ -42,7 +42,7 @@ node, npm, yarn は既に image に含まれているので、最小構成であ
 ```
 # Javascript Node CircleCI 2.0 configuration file
 #
-# Check https:https://circleci.com/docs/2.0/language-javascript/ for more details
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
 jobs:
@@ -53,7 +53,7 @@ jobs:
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
-      # documented at https:https://circleci.com/docs/2.0/circleci-images/
+      # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/workspace
@@ -81,7 +81,7 @@ jobs:
 
 定義ファイルの書き方については公式サンプルプロジェクトを見てください。
 
-- <https:https://github.com/CircleCI-Public/circleci-demo-javascript-express>
+- <https://github.com/CircleCI-Public/circleci-demo-javascript-express>
 
 ## Docker image を作成する
 
@@ -101,11 +101,11 @@ FROM circleci/node:8.9
 
 実際に作成した image はこちらです。
 
-- <https:https://hub.docker.com/r/mitsuruog/cool-build-frontend/>
+- <https://hub.docker.com/r/mitsuruog/cool-build-frontend/>
 
 docker image の作成方法についてはこちらを参照してください。
 
-- [docker image を docker hub に公開する方法](https:https://blog.mitsuruog.info/2017/11/way-to-publish-docker-image)
+- [docker image を docker hub に公開する方法](https://blog.mitsuruog.info/2017/11/way-to-publish-docker-image)
 
 ## Job を定義する
 
@@ -130,7 +130,7 @@ jobs:
 
 細かな設定は公式ドキュメントを参考にしてください。
 
-- [Configuration Reference](https:https://circleci.com/docs/2.0/configuration-reference/)
+- [Configuration Reference](https://circleci.com/docs/2.0/configuration-reference/)
 
 ## ワークフローを定義する
 
@@ -186,7 +186,7 @@ workflows:
 
 定義したワークフローは CircleCI 上の「WORKFLOWS」にて確認することができます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-2.png)
 
 ## おまけ
 
@@ -203,11 +203,11 @@ ENOMEM: not enough memory, read
 そんな時は、`resource_class`でマシンスペックをあげることができます。
 しかし、今のところ Circle CI のカスタマーサポートに依頼する必要があります。詳しくはこちらを見てください。
 
-- <https:https://circleci.com/docs/2.0/configuration-reference/#resource_class>
+- <https://circleci.com/docs/2.0/configuration-reference/#resource_class>
 
 > 有効にしたい Organization 名と一緒に依頼すると割と早めに対応してくれました。Circle CI のカスタマーサポート素晴らしい！！
 
-> ![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-3.png)
+> ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/circleci2.0-3.png)
 
 > とはいえ、将来的には`resource_class`はプレミアム機能になるかもしれないです。要注意！
 
@@ -218,4 +218,4 @@ CircleCI 2.0 でフロントエンドをビルドするための大まかな手�
 
 CircleCI 2.0 の公式ドキュメントについてはこちらを参照してください。
 
-- <https:https://circleci.com/docs/2.0/>
+- <https://circleci.com/docs/2.0/>

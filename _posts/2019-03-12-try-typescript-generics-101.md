@@ -5,7 +5,7 @@ date: 2019-03-12 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-generics-logo.jpg
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-generics-logo.jpg
 ---
 
 TypeScript を使っていると頻繁に見かけるジェネリクス(以下、Generics)。
@@ -101,7 +101,7 @@ function merge<T>(array: T[], newValue: T): T[] {
 
 しかし、このままでは TypeScript のコンパイラがエラーになるはずです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-generics1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-generics1.png)
 
 「Property 'id' does not exist on type 'T'.」
 

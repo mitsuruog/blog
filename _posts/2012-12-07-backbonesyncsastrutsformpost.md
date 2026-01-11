@@ -7,7 +7,7 @@ tags: [backbone, sastruts, seaser2]
 categories: ["Blog", "API・バックエンド連携"]
 ---
 
-[Backbone.js Advent Calendar 2012](https:https://www.adventar.org/calendars/15)と[青森アドベントカレンダー](https:https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/aomori-web-adevent-calendar-2012.html)17 日目の記事です。青森ネタは最後のほうに気持ち程度あります。
+[Backbone.js Advent Calendar 2012](https://www.adventar.org/calendars/15)と[青森アドベントカレンダー](https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/aomori-web-adevent-calendar-2012.html)17 日目の記事です。青森ネタは最後のほうに気持ち程度あります。
 SAStruts+Seaser2 構成のバックエンドに対して、Backbone.Sync から Form を POST して ActionForm で受け取る方法です。  
 （青森とは関係ありませんのであしからず。。。）
 
@@ -31,7 +31,7 @@ SAStruts+Seaser2 構成のバックエンドに対して、Backbone.Sync から 
 ## SAStruts -> Backbone.Sync GET の場合
 
 Backbone の Collection や Model にて fatch を呼び出すと、Backbone.Sync がサーバに対して GET で URL リソースを取得します。この部分は比較的簡単で、以下のように SAStruts の Action 側の実装を少し変えるのみで JSON でレスポンスを返すことができます。
-（ちなみに、JSON のライブラリは[jsonic](https:https://jsonic.sourceforge.jp/)を使用しています。）
+（ちなみに、JSON のライブラリは[jsonic](https://jsonic.sourceforge.jp/)を使用しています。）
 
 サーバ側(IndexAction.get.java)
 
@@ -73,7 +73,7 @@ PROTO.Views.view = Backbone.View.extend({
 
 結論から言うと、SAStruts 側で Backbone.Sync の Form 内容を POST で受け取るためには、Ajax リクエストをあたかも Form を Submit したリクエストかのように偽装する必要があります。
 
-そう、**backbone.emulateJSON = true**の出番です。（本当に[このパート](https:https://github.com/enja-oss/Backbone/blob/master/docs/Sync.md)翻訳しといて良かったな w。）
+そう、**backbone.emulateJSON = true**の出番です。（本当に[このパート](https://github.com/enja-oss/Backbone/blob/master/docs/Sync.md)翻訳しといて良かったな w。）
 
 これで Content-Type を「`application/x-www-form-urlencoded`」にすることは出来たのですが、リクエストパラメータは Ajax.options の data 属性で渡さないと受け取れません。結果、次のようなコードとなります。
 
@@ -130,17 +130,17 @@ public class IndexAction {
 さらに、ActionForm も受け取れるだけではなく、アノテーションによる validation も効きます。ここでエラーが JSON で帰ってくると理想的なのですが、今日時点ではそこまで作れてません。
 作っている最中のコードはこちらです。気力が続けば少しずつブラッシュしてくかも。
 
-[https:https://github.com/mitsuruog/SAStruts-Backbone](https://github.com/mitsuruog/SAStruts-Backbone)
+[https://github.com/mitsuruog/SAStruts-Backbone](https://github.com/mitsuruog/SAStruts-Backbone)
 
 ちなみに本題とは別件なんですが、同じ仕事で Bootstrap のカスタムもやっていて、なかなか Less も面白いなと思っています。世の中には Bootstrap のテーマを公開している人も多いので、青森ゆかりのデザイナーさん、青森っぽいテーマ一緒に作ってみませんか？  
 （と、無理やり青森アドベントカレンダーネタにしてみた w。）
 
 **Backbone.js Advent Calendar 2012**
 
-- ← 前日　[Node.js + WebSocket + Backbone.js のすすめ](https:https://takesy.cocolog-nifty.com/atico/2012/12/nodejs-websocke.html)[](https:https://www.blogger.com/)（@takeshy）
-- → 後日　[おさわり。backbone の ajax 周りの処理とか。](https:https://1000ch.net/2012/12/18/AjaxOfBackbone/)（@1000ch）
+- ← 前日　[Node.js + WebSocket + Backbone.js のすすめ](https://takesy.cocolog-nifty.com/atico/2012/12/nodejs-websocke.html)[](https://www.blogger.com/)（@takeshy）
+- → 後日　[おさわり。backbone の ajax 周りの処理とか。](https://1000ch.net/2012/12/18/AjaxOfBackbone/)（@1000ch）
 
 **Aomori Advent Calendar 2012**
 
-- ← 前日　[茄子的　今年一番ヒットしたツールは・・・](https:https://nasunoblog.blogspot.jp/2012/12/blog-post.html)（@nasunotw）
-- → 後日　[なぜ Facebook は僕の中で今年一番ヒットしたのか？](https:https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/facebook.html)（@kzki）
+- ← 前日　[茄子的　今年一番ヒットしたツールは・・・](https://nasunoblog.blogspot.jp/2012/12/blog-post.html)（@nasunotw）
+- → 後日　[なぜ Facebook は僕の中で今年一番ヒットしたのか？](https://aomori-web-advent-calendar-2012.blogspot.jp/2012/12/facebook.html)（@kzki）

@@ -5,18 +5,18 @@ date: 2018-06-24 0:00:00 +900
 comments: true
 tags: [react, typescript]
 categories: ["Blog", "開発ツール"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/rewired.jpg
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/rewired.jpg
 ---
 
 タイトル長くてすみません。
 
-ひと昔前までは、[react-create-app](https:https://github.com/facebook/create-react-app)で作成したプロジェクトの webpack.config を上書きするには、`eject`するしか方法がなかったのですが、現在は [react-app-rewired](https:https://github.com/timarney/react-app-rewired)を使うことで上書きが可能です。
+ひと昔前までは、[react-create-app](https://github.com/facebook/create-react-app)で作成したプロジェクトの webpack.config を上書きするには、`eject`するしか方法がなかったのですが、現在は [react-app-rewired](https://github.com/timarney/react-app-rewired)を使うことで上書きが可能です。
 
 > この方法を使った場合、react-create-app が提供するツールの動作保証対象外となります。つまり、これ以降発生した問題は自己責任で解決しなければなりません。ご注意ください。
 
 紹介する内容は、こちらの Github で見ることができます。
 
-- <https:https://github.com/mitsuruog/create-react-app-typescript-rewired-styleguidist>
+- <https://github.com/mitsuruog/create-react-app-typescript-rewired-styleguidist>
 
 ## react-app-rewired を導入する
 
@@ -76,7 +76,7 @@ npm build
 
 上の内容では元の Webconfig のままなのでカスタマイズする必要がありますが、その内容は**中〜上級者向け**です。カスタマイズのプロセスは次の通りです。
 
-1. ここから[config-overrides.js のテンプレート](https:https://github.com/timarney/react-app-rewired#extended-configuration-options)を取得する
+1. ここから[config-overrides.js のテンプレート](https://github.com/timarney/react-app-rewired#extended-configuration-options)を取得する
 2. 設定変更用の関数(慣例で`rewire(再結線する)`と呼ぶことが多い)を作成する
 3. rewire 関数を config-overrides.js に追加する
 

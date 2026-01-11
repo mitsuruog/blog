@@ -7,9 +7,9 @@ tags: [nodejs, websocket]
 categories: ["Blog", "API・バックエンド連携"]
 ---
 
-本ブログは[東京 Node 学園祭 2012 アドベントカレンダー](https:https://atnd.org/events/33022)の 6 日目の記事です。
+本ブログは[東京 Node 学園祭 2012 アドベントカレンダー](https://atnd.org/events/33022)の 6 日目の記事です。
 
-今回は[nodejitsu](https:https://nodejitsu.com/)を使って sockect.io を使ったアプリをホスティングしたところ、websocket（以下、ws）まわりで思わぬハマりポイントがあったというお話しをします。  
+今回は[nodejitsu](https://nodejitsu.com/)を使って sockect.io を使ったアプリをホスティングしたところ、websocket（以下、ws）まわりで思わぬハマりポイントがあったというお話しをします。  
 （同じようなトラブルで悩む方に少しでもヒントをあげられたらと考えています。）
 
 <!-- more -->
@@ -24,16 +24,16 @@ categories: ["Blog", "API・バックエンド連携"]
 
 既に周知の事実かもしれませんが、通常の HTTP（80 ポート）を使って ws 通信を行った場合、
 サーバから送信された ws の通信データが、クライアントのブラウザに到達する前に（セキュリティソフト、firewall、proxy…などなど）ブロックされることがあります。  
-（詳しく知りたい方は[こちらのエントリ](https:https://github.com/LearnBoost/socket.io/wiki/Socket.IO-and-firewall-software)を読んでみてください。）
+（詳しく知りたい方は[こちらのエントリ](https://github.com/LearnBoost/socket.io/wiki/Socket.IO-and-firewall-software)を読んでみてください。）
 
 サーバを正しく実装したにも関わらず ws が届かないようなときは、そもそもクライアントが ws 受信できる状態なのか、次の 2 つのサイトにて確認してみてください。
 
-- [https:https://websocketstest.com/](https://websocketstest.com/)（ws と Comet の疎通確認ができるサイトです。）
-- [https:https://wsping.jit.su/](https://wsping.jit.su/)（nodejitsu の websoketPing サイトです。）
+- [https://websocketstest.com/](https://websocketstest.com/)（ws と Comet の疎通確認ができるサイトです。）
+- [https://wsping.jit.su/](https://wsping.jit.su/)（nodejitsu の websoketPing サイトです。）
 
 例えばですが、80 ポートの ws がブロックされている場合は次のような結果となります。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2012/comp.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2012/comp.png)
 
 で、厄介なのが、セキュリティソフトにてブロックされている場合で、
 ws の疎通確認自体は OK なのですが、ws がなぜか届かない状態となってしまったので、原因を特定するのに少し時間がかかりました。
@@ -49,7 +49,7 @@ ws の正しい挙動としては、まず http でハンドシェイクを行�
 
 （念のため、Chrome で取ったヘッダーとか載せときますね。）
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2012/block.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2012/block.png)
 
 ```txt
 Request URL:ws:https://wsping.jit.su/socket.io/1/websocket/dL7NXuBCnWhqnZMPAYkU
@@ -58,7 +58,7 @@ Status Code:101 Switching Protocols
 Request Headersview source
 Connection:Upgrade
 Host:wsping.jit.su
-Origin:https:https://wsping.jit.su
+Origin:https://wsping.jit.su
 Sec-WebSocket-Extensions:x-webkit-deflate-frame
 Sec-WebSocket-Key:4EjkGu1WajTwi0MOvQjOyw==
 Sec-WebSocket-Version:13
@@ -81,8 +81,8 @@ Upgrade:websocket
 
 ## nodejitsu なかなか好いよ。
 
-最後に 2 か月くらい[nodejitsu](https:https://nodejitsu.com/)使って遊んでますが。良かった点を書き連ねてみます。（CEO の[
-Charlie Robbins 氏](https:https://twitter.com/indexzero)も来ることですし。）
+最後に 2 か月くらい[nodejitsu](https://nodejitsu.com/)使って遊んでますが。良かった点を書き連ねてみます。（CEO の[
+Charlie Robbins 氏](https://twitter.com/indexzero)も来ることですし。）
 
 - websocket が使える。
 - 無料期間は 1 ヵ月。Micro プランで月$3。（円高最高！）

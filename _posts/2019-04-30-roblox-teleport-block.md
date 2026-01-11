@@ -5,7 +5,7 @@ date: 2019-04-30 0:00:00 +900
 comments: true
 tags: [roblox, ロブロックス]
 categories: ["Blog", "雑記"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block-logo.png
 ---
 
 Roblox でプレイヤーが触ると別の場所にテレポートするブロックを作ってみましょう。
@@ -14,7 +14,7 @@ Roblox でプレイヤーが触ると別の場所にテレポートするブロ�
 
 まず、Workspace の中に`Teleport`というフォルダを作成して、必要なもの一式を追加します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block4.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block4.png)
 
 追加するものは次の通りです。
 
@@ -22,7 +22,7 @@ Roblox でプレイヤーが触ると別の場所にテレポートするブロ�
 - `Teleport1A` - テレポートブロック A(青色)
 - `Teleport1B` - テレポートブロック B(ピンク色)
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block5.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block5.png)
 
 ## TeleportScript の骨子を作る
 
@@ -75,7 +75,7 @@ CFrame については、まだよく理解できていないので詳しい説�
 
 では、早速テレポートブロック A に触れてみましょう。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block3.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block3.gif)
 
 (え！？)
 
@@ -102,13 +102,13 @@ end
 `Vector3`は(x, y, z)軸を設定するクラスです。
 左から順に x 軸(横)、y 軸(高さ)、z 軸(奥行き)を設定します。今回の例だと`Vector3.new(0, 5, 0)`なので、高さだけ 5 に設定しています。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block2.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block2.gif)
 
 今度はうまくいきました。
 
 > ちなみに、`Vector3.new(0, 50, 0)`に設定すると、テレポート先を上空に設定することができます。
 >
-> ![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block1.gif)
+> ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-teleport-block1.gif)
 
 ## まとめ
 

@@ -5,7 +5,7 @@ date: 2016-10-05 23:58:00 +900
 comments: true
 tags: [react, typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/defaut-parameter-in-typescript.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/defaut-parameter-in-typescript.png
 ---
 
 最近、React ＋ Typescript しか書いてないので、久々に小ネタを投下しようかなっと。。。
@@ -45,7 +45,7 @@ Uncaught TypeError: Cannot read property 'name' of undefined
 
 ## ES6 Default parameters を使ってみる
 
-早速、`book = book || {}`と行きたいのですが、ES6 の[Default parameters](https:https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)を使ってみます。
+早速、`book = book || {}`と行きたいのですが、ES6 の[Default parameters](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters)を使ってみます。
 
 ```ts
 export defaut function Book({ book = {} }: IBookProps) {

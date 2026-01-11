@@ -22,20 +22,20 @@ SAPUI5 にて UI 部品が多い View を構築する場合、すぐに 1000 行
 最近、SAPUI5 を生の Javascript で書くと「}」とか「)}」とかしんどいので coffeeScript で書いて楽しています。また、すべてのソースコードをのせると非常に冗長なため、抜粋したソースコードを載せています。実際に動作するサンプルとソースコードは GIthub 上にありますので、そちらを参照してください。
 
 サンプル
-<https:https://mitsuruog.github.io/sapui5-showroom/#/fragment>
+<https://mitsuruog.github.io/sapui5-showroom/#/fragment>
 
 ソースコード
 
 - CoffeeScript
-  - [https:https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee](https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee)
+  - [https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee](https://github.com/mitsuruog/sapui5-showroom/tree/master/coffee)
 - Javascript
-  - [https:https://github.com/mitsuruog/sapui5-showroom/tree/master/app](https://github.com/mitsuruog/sapui5-showroom/tree/master/app/view)
+  - [https://github.com/mitsuruog/sapui5-showroom/tree/master/app](https://github.com/mitsuruog/sapui5-showroom/tree/master/app/view)
 
 ## 1.Fragments とは
 
 「Fragments」とは「断片、破片」という意味で、文字通り UI をパーツとして分割する機能です。公式ドキュメントはこちらです。
 
-[https:https://sapui5.hana.ondemand.com/sdk/#docs/guide/36a5b130076e4b4aac2c27eebf324909.html](https://sapui5.hana.ondemand.com/sdk/#docs/guide/36a5b130076e4b4aac2c27eebf324909.html)
+[https://sapui5.hana.ondemand.com/sdk/#docs/guide/36a5b130076e4b4aac2c27eebf324909.html](https://sapui5.hana.ondemand.com/sdk/#docs/guide/36a5b130076e4b4aac2c27eebf324909.html)
 
 SAPUI5 での Fragments とは View と同じようなものですが、Controller を作成する必要がありません。従って、基本的に UI 部分をパーツ化して再利用するために利用するものです。ロジックまで再利用したい場合は、素直に View にしてしまった方がいいでしょう。
 

@@ -5,7 +5,7 @@ date: 2017-11-19 0:00:00 +900
 comments: true
 tags: [aws, s3]
 categories: ["Blog", "インフラ"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/iam-s3-bucket.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/iam-s3-bucket.png
 ---
 
 よく忘れるシリーズ。

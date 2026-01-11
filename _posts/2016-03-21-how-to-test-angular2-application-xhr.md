@@ -5,7 +5,7 @@ date: 2016-03-21 1:29:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, unit test]
 categories: ["Blog", "テスト"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -35,11 +35,11 @@ Angular2 の実装の方法は記事をよく目にする機会が増えたの�
 XHR 通信が関連するテストについて紹介します。
 
 Angular1 には XHR 通信を行う`$http`サービスがありました。
-XHR 通信をテストする場合は、`$http`を Mock する[$httpBackend](https:https://docs.angularjs.org/api/ngMock/service/$httpBackend)を利用し、実際の XHR 通信を`$httpBackend`でダミーのレスポンスに置き換えてテストを行っていました。
+XHR 通信をテストする場合は、`$http`を Mock する[$httpBackend](https://docs.angularjs.org/api/ngMock/service/$httpBackend)を利用し、実際の XHR 通信を`$httpBackend`でダミーのレスポンスに置き換えてテストを行っていました。
 
 Angular2 にも`MockBackend`という`$httpBackend`と同様の役割のものがありますので、利用方法について紹介します。
 
-- [MockBackend - ts](https:https://angular.io/docs/ts/latest/api/http/testing/MockBackend-class.html)
+- [MockBackend - ts](https://angular.io/docs/ts/latest/api/http/testing/MockBackend-class.html)
 
 ## 標準 HTTP の Mock を準備する(beforeEachProviders)
 
@@ -68,7 +68,7 @@ describe("HTTPのテスト", () => {
 上のコードでは、`Provider`API を利用して、テスト専用の`HTTP`を生成しています。
 `Provider`は、Angular2 の中で`@Injecter()`によって DI がされる際にインスタンスの生成方法を指定する API です。
 
-- [Provider - ts](https:https://angular.io/docs/ts/latest/api/core/Provider-class.html)
+- [Provider - ts](https://angular.io/docs/ts/latest/api/core/Provider-class.html)
 
 ここでは、`dependencies`で`HTTP`が利用している Provider を DI し、`useFactory`内部で新しい`HTTP`インスタンスを作成しています。
 インスタンスを作成する際の`backend`に、`dependencies`で指定した`MockBackend`が設定されます。
@@ -112,11 +112,11 @@ describe("HTTPのテスト", () => {
 大事な部分は`ResponseOptions`にダミーのレスポンスを設定する部分です。
 上の例では、body の`data`プロパティにダミーのオブジェクトを設定しています。他にも設定できるプロパティが存在するので、詳しくは API を参照してください。
 
-- [ResponseOptions - ts](https:https://angular.io/docs/ts/latest/api/http/ResponseOptions-class.html)
+- [ResponseOptions - ts](https://angular.io/docs/ts/latest/api/http/ResponseOptions-class.html)
 
 実際のレスポンスは`MockConnection`を利用して行います。他にも`mockDownload`, `mockError`など使えそうな API があります。
 
-- [MockConnection - ts](https:https://angular.io/docs/ts/latest/api/http/testing/MockConnection-class.html)
+- [MockConnection - ts](https://angular.io/docs/ts/latest/api/http/testing/MockConnection-class.html)
 
 `ResponseOptions`の部分はダミーレスポンス専用のクラスにしておき、テストコードの先頭で import して利用するともっとスッキリすると思います。
 
@@ -165,7 +165,7 @@ HTTP のテストについてでした。
 
 テストの全体像についてはこちらを参考にしてください。
 
-<https:https://github.com/mitsuruog/_angular2_http>
+<https://github.com/mitsuruog/_angular2_http>
 
 Unit テスト全般に言えることですが、テストを行うための Mock などの下準備が非常に面倒くさいです。
 下準備は定型文的なものが多いため、再利用できるようスニペットなどにしておくことが大事です。
@@ -178,4 +178,4 @@ Component など HTTP から遠いレイアーでは、今回のように HTTP �
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 (もちろんテストもできます！！)
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)

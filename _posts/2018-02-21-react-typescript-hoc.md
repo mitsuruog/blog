@@ -5,7 +5,7 @@ date: 2018-02-21 0:00:00 +900
 comments: true
 tags: [react, typescript]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/hoc2.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/hoc2.png
 ---
 
 React の Higher order component(以下、HOC)を TypeScript で作る方法の紹介です。
@@ -14,19 +14,19 @@ React の Higher order component(以下、HOC)を TypeScript で作る方法の�
 (完全な翻訳を目指しているわけではないので、細かいニュアンスまで気になる方は英語の記事を直接読んでください。あと少しコードは自分好みに変えてます。)
 
 - React Higher-Order Components in TypeScript made simple
-  <https:https://codeburst.io/react-higher-order-components-in-typescript-made-simple-6f9b55691af1>
+  <https://codeburst.io/react-higher-order-components-in-typescript-made-simple-6f9b55691af1>
 
 > 本人によると、この記事は HOC の作り方について同僚とディスカッションした内容をまとめたものだそうです。同僚大事。
 
 ## HOC とは何か？
 
-[公式ドキュメント](https:https://reactjs.org/docs/higher-order-components.html)によると、HOC とは
+[公式ドキュメント](https://reactjs.org/docs/higher-order-components.html)によると、HOC とは
 
 > a higher-order component is a function that takes a component and returns a new component
 > (HOC とは、コンポーネントをもらって新しいコンポーネントを返す関数です。)
 
 HOC は機能横断的な機能を抽出するために利用され、複数のコンポーネントを一箇所にまとめることで、コードの重複を減らすことができます。
-ちなみに、もっとも有名な HOC は[react-redux](https:https://github.com/reactjs/react-redux)の`connect`だそうです。
+ちなみに、もっとも有名な HOC は[react-redux](https://github.com/reactjs/react-redux)の`connect`だそうです。
 
 ## これから学ぶこと
 
@@ -47,7 +47,7 @@ HOC は機能横断的な機能を抽出するために利用され、複数の�
 
 これら 3 つの prop の関連は次のような図で表すことができます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/hoc1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/hoc1.png)
 
 この図でわかるように、resulting component(HOC で新しく作られたコンポーネント)の Props は`OriginalProps & ExternalProps`(2 つを合成したもの)です。
 
@@ -247,11 +247,11 @@ export class Hello extends React.Component<HelloProps, {}> {
 
 HOC を TypeScript で作る際の簡単なサンプルと説明でした。
 
-英語の記事に方には、[HOC のテンプレート](https:https://gist.github.com/no23reason/3d1d34b712313260b68e58b6113246e9#file-hoc-template-ts)もあるので、ぜひチェックしてみてください。
+英語の記事に方には、[HOC のテンプレート](https://gist.github.com/no23reason/3d1d34b712313260b68e58b6113246e9#file-hoc-template-ts)もあるので、ぜひチェックしてみてください。
 
 記事の中のコードは全てこちらのリポジトリで見ることができます。
 
-- <https:https://github.com/mitsuruog/react-typescript-hoc-sample>
+- <https://github.com/mitsuruog/react-typescript-hoc-sample>
 
 HOC の作り方は最初難しいので、このような素晴らしい記事に出会えて本当によかったです。ありがとう！Dan
 

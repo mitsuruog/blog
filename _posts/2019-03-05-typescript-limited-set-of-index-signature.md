@@ -5,7 +5,7 @@ date: 2019-03-05 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-index-signature-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-index-signature-logo.png
 ---
 
 TypeScript の小ネタです。
@@ -58,5 +58,5 @@ console.log(object2.password);
 
 ### 参考
 
-- [Quick fix for 'unions can't be used in index signatures, use a mapped object type instead' · Issue \#24220 · Microsoft/TypeScript](https:https://github.com/Microsoft/TypeScript/issues/24220)
-- [Index Signatures · TypeScript Deep Dive](https:https://basarat.gitbooks.io/typescript/docs/types/index-signatures.html)
+- [Quick fix for 'unions can't be used in index signatures, use a mapped object type instead' · Issue \#24220 · Microsoft/TypeScript](https://github.com/Microsoft/TypeScript/issues/24220)
+- [Index Signatures · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/docs/types/index-signatures.html)

@@ -5,7 +5,7 @@ date: 2016-03-17 1:59:00 +900
 comments: true
 tags: [angular, angular2, karma, jasmine, unit test]
 categories: ["Blog", "テスト"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/angular2-testing-logo.png
 ---
 
 Angular2 の実装の方法は記事をよく目にする機会が増えたので、テストについての自分が困らないように調べてみたシリーズ。
@@ -80,7 +80,7 @@ class TestComponent { }
 
 続いて、テストで利用する使い捨て Component を作成します。これをテスト用 fixture として利用します。
 
-- [TestComponentBuilder - js](https:https://angular.io/docs/js/latest/api/testing/TestComponentBuilder-class.html)
+- [TestComponentBuilder - js](https://angular.io/docs/js/latest/api/testing/TestComponentBuilder-class.html)
 
 ## fixture を作成する(overrideTemplate, createAsync)
 
@@ -122,14 +122,14 @@ Angular1 での`$compile(template)($rootScope)`とほぼ同じものだと考え
 
 よく利用するものについて紹介します。
 
-- [ComponentFixture - js](https:https://angular.io/docs/js/latest/api/testing/ComponentFixture-class.html)
+- [ComponentFixture - js](https://angular.io/docs/js/latest/api/testing/ComponentFixture-class.html)
 
 ## fixture を検証する API(nativeElement)
 
 `nativeElement`はテスト用 fixture の`HTMLElement`を返す API です。
 `HTMLElement`は HTML 標準の API であるため、これを利用してテスト用 fixture を検証・操作します。
 
-[HTMLElement - Web APIs | MDN](https:https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+[HTMLElement - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
 
 ```ts
 // itの部分だけ抜粋
@@ -158,7 +158,7 @@ Angular2 内部では Angular1 の`dirty checking`に代わる独自の変更検
 
 Angular2 の変更検知サイクルについてはこの記事が詳しいです。
 
-- [Change Detection in Angular 2 | Victor Savkin](https:https://victorsavkin.com/post/110170125256/change-detection-in-angular-2)
+- [Change Detection in Angular 2 | Victor Savkin](https://victorsavkin.com/post/110170125256/change-detection-in-angular-2)
 
 次のテストコードは、マウスが当たると文字色が red に変わる Component のテストだと仮定します。
 
@@ -208,15 +208,15 @@ DOM についてのテストは以上です。
 DOM が関連するテストはやはり面倒ですね。メンバーの習熟度や学習コストを鑑みて、自動テストをしないという選択肢もありだと思います。
 テストコードの全体像は、こちらで雰囲気をつかめると思います。
 
-[\_angular2-attribute-directive/highlight.directive.spec.ts at master · mitsuruog/\_angular2-attribute-directive](https:https://github.com/mitsuruog/_angular2-attribute-directive/blob/master/app%2Fcomponents%2Fhighlight.directive.spec.ts)
+[\_angular2-attribute-directive/highlight.directive.spec.ts at master · mitsuruog/\_angular2-attribute-directive](https://github.com/mitsuruog/_angular2-attribute-directive/blob/master/app%2Fcomponents%2Fhighlight.directive.spec.ts)
 
 今回の例では、検証に fixture の`nativeElement`を利用していましたが、`debugElement`についてはまだ利用用途があまりはっきりとわかっていません。
 機会があれば、もう少し掘り下げようかと思います。
 
-- [DebugElement - js](https:https://angular.io/docs/js/latest/api/core/DebugElement-class.html)
+- [DebugElement - js](https://angular.io/docs/js/latest/api/core/DebugElement-class.html)
 
 ### PR
 
 こちらに初学者のための Minimum starter kit を作成しましたので、ぜひ利用してください。
 
-[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https:https://github.com/mitsuruog/angular2-minimum-starter)
+[mitsuruog/angular2-minimum-starter: Minimum starter kit for angular2](https://github.com/mitsuruog/angular2-minimum-starter)

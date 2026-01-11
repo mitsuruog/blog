@@ -5,10 +5,10 @@ date: 2016-02-09 01:00:00 +900
 comments: true
 tags: [heroku, heroku connect, nodejs]
 categories: ["Blog", "インフラ"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect.png
 ---
 
-前回、[Heroku Connect の Configuration ファイルが辛いので美しくするモジュールを書いた](https:https://blog.mitsuruog.info/2016/02/heroku-connect-configuration-comb.html)の続きっぽいもの。
+前回、[Heroku Connect の Configuration ファイルが辛いので美しくするモジュールを書いた](https://blog.mitsuruog.info/2016/02/heroku-connect-configuration-comb.html)の続きっぽいもの。
 
 通常のシステム開発では、開発、ステージング、本番など複数環境を利用することが多いので、複数環境間で Configuration ファイルの差分を出すモジュールを書いてみました。
 
@@ -27,7 +27,7 @@ Mapping 定義から項目の Mapping が消えると、その項目が Heroku �
 
 そこで前回、作成した Configuration ファイルを整形するモジュールを利用して、Configuration ファイルの差分を抽出するモジュールを書きました。
 
-[mitsuruog/heroku-connect-configuration-compare: Fetch two Heroku Connect Configuration and Compare together](https:https://github.com/mitsuruog/heroku-connect-configuration-compare)
+[mitsuruog/heroku-connect-configuration-compare: Fetch two Heroku Connect Configuration and Compare together](https://github.com/mitsuruog/heroku-connect-configuration-compare)
 
 ## 使い方
 
@@ -41,9 +41,9 @@ heroku-connect-configuration-compare one-heroku-appname other-heroku-appname
 
 差分が Diff として参照できます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect-diff.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/heroku-connect-diff.png)
 
-> 注）[ Heroku Toolbelt](https:https://toolbelt.heroku.com/)と[heroku-connect-plugin](https:https://github.com/heroku/heroku-connect-plugin)がインストールしていることが前提です。
+> 注）[ Heroku Toolbelt](https://toolbelt.heroku.com/)と[heroku-connect-plugin](https://github.com/heroku/heroku-connect-plugin)がインストールしていることが前提です。
 
 ## TODO
 

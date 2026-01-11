@@ -10,11 +10,11 @@ categories: ["Blog", "テスト"]
 socket.io で有名な LearnBoost が公開している Node 製 SeleniumServer クライアントをさくっと紹介します。
 だって、フロントエンドエンジニアは Javascript で Selenium 動かしたいんだもん。
 
-この記事は[Selenium Advent Calendar 2013](https:https://www.adventar.org/calendars/128)の 19 日目の記事です。
+この記事は[Selenium Advent Calendar 2013](https://www.adventar.org/calendars/128)の 19 日目の記事です。
 
-前の記事は[[hinac0 さん]Selenium vs Mercury](https:https://0dan5.wordpress.com/2013/12/18/1-3/)
+前の記事は[[hinac0 さん]Selenium vs Mercury](https://0dan5.wordpress.com/2013/12/18/1-3/)
 
-次の記事は[[らんさぶさん]Selenium Tips - つれづれなるままに。](https:https://dolias2010.hatenablog.com/entry/2013/12/20/012714)
+次の記事は[[らんさぶさん]Selenium Tips - つれづれなるままに。](https://dolias2010.hatenablog.com/entry/2013/12/20/012714)
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ socket.io で有名な LearnBoost が公開している Node 製 SeleniumServer 
 
 ## 1. soda とは
 
-[soda](https:https://github.com/LearnBoost/soda)とは socket.io で有名な LearnBoost が公開している、Node 製 SeleniumServer クライアントです。
+[soda](https://github.com/LearnBoost/soda)とは socket.io で有名な LearnBoost が公開している、Node 製 SeleniumServer クライアントです。
 簡単に言うと、Selenium の実行コードを Javascript で書いて、Nodejs で実行するためのモジュールです。
 公式では「**Selenium Node Adapter.**」と謳ってます。
 
@@ -41,7 +41,7 @@ brew install selenium-server-standalone
 ```
 
 公式サイトからダウンロードしても、もちろん構いません。
-[https:https://www.seleniumhq.org/download/](https://www.seleniumhq.org/download/)
+[https://www.seleniumhq.org/download/](https://www.seleniumhq.org/download/)
 
 brew でインストールすると起動用のコマンドが表示されまうので、一旦覚えておきます。
 面倒なかたは ailas 張った方がいいでしょう。
@@ -78,7 +78,7 @@ var soda = require("soda"),
 var browser = soda.createClient({
   host: "localhost",
   port: 4444,
-  url: "https:https://www.google.co.jp/",
+  url: "https://www.google.co.jp/",
   browser: "firefox",
 });
 
@@ -117,7 +117,7 @@ node google.js
 
 ```sh
 mitsuruog:soda-sample mitsuruog$ node google.js
-getNewBrowserSession: *firefox, https:https://www.google.co.jp/
+getNewBrowserSession: *firefox, https://www.google.co.jp/
 http.createClient is deprecated. Use `http.request` instead.
 open: /
 type: q, Hello World
@@ -140,6 +140,6 @@ Node で Selenium を起動できる Driver モジュール soda いかがだっ
 
 機能限定ながらフロントエンジニアが Javascript でテストコードを書けて Node で実行できるというのは、ハマればメリットがあると思いました。
 
-また、Node から Selenium を起動できるものは他にも[wd（https:https://github.com/admc/wd/）](https://github.com/admc/wd/)というものがあり、他の WebDriver をサポートしているなど、機能が豊富でなかなか強力です。
+また、Node から Selenium を起動できるものは他にも[wd（https://github.com/admc/wd/）](https://github.com/admc/wd/)というものがあり、他の WebDriver をサポートしているなど、機能が豊富でなかなか強力です。
 
 機会があれば、こちらも紹介したいですね。

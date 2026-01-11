@@ -5,12 +5,12 @@ date: 2019-05-22 0:00:00 +900
 comments: true
 tags: [typescript, react-native]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-platform-extensions-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-platform-extensions-logo.png
 ---
 
 TypeScript の小ネタです。
 
-react-native には[Platform-specific extensions](https:https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions)という仕組みがあります。
+react-native には[Platform-specific extensions](https://facebook.github.io/react-native/docs/platform-specific-code.html#platform-specific-extensions)という仕組みがあります。
 
 これはファイルを拡張子を使って各プラットフォーム(Android/iOS)向けにモジュール参照先を切り替える仕組みです。
 
@@ -65,6 +65,6 @@ export * from "./BigButton.ios";
 TypeScript のコンパイラの方でサポートして欲しいという要望があったようですがクローズされてしまったようです。
 当分の間は上で紹介した方法で回避するしかなさそうです。
 
-- [Allow passing additional SupportedExtensions to support React Native \.android and \.ios module loading · Issue \#8328 · microsoft/TypeScript](https:https://github.com/microsoft/TypeScript/issues/8328)
+- [Allow passing additional SupportedExtensions to support React Native \.android and \.ios module loading · Issue \#8328 · microsoft/TypeScript](https://github.com/microsoft/TypeScript/issues/8328)
 
 今回のトリックも上の Issue からいただきました。最初に思いついた人すごいですね。

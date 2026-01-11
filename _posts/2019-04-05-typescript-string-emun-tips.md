@@ -5,7 +5,7 @@ date: 2019-04-05 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-string-enums-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typescript-string-enums-logo.png
 ---
 
 TypeScript の小ネタです。
@@ -29,9 +29,9 @@ direction = "North"; // Error Type '"North"' is not assignable to type 'Directio
 direction = "AnythingElse"; // Error
 ```
 
-[TypeScript Deep Dive](https:https://basarat.gitbooks.io/typescript/content/docs/types/literal-types.html)を読んでいたら、String Enums で Enum と string の両方に対応できる方法が載ってきたので紹介します。
+[TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/types/literal-types.html)を読んでいたら、String Enums で Enum と string の両方に対応できる方法が載ってきたので紹介します。
 
-- [Literal Types · TypeScript Deep Dive](https:https://basarat.gitbooks.io/typescript/content/docs/types/literal-types.html)
+- [Literal Types · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/types/literal-types.html)
 
 まず string[]から Enum を生成するユーティリティ関数を作成します。
 
@@ -48,7 +48,7 @@ function stringToEnum<T extends string>(o: T[]): { [K in T]: K } {
 
 > reduce の初期値に`Object.create(null)`を利用しているのは、プレーンな Object をベースに Enum を生成するためです。こちらの記事がよくまとまっています。
 >
-> - [JavaScript でなぜ Object\.create\(null\) を使うのか？ \- Qiita](https:https://qiita.com/tady/items/1215a801e178c98deb35)
+> - [JavaScript でなぜ Object\.create\(null\) を使うのか？ \- Qiita](https://qiita.com/tady/items/1215a801e178c98deb35)
 
 > ちなみに`{}`を初期値として使った場合は、次のようなエラーが発生します。TypeScript 賢い！
 >

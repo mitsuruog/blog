@@ -5,7 +5,7 @@ date: 2016-10-24 01:58:00 +900
 comments: true
 tags: [webpack, react, sass, font]
 categories: ["Blog", "フロントエンド基礎"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/custom-font.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/custom-font.png
 ---
 
 アイコンなどの画像には、少し前まで CSS Sprites を使うことが多かったと思います。しかし、最近は CSS でスタイリングできるため、カスタムフォントを作成して使用することが増えてきたように感じます。
@@ -126,7 +126,7 @@ SVG ファイルを開くと`unicode`要素があるので、そこから Unicod
 
 ## webpack でカスタムフォントをロードする方法
 
-webpack でカスタムフォントを使うためには、[url-loader](https:https://github.com/webpack/url-loader)を使って各フォントファイルをロードできるようにする必要があります。
+webpack でカスタムフォントを使うためには、[url-loader](https://github.com/webpack/url-loader)を使って各フォントファイルをロードできるようにする必要があります。
 
 ```js
 // webpack.config.js
@@ -170,7 +170,7 @@ Module not found: Error: Cannot resolve 'file' or 'directory' . /My-font.svg
 
 これは現時点では、Sass のコンパイラが URL の書き換えをサポートしていないため、`css-loader`を利用する場合は Sass のエントリーファイルから相対パス指定する必要があるからです。
 
-- [sass-loader: Problems with url(...)](https:https://github.com/jtangelder/sass-loader#problems-with-url)
+- [sass-loader: Problems with url(...)](https://github.com/jtangelder/sass-loader#problems-with-url)
 
 そのため、上の`icon.scss`でのパス指定は次のようにする必要があります。
 
@@ -219,5 +219,5 @@ Sass の相対パスまわりでハマるケースが多いのではないかと
 
 この記事を書くにあたって、次の記事も参考にしています。
 
-- [Working with Fonts with Webpack | Adrian Hall](https:https://shellmonger.com/2016/01/22/working-with-fonts-with-webpack/)
-- [Using @font-face | CSS-Tricks](https:https://css-tricks.com/snippets/css/using-font-face/)
+- [Working with Fonts with Webpack | Adrian Hall](https://shellmonger.com/2016/01/22/working-with-fonts-with-webpack/)
+- [Using @font-face | CSS-Tricks](https://css-tricks.com/snippets/css/using-font-face/)

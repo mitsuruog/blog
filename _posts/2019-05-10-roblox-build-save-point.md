@@ -5,7 +5,7 @@ date: 2019-05-10 0:00:00 +900
 comments: true
 tags: [roblox, ロブロックス]
 categories: ["Blog", "雑記"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point-logo.png
 ---
 
 今日は Roblox でセーブポイントを作ってみます。
@@ -14,7 +14,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/
 
 完成形のプロジェクト構造はこちらです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point1.png)
 
 今回は Workspace に Part を 4 つと ServerScript が 1 つです。
 
@@ -23,12 +23,12 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/
 まず、Workspace にセーブポイントを配置します。
 セーブポイントは「SpawnLocation」を使います。SpawnLocation は下ようなギアのマークが付いているブロックで、プレイヤーはこの場所からゲームに参加します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point2.png)
 
 今回は 4 つ配置します。
 わかりやすいように`Checkpoints`というフォルダに格納して、それぞれの`Name`を 1 から 4 までつけます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point3.png)
 
 この画像では見えていないですが、すぐ横に触ると死ぬマグマ玉も置いています。
 
@@ -61,7 +61,7 @@ Players.PlayerAdded:Connect(onPlayerAdd)
 
 結果はどうでしょうか？
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point4.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point4.gif)
 
 4 番目のセーブポイントがスタート地点になっています。
 どうやら、セーブポイントを`Name`の昇順で並び替える必要があるようです。
@@ -146,13 +146,13 @@ end
 
 実際にセーブポイントに触れてみると、スタート地点が更新されていることがログで確認できます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point5.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point5.gif)
 
 実際に死んでみます。
 
 セーブポイント 3 に触れた後で、マグマ玉に触れるとセーブポイント 3 から復活することができます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point6.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-save-point6.gif)
 
 ## まとめ
 

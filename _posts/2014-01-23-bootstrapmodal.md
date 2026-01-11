@@ -7,19 +7,19 @@ tags: [bootstrap]
 categories: ["Blog", "UI・UX"]
 ---
 
-[Bootstrap](https:https://getbootstrap.com/)の小ネタです。
+[Bootstrap](https://getbootstrap.com/)の小ネタです。
 
-[Bootstrap](https:https://getbootstrap.com/)には[Modal](https:https://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
+[Bootstrap](https://getbootstrap.com/)には[Modal](https://getbootstrap.com/javascript/#modals)というダイアログを表示する機能が内包されています。この Modal を表示する際にパラメータを渡す方法について調べました。
 ユースケースとしては、一覧から詳細ダイアログを開く際にパラメータを渡す場合などでしょうか。
 
 <!-- more -->
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/bootstrap-modal.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/bootstrap-modal.png)
 
 Modal にパラメータを渡す方法は昔から議論されていて、最近まで変更がされているようです。Github 上の Issue はこちら
 
 Pass data arguments to modal? · Issue #531 · twbs/bootstrap
-[https:https://github.com/twbs/bootstrap/issues/531](https://github.com/twbs/bootstrap/issues/531)
+[https://github.com/twbs/bootstrap/issues/531](https://github.com/twbs/bootstrap/issues/531)
 
 ## 1. 3.0.3 以前
 

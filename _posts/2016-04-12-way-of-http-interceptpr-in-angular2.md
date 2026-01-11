@@ -5,12 +5,12 @@ date: 2016-04-12 0:58:00 +900
 comments: true
 tags: [angular, angular2]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/HTTP_Intercept.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/HTTP_Intercept.png
 ---
 
 Way of httpInterceptor in Angular 2
 
-4/10 に開催された[Angular 2 ハンズオン](https:https://connpass.com/event/28985/)のチューターとして参加してきました。  
+4/10 に開催された[Angular 2 ハンズオン](https://connpass.com/event/28985/)のチューターとして参加してきました。  
 チューターしている合間に、Angular2 での HttpIntercepor のやり方を調べてたので、その辺りを紹介します。
 
 <!-- more -->
@@ -18,7 +18,7 @@ Way of httpInterceptor in Angular 2
 ついでに LT してきました。LT の資料はこちらです。
 
 Angular2 HttpInterceptor Needed  
-<https:https://gist.github.com/mitsuruog/6f7f0ca3f546b245bccdd3ebc14375d8>
+<https://gist.github.com/mitsuruog/6f7f0ca3f546b245bccdd3ebc14375d8>
 
 ## HttpInterceptor とは
 
@@ -27,14 +27,14 @@ Angular2 HttpInterceptor Needed
 Controller などの後続処理から、XHR 通信時に発生する例外処理などを分離して`HttpInterceptor`で一括処理します。
 Angular1 では、`HttpInterceptor`を使うことで綺麗に分離することができました。
 
-refs: [AngularJS: API: $http](https:https://docs.angularjs.org/api/ng/service/$http)
+refs: [AngularJS: API: $http](https://docs.angularjs.org/api/ng/service/$http)
 
 ## Angular2 では簡単にはできない
 
 Angular2 でも簡単に実現できると考えていたのですが、思ったより面倒でした。
 公式リポジトリの Issue にて実現方法について議論されていました。(めっちゃ長いです)
 
-[RFC: Http interceptors and transformers · Issue #2684 · angular/angular](https:https://github.com/angular/angular/issues/2684)
+[RFC: Http interceptors and transformers · Issue #2684 · angular/angular](https://github.com/angular/angular/issues/2684)
 
 ## Angualr2 での HttpInterceptor の実現方法
 
@@ -131,8 +131,8 @@ Angular2 でも`HttpInterceptor`を実現できそうですが、少し面倒で
 
 こちらに`custom-http.service.ts`のコード置いておきます。(しばらくはこのままで使えるはず。。。)
 
-[custom-http.service.ts](https:https://gist.github.com/mitsuruog/6f7f0ca3f546b245bccdd3ebc14375d8#file-custom-http-service-ts)
+[custom-http.service.ts](https://gist.github.com/mitsuruog/6f7f0ca3f546b245bccdd3ebc14375d8#file-custom-http-service-ts)
 
 > (追記)
-> LT では`new Providor()`としていましたが、 [@laco0416](https:https://twitter.com/laco0416)さんから、
+> LT では`new Providor()`としていましたが、 [@laco0416](https://twitter.com/laco0416)さんから、
 > `Providor`を Warp している`provide`を利用した方が破壊的変更が起きにくいとアドバイスいただき変更しました。ありがとうございます！！

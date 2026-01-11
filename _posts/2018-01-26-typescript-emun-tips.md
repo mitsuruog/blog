@@ -5,7 +5,7 @@ date: 2018-01-26 0:00:00 +900
 comments: true
 tags: [typescript]
 categories: ["Blog", "JavaScript・TypeScript"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/TypeScriptEnum.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2018/TypeScriptEnum.png
 ---
 
 TypeScript の Enum を使った小ネタです。
@@ -118,4 +118,4 @@ TypeScript の Enum に関数を追加してメッセージキーを返す方法
 
 やり方は、この記事の「Enum with static functions」を参考にしています。
 
-- [Enums · TypeScript Deep Dive](https:https://basarat.gitbooks.io/typescript/docs/enums.html)
+- [Enums · TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/docs/enums.html)

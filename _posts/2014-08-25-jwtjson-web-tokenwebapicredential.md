@@ -9,7 +9,7 @@ categories: ["Blog", "API・バックエンド連携"]
 
 AngularJS への改宗が完了した「mitsuruog」です。  
 AngularJS に限らず Single page application(以下、SPA)を構築した場合、認証(Authenticate)とその後の WebAPI での証明情報(Credential)の受け渡し方法について最近悩んでいます。  
-調べていたら Json Web Token(以下、JWT)を利用した方法が[Cookies vs Tokens. Getting auth right with Angular.JS](https:https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)で紹介されていて、試してみると結構使えそうでしたので紹介してみます。
+調べていたら Json Web Token(以下、JWT)を利用した方法が[Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)で紹介されていて、試してみると結構使えそうでしたので紹介してみます。
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ URL を知っていれば誰でもアクセスできる性質を持っていま�
 
 バックエンドではユーザ認証を行い、その証明情報を元に、不正なアクセスを除外したり、正しいアクセスに対して機能に対する認可を行わなければなりません。そのため、SPA での証明情報の受け渡しは非常に重要です。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT2.png)
 
 ## 2.Token を利用した証明情報の受け渡し
 
@@ -32,7 +32,7 @@ Cookie を利用した証明情報とは「セッション ID」をイメージ�
 
 それに対し、Token を利用した方法では認証はバックンドに依存しません。ここでの「Token」とは「**電子署名**」の一種です。こちらが Token を利用した場合の証明情報の受け渡しフローです。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT3.png)
 
 まず認証後に、暗号学的ハッシュ関数(SHA-256 など)を使って暗号化した Token を生成して渡します。このときにロールや個人情報を Token に含めることがポイントです。  
 フロントエンドは WebAPI アクセスする際に HTTP ヘッダーに Token を設定します。WebAPI アクセスを受けたバックエンドは Token を秘密鍵を使って復号し、Token が改ざんされていないことを確認することで、正しいアクセスであることを確認します。
@@ -48,10 +48,10 @@ JWT とは、Json 形式の claims(※)を暗号化して URL で安全に送れ
 > (※)claims(クレーム)：うーん、いまいちイメージが湧かない。たぶん、上の個人情報とかロールとかそんな印象だと思います。
 
 JWT の構造は JSON Web Signature(JWS)と JSON Web Encryption(JWE)の 2 つ。
-(ちなみに上の[Cookies vs Tokens. Getting auth right with Angular.JS](https:https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)は JWS です。)
+(ちなみに上の[Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)は JWS です。)
 JWS 構造の JWT を簡単に図解すると「ヘッダー」「クレームセット」「署名」の 3 部構成になっています。それぞれ Base64URL エンコードされており、署名はヘッダー・クレームセットから生成します。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/JWT1.png)
 
 クレームセット部分には、個人情報やロールなどカスタム項目を設定します。これ以外に JWT の仕様で以下のような項目(クレーム名)が標準で定義されています。
 
@@ -64,8 +64,8 @@ JWS 構造の JWT を簡単に図解すると「ヘッダー」「クレーム�
 JWT についての詳細は下記のブログを参照してください。おそらく私よりかなり正確な理解をされていると思います。(JWT の日本語情報はかなり希少です)
 特に hiyosi’s blog さんの記事は JWT の仕様と JWS 構造の JWT の作成・検証(ただし scala)まで含まれており、非常に有用です。
 
-[JSON Web Token (JWT) - OAuth.jp](https:https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
-[JWT について簡単にまとめてみた - hiyosi’s blog](https:https://hiyosi.tumblr.com/post/70073770678/jwt)
+[JSON Web Token (JWT) - OAuth.jp](https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
+[JWT について簡単にまとめてみた - hiyosi’s blog](https://hiyosi.tumblr.com/post/70073770678/jwt)
 
 ## 4.Token を利用した場合の課題など
 
@@ -94,18 +94,18 @@ JWT を利用した証明情報の受け渡し方法いかがでしたでしょ�
 国内情報が少なくて、正直どこまで信頼できるか手探りの状態です。今後も引き続き WebAPI 周りの認証とか証明情報の受け渡しとか注視していきます。
 
 最近、AngularJS で各ソーシャル対応の Token ベース認証ライブラリが出ましたので、こちらを使ってみるのもいいかと思います。
-[sahat/satellizer](https:https://github.com/sahat/satellizer)
+[sahat/satellizer](https://github.com/sahat/satellizer)
 
 こちらが参考資料です。
 
 - **Blog**
-  - [Cookies vs Tokens. Getting auth right with Angular.JS](https:https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
-  - [JSON Web Token (JWT) - OAuth.jp](https:https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
-  - [JWT について簡単にまとめてみた - hiyosi’s blog](https:https://hiyosi.tumblr.com/post/70073770678/jwt)
+  - [Cookies vs Tokens. Getting auth right with Angular.JS](https://auth0.com/blog/2014/01/07/angularjs-authentication-with-cookies-vs-token/)
+  - [JSON Web Token (JWT) - OAuth.jp](https://oauth.jp/blog/2012/10/26/json-web-token-jwt/)
+  - [JWT について簡単にまとめてみた - hiyosi’s blog](https://hiyosi.tumblr.com/post/70073770678/jwt)
 - **仕様**
-  - [JSON Web Token (JWT) draft25](https:https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
-  - [JSON Web Token (JWT) -日本語 draft11-](https:https://openid-foundation-japan.github.io/draft-ietf-oauth-json-web-token-11.ja.html)
+  - [JSON Web Token (JWT) draft25](https://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)
+  - [JSON Web Token (JWT) -日本語 draft11-](https://openid-foundation-japan.github.io/draft-ietf-oauth-json-web-token-11.ja.html)
 - **ライブラリ**
-  - [auth0/express-jwt(nodejs/express ミドルウェア)](https:https://github.com/auth0/express-jwt)
-  - [auth0/node-jsonwebtoken(nodejs/JWS 形式の JWT 作成)](https:https://github.com/auth0/node-jsonwebtoken)
-  - [sahat/satellizer(javascript/AngularJS 用の Token ベース認証ライブラリ)](https:https://github.com/sahat/satellizer)
+  - [auth0/express-jwt(nodejs/express ミドルウェア)](https://github.com/auth0/express-jwt)
+  - [auth0/node-jsonwebtoken(nodejs/JWS 形式の JWT 作成)](https://github.com/auth0/node-jsonwebtoken)
+  - [sahat/satellizer(javascript/AngularJS 用の Token ベース認証ライブラリ)](https://github.com/sahat/satellizer)

@@ -7,7 +7,7 @@ tags: [android, chrome devtools]
 categories: ["Blog", "開発ツール"]
 ---
 
-2013/10/30 に「[Frontrend x Chrome Tech Talk Night E<span id="goog_1836471854"></span><span id="goog_1836471855"></span>xtended](https:https://frontrend.github.io/events/chrome/)」が開催され、Addy 氏、Jake 氏、Paul 氏が来日して、最新のモバイル開発のための様々な手法を紹介してくれました。
+2013/10/30 に「[Frontrend x Chrome Tech Talk Night E<span id="goog_1836471854"></span><span id="goog_1836471855"></span>xtended](https://frontrend.github.io/events/chrome/)」が開催され、Addy 氏、Jake 氏、Paul 氏が来日して、最新のモバイル開発のための様々な手法を紹介してくれました。
 そこで聞いた内容をもとに、エンタープライズで適用できそうなものを、中立な目線で評価・検証していたのですが、ChromeDevtools のが凄すぎて、終わってみたら ChromeDevtools ばっかり評価・検証していた（おいおい！）という話をします。
 
 ちなみに、Android 開発はほとんどやったことはありません。  
@@ -15,9 +15,9 @@ categories: ["Blog", "開発ツール"]
 
 <!-- more -->
 
-これの記事は[Frontrend Advent Calendar 2013](https:https://www.adventar.org/calendars/62)の 12 日目の記事です。  
+これの記事は[Frontrend Advent Calendar 2013](https://www.adventar.org/calendars/62)の 12 日目の記事です。  
 前日の記事は[light Chen さん]・・・まだ書いてない＞＜;  
-明日の記事は[[pocotan001 さん]Gist Slides（仮）を作った。 - pocotumblr](https:https://pocotumblr.tumblr.com/post/69868810750/gist-slides)
+明日の記事は[[pocotan001 さん]Gist Slides（仮）を作った。 - pocotumblr](https://pocotumblr.tumblr.com/post/69868810750/gist-slides)
 
 ## はじめに
 
@@ -33,7 +33,7 @@ categories: ["Blog", "開発ツール"]
 今日は ChromeDevtools で最近追加された、Android 開発が楽になる機能を２つ紹介します。
 
 詳しくは本家のサイトが一番詳しいので参照してください。
-[https:https://developers.google.com/chrome-developer-tools/docs/remote-debugging](https://developers.google.com/chrome-developer-tools/docs/remote-debugging)
+[https://developers.google.com/chrome-developer-tools/docs/remote-debugging](https://developers.google.com/chrome-developer-tools/docs/remote-debugging)
 
 ## Remote Debugging
 
@@ -47,7 +47,7 @@ Google で調べるといろいろ出てきますので、詳しくは紹介し�
 
 まず、デバイスを USB で接続して、ローカル PC 上の Chrome のアドレスバーにて「chrome:https://inspect」と打ってください。下のような画面が表示されて、接続してあるデバイスが表示されれば準備は OK です。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting1.png)
 
 ### Remote Debugging 使ってみる
 
@@ -56,18 +56,18 @@ Google で調べるといろいろ出てきますので、詳しくは紹介し�
 
 さらに、ブラウザのバージョン番号が表示されている横のテキストボックスに URL を入力することで、デバイス側へ表示させてたいページを送ることができ、Remote Debugging と組み合わせることで、ローカル上で開発中の画面をデバイス側でデバックすることができます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting2.png)
 
 ### Port Forwarding
 
 Port Forwarding とはローカル PC 上の TCP ポートをそのままデバイス側に転送する機能です。具体的にはローカル PC 上で開発している「localhost:9000」など、今まさに開発中の Web ページをデバイス側へ転送して表示させることができます。
 （本家のサイトに記載されてますが、ネットワークなどの制限により動作しない場合があるようです。）
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting3.png)
 
 ### Port Forwarding + Grunt + livereload
 
-最近のフロント開発では、「Yeoman+Bower+Grunt」を組み合わせた高速開発手法がトレンドです。中でも[grunt-contrib-watch](https:https://github.com/gruntjs/grunt-contrib-watch)の「livereload」を使ったコードの変更からブラウザのリフレッシュまでの一連の操作を自動化したものは、今のフロント高速開発を象徴しているものです。
+最近のフロント開発では、「Yeoman+Bower+Grunt」を組み合わせた高速開発手法がトレンドです。中でも[grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)の「livereload」を使ったコードの変更からブラウザのリフレッシュまでの一連の操作を自動化したものは、今のフロント高速開発を象徴しているものです。
 
 この livereload と Port Forwarding を組み合わせると、ローカル PC 上に USB 接続してあるすべてのデバイスを livereload させることができます。
 具体的には次のようにします。
@@ -76,11 +76,11 @@ Port Forwarding とはローカル PC 上の TCP ポートをそのままデバ�
 次のように 9000、9002 ポートを転送するように、Port Forwarding 設定をします。
 （livereload のデフォルトポートは 35729 なのですが、Devtools 側が 4 桁ポートしか受け入れてくれないので、9002 にしてます。Devtools チームの皆さんなんとかしてくださーい。）
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting4.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting4.png)
 
 設定が正しく行われると、転送されるポートが画面上で確認できます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting5.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting5.png)
 
 これで、9002 ポートを経由して livereload ができるようになりました。
 コード修正のたびに、デバイスのブラウザをリフレッシュするという手間がなくなりましたね。
@@ -100,22 +100,22 @@ Screencasting を使うためには、ローカル PC 上の Chrome のアドレ
 「デベロッパー ツールのテストを有効にする（#enable-devtools-experiments）」
 「USB でリモート デバッグを有効にする。（#remote-debugging-raw-usb）」
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting6.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting6.png)
 
 変更したら、下の方に Chrome を再起動するためのボタンが表示されますので、再起動してください。
 そして Devtools の設定画面を開いてみると、見慣れない「Experiments」メニューが表示されるはずです。
 そこで「Enable screencast」にチェックをすると準備は OK です。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting7.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting7.png)
 
 ### Screencasting を使ってみる
 
 とりあえず、先ほどの Remote Debugging と同じ要領で、デバイスを USB でつないで Remote Debugging してみてください。今度は、Devtools の下の方に見慣れない「□」が表示されているはずです。（ちょっと分かりにくいですが w）
 これを押すとデバイスで表示されてるページがローカル PC 上に転送されてきます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting8.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting8.png)
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting9.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/Screencasting9.png)
 
 ちなみに、Screencasting された画面では次のことができます。  
 素晴らしい！！
@@ -139,11 +139,11 @@ Remote Debugging と Screencasting。非常に強力でしたね。これらを�
 
 さくっと livereload 体験してみたい方は、こちらにサンプルが動かせるリポジトリ準備しましたので、ローカルに clone して動かしてみてください。
 
-[https:https://github.com/mitsuruog/awesome-chrome-devtools](https://github.com/mitsuruog/awesome-chrome-devtools)
+[https://github.com/mitsuruog/awesome-chrome-devtools](https://github.com/mitsuruog/awesome-chrome-devtools)
 
 ### 謝辞
 
-最後に、この内容は 2013/10/30 にサイバーエージェントで開催された「[Frontrend x Chrome Tech Talk Night Extended](https:https://frontrend.github.io/events/chrome/)」で聞いた内容を元にしています。
+最後に、この内容は 2013/10/30 にサイバーエージェントで開催された「[Frontrend x Chrome Tech Talk Night Extended](https://frontrend.github.io/events/chrome/)」で聞いた内容を元にしています。
 
 本当にサイバーエージェントの Frontrend の方々、最高です！！
 ありがとう！！

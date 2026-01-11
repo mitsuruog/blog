@@ -5,7 +5,7 @@ date: 2017-05-17 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "インフラ"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/dropbox2cloudinary.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/dropbox2cloudinary.png
 ---
 
 ~~当ブログで使っている画像を Dropbox の public フォルダから、Cloudinary に移行した話です。
@@ -28,7 +28,7 @@ Cloudinary とは、画像/動画専門のクラウドホスティングサー�
 
 > （だめでした〜！！）Bandwidth が 5GB/月なんですが、結構アクセス多くってオーバーしてしまいました。結果、S3 に移行することにしました。(2017/06/15)
 
-- [Cloudinary](https:https://cloudinary.com/)
+- [Cloudinary](https://cloudinary.com/)
 
 ## 移行方法
 
@@ -36,10 +36,10 @@ Cloudinary とは、画像/動画専門のクラウドホスティングサー�
 
 ```
 // Dropbox
-https:https://dl.dropboxusercontent.com/u/<YOUR_ID>
+https://dl.dropboxusercontent.com/u/<YOUR_ID>
 
 // Cloudinary
-https:https://res.cloudinary.com/<YOUR_COULD_NAME>/image/upload/<YOUR_ID>
+https://res.cloudinary.com/<YOUR_COULD_NAME>/image/upload/<YOUR_ID>
 ```
 
 ### 画像 URL の一括置換

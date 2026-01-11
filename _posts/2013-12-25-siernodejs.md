@@ -20,15 +20,15 @@ categories: ["Blog", "キャリア・働き方"]
 
 ## 1. 教材について
 
-はじめに、教材の利用とリポジトリの Fork 許可してくれた[@yosuke_furukawa](https:https://twitter.com/yosuke_furukawa)さん、本当にありがとうございました！
+はじめに、教材の利用とリポジトリの Fork 許可してくれた[@yosuke_furukawa](https://twitter.com/yosuke_furukawa)さん、本当にありがとうございました！
 
 本家のリソースはこちらです。
 
-[https:https://github.com/yosuke-furukawa/node_study](https://github.com/yosuke-furukawa/node_study)
+[https://github.com/yosuke-furukawa/node_study](https://github.com/yosuke-furukawa/node_study)
 
 で、私が実際にハンズオンで使用した Fork したものはこちらです。
 
-[https:https://github.com/mitsuruog/node_study](https://github.com/mitsuruog/node_study)
+[https://github.com/mitsuruog/node_study](https://github.com/mitsuruog/node_study)
 
 Fork した方は、以下の点を少し修正を加えています。
 

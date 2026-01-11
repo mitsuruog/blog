@@ -5,7 +5,7 @@ date: 2016-01-03 00:00:21 +0900
 comments: true
 tags: [webpack, salesforce lightning design system, salesforce]
 categories: ["Blog", "開発ツール"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/webpack-slds.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/webpack-slds.png
 ---
 
 一手間必要だったのでメモ。  
@@ -18,7 +18,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2016/
 こちらの内容とほぼ一緒です。
 
 Webpack config example · Issue #127 · salesforce-ux/design-system  
-https:https://github.com/salesforce-ux/design-system/issues/127
+https://github.com/salesforce-ux/design-system/issues/127
 
 ## 手順
 
@@ -154,7 +154,7 @@ $static-font-path: "~@salesforce-ux/design-system/assets/fonts/webfonts";
 
 font の絶対パスの件は本家に似たような Issue がありますので、Sass 変数の置き換え作法は、今後のためにも知っておいた方がよろしいかと思います。
 
-Compiling index-ltng.scss results in CSS that does not load salesforce fonts · Issue #71 · salesforce-ux/design-system https:https://github.com/salesforce-ux/design-system/issues/71
+Compiling index-ltng.scss results in CSS that does not load salesforce fonts · Issue #71 · salesforce-ux/design-system https://github.com/salesforce-ux/design-system/issues/71
 
 これで font も読み込むことができました。  
 めでたし、めでたし。

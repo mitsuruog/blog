@@ -5,12 +5,12 @@ date: 2019-01-22 0:00:00 +900
 comments: true
 tags: [react, typescript, redux]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesafe-actions-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesafe-actions-logo.png
 ---
 
 （完全に自分用のメモです。）
 
-TypeScript+React+Redux を使うときに気に入って使っている[typesafe-actions](https:https://github.com/piotrwitek/typesafe-actions)。
+TypeScript+React+Redux を使うときに気に入って使っている[typesafe-actions](https://github.com/piotrwitek/typesafe-actions)。
 意外なところでハマりポイントがありました。
 
 ## Reducer で Action の型情報が見れない
@@ -38,7 +38,7 @@ export const weatherReducer = (
 
 ところが`action.payload`の型情報が正しく取れていません。なぜだろう。。。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesafe-actions1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/typesafe-actions1.png)
 
 エラーの内容はこちら。
 
@@ -72,7 +72,7 @@ export const WEATHER_ERROR = `${PREFIX}/ERROR`;
 
 公式ドキュメントにも書いてありました。
 
-- [typesafe-actions: The Actions](https:https://github.com/piotrwitek/typesafe-actions#--the-actions)
+- [typesafe-actions: The Actions](https://github.com/piotrwitek/typesafe-actions#--the-actions)
 
 > PRO-TIP: string constants limitation in TypeScript
 > ...

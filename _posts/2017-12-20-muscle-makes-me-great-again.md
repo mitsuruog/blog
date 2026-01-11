@@ -5,10 +5,10 @@ date: 2017-12-20 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "雑記"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gym.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/gym.png
 ---
 
-この記事は[筋肉 Advent Calendar 2017 \- Adventar](https:https://adventar.org/calendars/2143#list-2017-12-12)20 日目の記事です。
+この記事は[筋肉 Advent Calendar 2017 \- Adventar](https://adventar.org/calendars/2143#list-2017-12-12)20 日目の記事です。
 
 （たまには技術系じゃないことも書いてみようかな。。。）
 
@@ -82,5 +82,5 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2017/
 
 ちなみに、この記事は 3 年前にデブサミに一緒に出た知り合いが、最近マッチョになっていくのを Facebook の TL で見てインスパイアされて書いたものです w。
 
-- [筋トレを始めて半年経ったので振り返ります \- ニクニクドットミー](https:https://blog.nikuniku.me/entry/2017/12/18/141807)
-- [デブサミ 2014 で 35 歳からフロントエンジニアにキャリアチェンジして 35 歳定年説を覆した話をしてきた \| I am mitsuruog](https:https://blog.mitsuruog.info/2014/02/20143535.html)
+- [筋トレを始めて半年経ったので振り返ります \- ニクニクドットミー](https://blog.nikuniku.me/entry/2017/12/18/141807)
+- [デブサミ 2014 で 35 歳からフロントエンジニアにキャリアチェンジして 35 歳定年説を覆した話をしてきた \| I am mitsuruog](https://blog.mitsuruog.info/2014/02/20143535.html)

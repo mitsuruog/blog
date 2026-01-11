@@ -5,7 +5,7 @@ date: 2013-04-09 17:44:40 +0900
 comments: true
 tags: [backbone, spa, チュートリアル]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/backbone.jpg
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/backbone.jpg
 ---
 
 先日めでたく 1.0.0 をリリースした Backbone.js ですが、よくも悪くも「どう作るか」について、作成者側の思いで自由にできるため、始めの取っ掛かりとして、どう作ればよいかと言うことで結構悩む方も多いかと思います。
@@ -28,7 +28,7 @@ image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2013/
 
 このチュートリアルでは、よくある Tweet 検索アプリケーションを作成しています。
 
-[https:https://github.com/mitsuruog/SPA-with-Backbone](https://github.com/mitsuruog/SPA-with-Backbone)
+[https://github.com/mitsuruog/SPA-with-Backbone](https://github.com/mitsuruog/SPA-with-Backbone)
 
 次からは、View について注意するポイントを幾つか紹介します。
 

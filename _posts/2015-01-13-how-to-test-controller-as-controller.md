@@ -13,7 +13,7 @@ controllerAs 仕様にした controller をユニットテストする際、少�
 
 <!-- more -->
 
-テストコードは angular 本家の[PhoneCat チュートリアル](https:https://docs.angularjs.org/tutorial)のものを利用します。
+テストコードは angular 本家の[PhoneCat チュートリアル](https://docs.angularjs.org/tutorial)のものを利用します。
 
 `controllerAs`仕様にカスタムした controller
 
@@ -74,7 +74,7 @@ describe("Controller: PhoneListCtrl", function () {
 });
 ```
 
-[$controller](https:https://docs.angularjs.org/api/ng/service/$controller)で指定する controller の constructor 指定の部分に`as`構文が使えるんですね。知りませんでした。  
+[$controller](https://docs.angularjs.org/api/ng/service/$controller)で指定する controller の constructor 指定の部分に`as`構文が使えるんですね。知りませんでした。  
 $controller でテストする controller を inject したら、scope に設定した model などは`as`で指定した alias(今回だと vm)から参照できるみたい。
 
 ちなみに、constructor で`as`構文を使わないと`expect`するところで`undefined`になります。

@@ -5,10 +5,10 @@ date: 2018-12-16 0:00:00 +900
 comments: true
 tags: [その他]
 categories: ["Blog", "マネジメント"]
-image: https:https://images-na.ssl-images-amazon.com/images/I/51B6wny9PrL._SX327_BO1,204,203,200_.jpg
+image: https://images-na.ssl-images-amazon.com/images/I/51B6wny9PrL._SX327_BO1,204,203,200_.jpg
 ---
 
-この記事は[ファシリテーター Advent Calendar 2018 \- Adventar](https:https://adventar.org/calendars/3052) 16 日目の記事です。
+この記事は[ファシリテーター Advent Calendar 2018 \- Adventar](https://adventar.org/calendars/3052) 16 日目の記事です。
 
 ## はじめに
 
@@ -20,7 +20,7 @@ image: https:https://images-na.ssl-images-amazon.com/images/I/51B6wny9PrL._SX327
 内容は、ほぼこちらの本の読書感想文のようなものです。
 タイトルに惹かれて買ってみたのですが、読み終わって何か世界が変わったような気がしたので紹介します。
 
-[敵とのコラボレーション――賛同できない人、好きではない人、信頼できない人と協働する方法](https:https://www.amazon.co.jp/dp/4862762638)
+[敵とのコラボレーション――賛同できない人、好きではない人、信頼できない人と協働する方法](https://www.amazon.co.jp/dp/4862762638)
 
 たまにはこういう記事もいいかな。
 

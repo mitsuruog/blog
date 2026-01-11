@@ -11,19 +11,19 @@ categories: ["Blog", "API・バックエンド連携"]
 今回は「OpenUI5 と OData を使ってどのように Web システムを作成するか」というチュートリアルを作って見ました。
 
 内容はこちらです。  
-[https:https://mitsuruog.github.io/Openui5-with-OdataService/](https://mitsuruog.github.io/Openui5-with-OdataService/)
+[https://mitsuruog.github.io/Openui5-with-OdataService/](https://mitsuruog.github.io/Openui5-with-OdataService/)
 
 Gtihub：  
-[https:https://github.com/mitsuruog/Openui5-with-OdataService](https://github.com/mitsuruog/Openui5-with-OdataService)  
+[https://github.com/mitsuruog/Openui5-with-OdataService](https://github.com/mitsuruog/Openui5-with-OdataService)  
 良かったら Github で Star 付けたり、SNS でシェアしてくださいね。
 
 <!-- more -->
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/openui5odata1.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/openui5odata1.png)
 
 > (2014/11/13 追記)  
-> このネタで[HTML5Experts.jp](https:https://html5experts.jp)に寄稿しました。こちらの方が分かりやすく書いてあると思います。  
-> [実例から考える、HTML5 時代のエンタープライズ・アーキテクチャ | HTML5Experts.jp](https:https://html5experts.jp/mitsuruog/9518/) > ![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/exjp_odata.png)
+> このネタで[HTML5Experts.jp](https://html5experts.jp)に寄稿しました。こちらの方が分かりやすく書いてあると思います。  
+> [実例から考える、HTML5 時代のエンタープライズ・アーキテクチャ | HTML5Experts.jp](https://html5experts.jp/mitsuruog/9518/) > ![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/exjp_odata.png)
 
 ## 目次
 
@@ -58,13 +58,13 @@ OData の仕様は一見非常に難解です。OData の仕様に則ったデ�
 こちらは「CompanyName」を「Alfr」で前方一致検索するためのクエリです。
 
 ```
-https:https://services.odata.org/Northwind/Northwind.svc/Customers?$filter=startswith(CompanyName, ‘Alfr’) eq true
+https://services.odata.org/Northwind/Northwind.svc/Customers?$filter=startswith(CompanyName, ‘Alfr’) eq true
 ```
 
 こんなものもあります。
 
 ```
-https:https://services.odata.org/OData/OData.svc/Categories?$select=Name,Products&$expand=Products
+https://services.odata.org/OData/OData.svc/Categories?$select=Name,Products&$expand=Products
 ```
 
 `$select`とか`$expand`とは一体どんな意味があるのでしょうか。。。（詳しくはチュートリアルの中で触れています。）
@@ -85,7 +85,7 @@ OData が持つデータアクセス方法の標準化と UI フレームワー�
 
 従来のオープンソースを組み合わせた場合と比べ、データアクセスに関わる非常にセンシティブで難易度が高い部分実装がかなり省け、大規模なシステム開発においても比較的管理しやすく、安全に開発ができる可能性があり、非常に惹かれるものがあります。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/openui5odata2.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2014/openui5odata2.png)
 
 ## 5. まとめ
 

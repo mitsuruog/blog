@@ -5,7 +5,7 @@ date: 2019-04-27 0:00:00 +900
 comments: true
 tags: [roblox, ロブロックス]
 categories: ["Blog", "雑記"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser-logo.png
 ---
 
 Roblox で罠を作る方法です。
@@ -19,7 +19,7 @@ Roblox で罠を作る方法です。
 
 通常の罠の作り方は至ってシンプルです。Roblox の公式ページにチュートリアルがあるので、その通りやってみれば作れると思います。
 
-- [Roblox: Coding Traps and Pickups](https:https://developer.roblox.com/articles/Creating-Traps-and-Pickups)
+- [Roblox: Coding Traps and Pickups](https://developer.roblox.com/articles/Creating-Traps-and-Pickups)
 
 コードが次のようなものになります。`Laser`という Part を作成して、その中に Script を作成してください。
 
@@ -66,7 +66,7 @@ end
 今回は 3 秒間隔で点滅するようにしました。
 ただし、今のままではレーザーが消灯している場合も作動してしまい、プレヤーが触れると死んでしまいます。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser1.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser1.gif)
 
 うーん。なんでだろう。。。
 
@@ -96,7 +96,7 @@ end
 `CanCollide = false`にした場合、Part の位置を固定しないと、ゲームの世界から落下して見えなくなってしまいます。
 プロパティウィンドウから Part の`Anchored`のチェックを付けておいてください。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser3.png)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser3.png)
 
 しかし、このままではまだレーザーが消灯時にも罠が作動しています。
 これは`Laser.Touched`イベントが`Laser.CanCollide = false`の場合でも発火してしまうためです。
@@ -125,11 +125,11 @@ Laser.Touched:Connect(onPartTouch)
 
 これで罠が完成しました。
 
-![](https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser2.gif)
+![](https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/roblox-flashing-raser2.gif)
 
 ## まとめ
 
 通常の罠の作り方と、点滅する罠の作り方でした。
 少しカスタマイズしようとすると途端にわからなくなりますが、Roblox の公式サイトの API リファレンスはかなり親切に書いてあるので、こまったら API リファレンス読むようにします。
 
-- [Roblox API REFERENCE: BasePart.CanCollide](https:https://developer.roblox.com/api-reference/property/BasePart/CanCollide)
+- [Roblox API REFERENCE: BasePart.CanCollide](https://developer.roblox.com/api-reference/property/BasePart/CanCollide)

@@ -5,14 +5,14 @@ date: 2019-08-27 0:00:00 +900
 comments: true
 tags: [react-native, react-native-router-flux]
 categories: ["Blog", "フレームワーク"]
-image: https:https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf-logo.png
+image: https://s3-ap-northeast-1.amazonaws.com/blog-mitsuruog/images/2019/rnrf-logo.png
 ---
 
-[react-native-router-flux](https:https://github.com/aksonov/react-native-router-flux)の小ネタです。
+[react-native-router-flux](https://github.com/aksonov/react-native-router-flux)の小ネタです。
 
 前回の話はこちら。
 
-- [react\-native\-router\-flux の onRight をカスタマイズする \| I am mitsuruog](https:https://blog.mitsuruog.info/2019/03/rnrf-customizable-onright)
+- [react\-native\-router\-flux の onRight をカスタマイズする \| I am mitsuruog](https://blog.mitsuruog.info/2019/03/rnrf-customizable-onright)
 
 前回はアプリの NavBar の右側にあるボタン(以下、RightButton)をクリックした時に、次の画面に props を渡したいようなユースケースを想定していましたが、今回は RightButton を props の条件で出し分けしたいと思います。
 
