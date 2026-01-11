@@ -136,7 +136,7 @@ angular.module("app").controller("MainCtrl", MainCtrl);
 ```
 
 各コントローラで promise を処理するのが面倒な場合は、15 日目[AngularJS - Promise を使おう - Qiita(@teyosh)](https://qiita.com/teyosh/items/d7d3c17f954318c88882)で紹介されているような、promise を処理するための factory を作ってラップするといいと思います。  
-(たしか、<a target="_blank" href="https://www.amazon.co.jp/gp/product/4873116678/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4873116678&linkCode=as2&tag=mitsuruog-22&linkId=bdd0c9b0152b6260907ab4e64036c67a">AngularJS アプリケーション開発ガイド</a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=mitsuruog-22&l=am2&o=9&a=4873116678" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />のサンプルもそうなってたはず。)
+(たしか、<a target="_blank" href="https://www.amazon.co.jp/gp/product/4873116678/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4873116678&linkCode=as2&tag=mitsuruog-22&linkId=bdd0c9b0152b6260907ab4e64036c67a">AngularJS アプリケーション開発ガイド</a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=mitsuruog-22&l=am2&o=9&a=4873116678" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />のサンプルもそうなってたはず。)
 
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=mitsuruog-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=4873116678&linkId=d152ad4c622d40713fb4691ba63bcb90&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr">
     </iframe>
