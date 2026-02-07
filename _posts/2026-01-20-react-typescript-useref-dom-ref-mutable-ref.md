@@ -3,8 +3,8 @@ layout: post
 title: "React 18/19 変更点まとめ: ref / forwardRef / useRef のTypeScriptパターン"
 date: 2026-01-20 0:00:00 +900
 comments: true
-tags: [フレームワーク]
-categories: ["react", "typescript"]
+tags: ["react", "typescript"]
+categories: ["Blog", "フロントエンド基礎"]
 image: /assets/img/2026/react-typescript-useref-dom-ref-mutable-ref.png
 ---
 
